@@ -1,0 +1,78 @@
+/* ======================================================================== */
+/* CSS Reset inspired by Elly Loel's CSS Reset */
+/* http://www.ellyloel.com/ */
+/* ======================================================================== */
+
+/* Use a more-intuitive box-sizing model on everything */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+}
+
+html {
+  block-size: 100%; /* Allow percentage-based heights in the application */
+  -webkit-text-size-adjust: none; /* Making sure text size is only controlled by font-size */
+}
+
+body {
+  -webkit-font-smoothing: antialiased; /* Improve text rendering */
+  text-rendering: optimizeSpeed; /* https://marco.org/2012/11/15/text-rendering-optimize-legibility */
+  min-block-size: 100%; /* Allow percentage-based heights in the application */
+}
+
+/* Improve media defaults */
+:where(img, svg, video) {
+  display: block;
+  block-size: auto;
+  max-inline-size: 100%;
+}
+
+/* Avoid text overflows */
+:where(p, h1, h2, h3, h4, h5, h6) {
+  overflow-wrap: break-word;
+}
+
+/* Make it clear that interactive elements are interactive */
+:where(a[href], area, button, input, label[for], select, summary, textarea, [tabindex]:not([tabindex*='-'])) {
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+/* Animate focus outline */
+@media (prefers-reduced-motion: no-preference) {
+  :focus-visible {
+    transition: outline-offset 145ms cubic-bezier(0.25, 0, 0.4, 1);
+  }
+  :where(:not(:active)):focus-visible {
+    transition-duration: 0.25s;
+  }
+}
+:where(:not(:active)):focus-visible {
+  outline-offset: 3px;
+}
+
+/* Make sure users can't select button text */
+:where(button, button[type], input[type='button'], input[type='submit'], input[type='reset']) {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  user-select: none;
+  text-align: center;
+}
+
+/* Disabled cursor for disabled buttons */
+:where(button, button[type], input[type='button'], input[type='submit'], input[type='reset'])[disabled] {
+  cursor: not-allowed;
+}
+
+/* ======================================================================== */
+/* Global styles */
+/* ======================================================================== */
