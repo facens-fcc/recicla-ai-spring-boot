@@ -170,22 +170,3 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-
-/* */
-
-.headline {
-  font-weight: bold;
-}
-
-.headline--md {
-  font-size: 2rem;
-  line-height: 1.3;
-}
-
-/* */
-
-.overline {
-  background: gainsboro;
-  max-width: max-content;
-  padding: 0.25em 1em;
-}
