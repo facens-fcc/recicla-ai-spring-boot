@@ -149,6 +149,15 @@ body {
   padding: 6rem 1.5rem;
 }
 
+.section--primary-color {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.section--light-grey-color {
+  background-color: gainsboro;
+}
+
 /* */
 
 .content > * + * {
