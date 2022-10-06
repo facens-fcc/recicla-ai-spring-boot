@@ -1,0 +1,147 @@
+[
+  {
+    "id": 1,
+    "featured": true,
+    "name": "Recicladora Facens",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    "whatsapp": true,
+    "phone": "11 99999-9999",
+    "adress": "Rua dos Bobos, 0",
+    "services": {
+      "plastic": true,
+      "paper": true,
+      "glass": true,
+      "metal": true,
+      "organic": true,
+      "electronic": true,
+      "clothes": true,
+      "others": true
+    },
+    "opening_hours": {
+      "monday": "08:00 - 18:00",
+      "tuesday": "08:00 - 18:00",
+      "wednesday": "08:00 - 18:00",
+      "thursday": "08:00 - 18:00",
+      "friday": "08:00 - 18:00",
+      "saturday": "08:00 - 18:00",
+      "sunday": "08:00 - 18:00"
+    },
+    "image": "https://images.unsplash.com/photo-1593642532972-7e8c2a6c3d1a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8cmVjaWNsYWNvJTIwZmFjZW58ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80"
+  },
+  {
+    "id": 2,
+    "featured": true,
+    "name": "Recicladora FCC",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    "whatsapp": true,
+    "phone": "11 99999-9999",
+    "adress": "Rua dos Bobos, 0",
+    "services": {
+      "plastic": true,
+      "paper": true,
+      "glass": true,
+      "metal": true,
+      "organic": true,
+      "electronic": true,
+      "clothes": true,
+      "others": true
+    },
+    "opening_hours": {
+      "monday": "08:00 - 18:00",
+      "tuesday": "08:00 - 18:00",
+      "wednesday": "08:00 - 18:00",
+      "thursday": "08:00 - 18:00",
+      "friday": "08:00 - 18:00",
+      "saturday": "08:00 - 18:00",
+      "sunday": "08:00 - 18:00"
+    },
+    "image": "https://images.unsplash.com/photo-1593642532972-7e8c2a6c3d1a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8cmVjaWNsYWNvJTIwZmFjZW58ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80"
+  },
+  {
+    "id": 3,
+    "featured": true,
+    "name": "Recicladora Jogajunto",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    "whatsapp": true,
+    "phone": "11 99999-9999",
+    "adress": "Rua dos Bobos, 0",
+    "services": {
+      "plastic": true,
+      "paper": true,
+      "glass": true,
+      "metal": true,
+      "organic": true,
+      "electronic": true,
+      "clothes": true,
+      "others": true
+    },
+    "opening_hours": {
+      "monday": "08:00 - 18:00",
+      "tuesday": "08:00 - 18:00",
+      "wednesday": "08:00 - 18:00",
+      "thursday": "08:00 - 18:00",
+      "friday": "08:00 - 18:00",
+      "saturday": "08:00 - 18:00",
+      "sunday": "08:00 - 18:00"
+    },
+    "image": "https://images.unsplash.com/photo-1593642532972-7e8c2a6c3d1a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8cmVjaWNsYWNvJTIwZmFjZW58ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80"
+  },
+  {
+    "id": 4,
+    "featured": false,
+    "name": "Recicladora Não Sei o Que Lá",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    "whatsapp": true,
+    "phone": "11 99999-9999",
+    "adress": "Rua dos Bobos, 0",
+    "services": {
+      "plastic": true,
+      "paper": true,
+      "glass": true,
+      "metal": true,
+      "organic": true,
+      "electronic": true,
+      "clothes": true,
+      "others": true
+    },
+    "opening_hours": {
+      "monday": "08:00 - 18:00",
+      "tuesday": "08:00 - 18:00",
+      "wednesday": "08:00 - 18:00",
+      "thursday": "08:00 - 18:00",
+      "friday": "08:00 - 18:00",
+      "saturday": "08:00 - 18:00",
+      "sunday": "08:00 - 18:00"
+    },
+    "image": "https://images.unsplash.com/photo-1593642532972-7e8c2a6c3d1a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8cmVjaWNsYWNvJTIwZmFjZW58ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80"
+  },
+  {
+    "id": 5,
+    "featured": false,
+    "name": "Recicladora Fulanada da Silva",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    "whatsapp": true,
+    "phone": "11 99999-9999",
+    "adress": "Rua dos Bobos, 0",
+    "services": {
+      "plastic": true,
+      "paper": true,
+      "glass": true,
+      "metal": true,
+      "organic": true,
+      "electronic": true,
+      "clothes": true,
+      "others": true
+    },
+    "opening_hours": {
+      "monday": "08:00 - 18:00",
+      "tuesday": "08:00 - 18:00",
+      "wednesday": "08:00 - 18:00",
+      "thursday": "08:00 - 18:00",
+      "friday": "08:00 - 18:00",
+      "saturday": "08:00 - 18:00",
+      "sunday": "08:00 - 18:00"
+    },
+    "image": "https://images.unsplash.com/photo-1593642532972-7e8c2a6c3d1a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8cmVjaWNsYWNvJTIwZmFjZW58ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80"
+  }
+]

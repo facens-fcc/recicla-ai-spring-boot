@@ -2,46 +2,18 @@ import React from 'react';
 
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
-import Card from '../../components/Card/Card';
 import Heading from '../../components/Heading/Heading';
-import Overtitle from '../../components/Overtitle/Overtitle';
 import Button from '../../components/Button/Button';
 
 import CallToAction from '../../components/CallToAction/CallToAction';
+import FeaturedServices from '../../components/FeaturedServices/FeaturedServices.jsx';
 
 const Home = () => {
   return (
     <div>
       <Header />
       <main>
-        <section className="section">
-          <div className="container">
-            <div className="stack">
-              <div className="content content--center">
-                <Overtitle level="h2">Lixos eletrônicos</Overtitle>
-                <Heading level="p" size="lg">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-                </Heading>
-              </div>
-              <div className="grid">
-                <div className="col">
-                  <Card title="Pilhas e baterias" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt." image="https://source.unsplash.com/random/400x300" />
-                </div>
-                <div className="col">
-                  <Card title="Pilhas e baterias" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt." image="https://source.unsplash.com/random/400x300" />
-                </div>
-                <div className="col">
-                  <Card title="Pilhas e baterias" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt." image="https://source.unsplash.com/random/400x300" />
-                </div>
-              </div>
-              <div className="content content--center">
-                <Button variant="primary" href="/">
-                  Buscar por todos os tipos de lixos
-                </Button>
-              </div>
-            </div>
-          </div>
-        </section>
+        <FeaturedServices />
         <section className="section section--light-grey-color">
           <div className="container">
             <div className="stack">

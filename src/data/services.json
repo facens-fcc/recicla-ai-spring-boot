@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "featured": true,
+    "name": "Baterias e Pilhas",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    "image": "https://source.unsplash.com/random/400x300"
+  },
+  {
+    "id": 2,
+    "featured": true,
+    "name": "Eletrodomésticos e Aparelhos",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    "image": "https://source.unsplash.com/random/400x300"
+  },
+  {
+    "id": 3,
+    "featured": true,
+    "name": "Celulares e Tablets",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    "image": "https://source.unsplash.com/random/400x300"
+  },
+  {
+    "id": 4,
+    "featured": false,
+    "name": "Informática",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    "image": "https://source.unsplash.com/random/400x300"
+  }
+]
