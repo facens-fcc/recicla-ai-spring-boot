@@ -22,8 +22,7 @@ ul {
     justify-content: space-between;
 }
 
-.headerToggle > span,
-.headerToggle__open > span {
+.headerToggle > span {
     display: block;
     width: 1.625rem;
     height: 0.125rem;
@@ -32,13 +31,16 @@ ul {
     transform-origin: 3px 1px;
 }
 
-.headerToggle > span:not(last-child),
-.headerToggle__open > span:not(last-child) {
+.headerToggle > span:not(last-child) {
     margin-bottom: 0.3125rem;
 }
 
+.headerToggle {
+    display: block;
+    background: none;
+}
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
     .headerToggle {
         display: none;
     }
@@ -46,10 +48,9 @@ ul {
 
 .menu {
     display: none;
-    gap: 1.5625rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
     .menu {
         display: flex;
     }
@@ -72,7 +73,7 @@ ul {
 
 
 /* Open menu */
-.menuOpen {
+.menu__open {
     display: block;
     position: absolute;
     top: 2.5rem;
@@ -80,6 +81,7 @@ ul {
     border-radius: 5px;
     z-index: 1;
     background-color: var(--color-primary-light);
+    height: 90vh;
 }
 
 .headerToggle__open > span:first-child {
@@ -94,12 +96,13 @@ ul {
     transform: rotate(-45deg);
 }
 
-.menuOpen li {
+.menu__open li {
     text-align: center;
     margin: 1rem 0;
 }
 
-.menuOpen .menuItem a,
-.menuOpen .menuItem__green a {
+.menu__open .menuItem a,
+.menu__open .menuItem__green a {
     color: #FFFFFF;
 }
+
