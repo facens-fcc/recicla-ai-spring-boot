@@ -20,8 +20,8 @@ const FeaturedServices = () => {
           </div>
           <div className="grid">
             {featuredServices.map(({ id, name, logo, description }) => (
-              <div className="col">
-                <Card key={id} title={name} logo={logo} description={description} />
+              <div className="col" key={id}>
+                <Card id={id} title={name} logo={logo} description={description} />
               </div>
             ))}
           </div>
