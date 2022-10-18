@@ -282,3 +282,23 @@ body {
   max-width: max-content;
   padding: 0.25em 1em;
 }
+
+/*  */
+
+.box {
+  background: #ffffff;
+  border-radius: 0.5rem;
+  padding: var(--spacing-xxl);
+}
+
+/*  */
+
+.form {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.form--horizontal {
+  grid-template-columns: 1fr 1fr auto;
+  align-items: flex-end;
+}
