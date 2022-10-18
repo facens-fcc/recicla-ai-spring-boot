@@ -1,6 +1,4 @@
-import React from 'react';
-import { useState, useEffect } from 'react';
-
+import { React, useState, useEffect } from 'react';
 import style from './Header.module.css';
 
 const Header = () => {
@@ -14,9 +12,9 @@ const Header = () => {
     });
   }, [setIsNavbarOpen]);
 
-  function handleToggle() {
+  const handleToggle = () => {
     setIsNavbarOpen(!isNavbarOpen);
-  }
+  };
 
   return (
     <header className={style.header}>
@@ -33,16 +31,22 @@ const Header = () => {
 
         <ul className={isNavbarOpen ? `${style.menu} ${style.menu__open}` : `${style.menu}`}>
           <li className={style.menuItem}>
-            <a href="#">Sobre o projeto</a>
+            <a className="link" href="/">
+              Sobre o projeto
+            </a>
           </li>
           <li className={style.menuItem}>
-            <a href="#">O que são lixos eletrônicos</a>
+            <a className="link" href="/">
+              O que são lixos eletrônicos
+            </a>
           </li>
           <li className={style.menuItem}>
-            <a href="#">Contato</a>
+            <a className="link" href="/">
+              Contato
+            </a>
           </li>
           <li className={style.menuItem}>
-            <a href="#" className={style.menuItem__green}>
+            <a className="link link--highlight" href="/">
               Cadastre-se
             </a>
           </li>

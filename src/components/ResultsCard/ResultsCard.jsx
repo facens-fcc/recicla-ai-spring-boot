@@ -1,7 +1,5 @@
 import React from 'react';
 import style from './ResultsCard.module.css';
-
-import Button from '../Button/Button';
 import Card from '../Card/Card';
 
 const ResultsCard = ({ company }) => {
@@ -23,9 +21,9 @@ const ResultsCard = ({ company }) => {
           {services.plastic && <li className={style.resultsFeed__card__service}></li>}
         </ul>
         <div className={style.resultsFeed__card__footer}>
-          <Button variant="primary" href="#">
+          <a className="button button--primary" href="/">
             Ver mais
-          </Button>
+          </a>
         </div>
       </div>
     </Card>

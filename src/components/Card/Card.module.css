@@ -16,23 +16,10 @@
   padding: 2rem;
 }
 
-.title {
-  font-weight: bold;
-  font-size: 1.125rem;
-}
-
 .image {
   position: absolute;
   width: 100%;
   height: 100%;
   inset: 0;
   object-fit: contain;
-}
-
-.button {
-  color: var(--color-primary);
-  display: block;
-  font-weight: bold;
-  margin-top: 1rem;
-  text-decoration: none;
 }

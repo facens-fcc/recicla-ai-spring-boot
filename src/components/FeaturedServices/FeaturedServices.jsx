@@ -1,8 +1,5 @@
 import React from 'react';
 import Card from '../Card/Card';
-import Overtitle from '../Overtitle/Overtitle';
-import Heading from '../Heading/Heading';
-import Button from '../Button/Button';
 import services from '../../data/services.json';
 
 const FeaturedServices = () => {
@@ -13,10 +10,8 @@ const FeaturedServices = () => {
       <div className="container">
         <div className="stack">
           <div className="content content--center">
-            <Overtitle level="h2">Lixos eletrônicos</Overtitle>
-            <Heading level="p" size="lg">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-            </Heading>
+            <h2 className="overtitle">Lixos eletrônicos</h2>
+            <p className="headline headline--large">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
           </div>
           <div className="grid">
             {featuredServices.map(({ id, name, logo, description }) => (
@@ -26,9 +21,9 @@ const FeaturedServices = () => {
             ))}
           </div>
           <div className="content content--center">
-            <Button variant="primary" href="/">
+            <a className="button button--primary" href="/">
               Buscar por todos os tipos de lixos
-            </Button>
+            </a>
           </div>
         </div>
       </div>

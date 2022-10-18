@@ -1,18 +1,20 @@
 import React from 'react';
 import style from './Card.module.css';
 
-const Card = ({ title, description, image }) => {
+const Card = ({ title, description, image, link }) => {
   return (
     <div className={style.card}>
       <div className={style.header}>
         <img className={style.image} src={image} alt={title} />
       </div>
       <div className={style.body}>
-        <h3 className={style.title}>{title}</h3>
-        <p className={style.description}>{description}</p>
-        <a className={style.button} href="/">
-          Ver locais de descarte →
-        </a>
+        <div className="stack stack--xm">
+          <h2 className="heading heading--small">{title}</h2>
+          <p>{description}</p>
+          <a className="link link--highlight" href={link}>
+            Ver locais de descarte →
+          </a>
+        </div>
       </div>
     </div>
   );

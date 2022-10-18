@@ -1,6 +1,4 @@
 import React from 'react';
-import Heading from '../Heading/Heading';
-import Button from '../Button/Button';
 
 const CallToAction = () => {
   return (
@@ -8,14 +6,12 @@ const CallToAction = () => {
       <div className="container container--narrow">
         <div className="stack">
           <div className="content content--center">
-            <Heading level="h2" size="lg">
-              O que são classificados como lixos eletrônicos?
-            </Heading>
+            <h2 className="heading heading--large">O que são classificados como lixos eletrônicos?</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.</p>
-            <Button variant="secondary" href="/">
+            <a className="button button--secondary" href="/">
               Saiba mais
-            </Button>
+            </a>
           </div>
         </div>
       </div>
