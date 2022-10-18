@@ -92,6 +92,14 @@ a {
   --color-primary-light: #298435;
   --color-body: #000;
 
+  --color-neutral-100: #fff;
+  --color-neutral-200: #f2f2f2;
+  --color-neutral-300: #eaeaea;
+  --color-neutral-400: #999;
+  --color-neutral-500: #666;
+  --color-neutral-600: #333;
+  --color-neutral-700: #000;
+
   --spacing-xxs: 0.25rem;
   --spacing-xs: 0.5rem;
   --spacing-s: 0.75rem;
