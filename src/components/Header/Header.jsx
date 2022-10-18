@@ -4,17 +4,49 @@ import style from './Header.module.css';
 const Header = () => {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
 
-  useEffect(() => {
-    window.addEventListener('resize', () => {
-      if (window.matchMedia('(min-width: 768px)').matches) {
-        setIsNavbarOpen(false);
-      }
-    });
-  }, [setIsNavbarOpen]);
+  const handleButtonAriaLabel = () => {
+    return isNavbarOpen ? 'Fechar menu' : 'Abrir menu';
+  };
+
+  const handleButtonAriaExpanded = () => {
+    return isNavbarOpen ? 'true' : 'false';
+  };
+
+  const handleButtonClassName = () => {
+    return isNavbarOpen ? `${style.headerToggle} ${style.headerToggle__open}` : style.headerToggle;
+  };
 
   const handleToggle = () => {
     setIsNavbarOpen(!isNavbarOpen);
   };
+
+  /**
+   * Close the navbar when resizing the window to a larger size.
+   */
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 768) setIsNavbarOpen(false);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  /**
+   * Close the navbar when pressing the escape key.
+   */
+
+  useEffect(() => {
+    const handleEsc = (event) => {
+      if (event.key === 'Escape') setIsNavbarOpen(false);
+    };
+
+    window.addEventListener('keydown', handleEsc);
+
+    return () => window.removeEventListener('keydown', handleEsc);
+  }, [setIsNavbarOpen]);
 
   return (
     <header className={style.header}>
@@ -23,7 +55,7 @@ const Header = () => {
           Recicla.aí
         </a>
 
-        <button href="#" className={isNavbarOpen ? `${style.headerToggle} ${style.headerToggle__open}` : `${style.headerToggle}`} onClick={handleToggle}>
+        <button type="button" aria-haspopup="true" aria-expanded={handleButtonAriaExpanded()} aria-label={handleButtonAriaLabel()} className={handleButtonClassName()} onClick={handleToggle}>
           <span></span>
           <span></span>
           <span></span>

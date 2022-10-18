@@ -73,6 +73,16 @@ body {
   cursor: not-allowed;
 }
 
+/* Remove list styles */
+ul {
+  list-style: none;
+}
+
+/* Set default color for links */
+a {
+  color: currentColor;
+}
+
 /* ======================================================================== */
 /* Global styles */
 /* ======================================================================== */
@@ -212,6 +222,7 @@ body {
 /*  */
 
 .link {
+  text-decoration: none;
 }
 
 .link--highlight {
