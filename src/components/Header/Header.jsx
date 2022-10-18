@@ -41,6 +41,14 @@ const Header = () => {
     return () => window.removeEventListener('keydown', handleEsc);
   }, [setIsNavbarOpen]);
 
+  /**
+   * Disable scrolling when the navbar is open.
+   */
+
+  useEffect(() => {
+    return isNavbarOpen ? document.body.classList.add('no-scroll') : document.body.classList.remove('no-scroll');
+  }, [isNavbarOpen]);
+
   return (
     <header className={style.header}>
       <div className="container">

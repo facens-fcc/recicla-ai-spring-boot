@@ -125,6 +125,13 @@ body {
   line-height: 1.7;
 }
 
+/*  */
+
+.no-scroll {
+  position: fixed;
+  overflow-y: scroll;
+}
+
 /* */
 
 .container {
