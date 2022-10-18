@@ -14,6 +14,9 @@ const Results = () => {
       <Header />
       <main>
         <section className={style.results}>
+          <div className="section--light-grey-color">
+            <h2 className={style.results__title}>Resultados da busca</h2>
+          </div>
           <div className="container">
             <div className={style.results__wrapper}>
               <ResultsSidebar />

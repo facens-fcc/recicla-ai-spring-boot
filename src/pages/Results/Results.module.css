@@ -1,0 +1,11 @@
+.results__title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 3rem;
+  text-align: center;
+  padding: 5.625rem 4rem;
+}
+
+.results__wrapper {
+  margin-top: 4rem;
+}
