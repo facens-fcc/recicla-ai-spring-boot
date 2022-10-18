@@ -1,4 +1,4 @@
-import { React, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import style from './Header.module.css';
 import Brand from '../Brand/Brand';
 
@@ -49,10 +49,47 @@ const Header = () => {
     return isNavbarOpen ? document.body.classList.add('no-scroll') : document.body.classList.remove('no-scroll');
   }, [isNavbarOpen]);
 
+  /**
+   * Trap focus inside the navbar when it is open.
+   */
+
+  useEffect(() => {
+    const navbar = document.querySelector('#navbar');
+    const firstFocusableElement = navbar.querySelector('a');
+    const firstFocusableListElement = navbar.querySelector('ul a');
+    const focusableElements = navbar.querySelectorAll('a, button');
+    const lastFocusableElement = focusableElements[focusableElements.length - 1];
+
+    const handleTab = (event) => {
+      if (event.key === 'Tab') {
+        if (event.shiftKey) {
+          if (document.activeElement === firstFocusableElement) {
+            lastFocusableElement.focus();
+            event.preventDefault();
+          }
+        } else {
+          if (document.activeElement === lastFocusableElement) {
+            firstFocusableElement.focus();
+            event.preventDefault();
+          }
+        }
+      }
+    };
+
+    if (isNavbarOpen) {
+      firstFocusableListElement.focus();
+      window.addEventListener('keydown', handleTab);
+    } else {
+      window.removeEventListener('keydown', handleTab);
+    }
+
+    return () => window.removeEventListener('keydown', handleTab);
+  }, [isNavbarOpen]);
+
   return (
     <header className={style.header}>
       <div className="container">
-        <nav className={style.nav} data-menu-open={isNavbarOpen}>
+        <nav className={style.nav} data-menu-open={isNavbarOpen} id="navbar">
           <Brand />
 
           <button className={style.toggle} onClick={handleToggle} aria-expanded={isNavbarOpen} aria-label={handleButtonLabel()} aria-haspopup="true" type="button">
