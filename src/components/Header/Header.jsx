@@ -1,19 +1,12 @@
 import { React, useState, useEffect } from 'react';
 import style from './Header.module.css';
+import Brand from '../Brand/Brand';
 
 const Header = () => {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
 
-  const handleButtonAriaLabel = () => {
+  const handleButtonLabel = () => {
     return isNavbarOpen ? 'Fechar menu' : 'Abrir menu';
-  };
-
-  const handleButtonAriaExpanded = () => {
-    return isNavbarOpen ? 'true' : 'false';
-  };
-
-  const handleButtonClassName = () => {
-    return isNavbarOpen ? `${style.headerToggle} ${style.headerToggle__open}` : style.headerToggle;
   };
 
   const handleToggle = () => {
@@ -50,40 +43,40 @@ const Header = () => {
 
   return (
     <header className={style.header}>
-      <nav className={style.nav}>
-        <a href="/" className={style.logo}>
-          Recicla.aí
-        </a>
+      <div className="container">
+        <nav className={style.nav} data-menu-open={isNavbarOpen}>
+          <Brand />
 
-        <button type="button" aria-haspopup="true" aria-expanded={handleButtonAriaExpanded()} aria-label={handleButtonAriaLabel()} className={handleButtonClassName()} onClick={handleToggle}>
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+          <button className={style.toggle} onClick={handleToggle} aria-expanded={isNavbarOpen} aria-label={handleButtonLabel()} aria-haspopup="true" type="button">
+            <span className={style.toggleLine} />
+            <span className={style.toggleLine} />
+            <span className={style.toggleLine} />
+          </button>
 
-        <ul className={isNavbarOpen ? `${style.menu} ${style.menu__open}` : `${style.menu}`}>
-          <li className={style.menuItem}>
-            <a className="link" href="/">
-              Sobre o projeto
-            </a>
-          </li>
-          <li className={style.menuItem}>
-            <a className="link" href="/">
-              O que são lixos eletrônicos
-            </a>
-          </li>
-          <li className={style.menuItem}>
-            <a className="link" href="/">
-              Contato
-            </a>
-          </li>
-          <li className={style.menuItem}>
-            <a className="link link--highlight" href="/">
-              Cadastre-se
-            </a>
-          </li>
-        </ul>
-      </nav>
+          <ul className={style.menu}>
+            <li className={style.menuItem}>
+              <a className="link" href="/">
+                Sobre o projeto
+              </a>
+            </li>
+            <li className={style.menuItem}>
+              <a className="link" href="/">
+                O que são lixos eletrônicos
+              </a>
+            </li>
+            <li className={style.menuItem}>
+              <a className="link" href="/">
+                Contato
+              </a>
+            </li>
+            <li className={style.menuItem}>
+              <a className="link link--highlight" href="/">
+                Cadastre-se
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
   );
 };

@@ -1,13 +1,13 @@
 import React from 'react';
 import style from './Footer.module.css';
+import Brand from '../Brand/Brand';
 
 const Footer = () => {
   return (
     <footer className={style.footer}>
-      {/* <img src="" alt="" /> */}
-      <a href="#">Recicla.aí</a>
+      <Brand />
     </footer>
-  )
+  );
 };
 
 export default Footer;
