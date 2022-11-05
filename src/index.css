@@ -47,19 +47,6 @@ body {
   touch-action: manipulation;
 }
 
-/* Animate focus outline */
-@media (prefers-reduced-motion: no-preference) {
-  :focus-visible {
-    transition: outline-offset 145ms cubic-bezier(0.25, 0, 0.4, 1);
-  }
-  :where(:not(:active)):focus-visible {
-    transition-duration: 0.25s;
-  }
-}
-:where(:not(:active)):focus-visible {
-  outline-offset: 3px;
-}
-
 /* Make sure users can't select button text */
 :where(button, button[type], input[type='button'], input[type='submit'], input[type='reset']) {
   -webkit-tap-highlight-color: transparent;
@@ -108,6 +95,16 @@ a {
   --spacing-xl: 2rem;
   --spacing-xxl: 3rem;
   --spacing-xxxl: 4rem;
+
+  --z-index-default: 1;
+  --z-index-xxs: 10;
+  --z-index-xs: 20;
+  --z-index-s: 30;
+  --z-index-m: 40;
+  --z-index-l: 50;
+  --z-index-lg: 60;
+  --z-index-xl: 70;
+  --z-index-xxl: 80;
 }
 
 @font-face {
@@ -131,10 +128,6 @@ body {
   font-family: Inter, sans-serif;
   font-size: 1.125rem;
   line-height: 1.7;
-}
-
-:focus {
-  outline: 2px solid cadetblue;
 }
 
 /*  */

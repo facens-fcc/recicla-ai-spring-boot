@@ -18,7 +18,10 @@ const Home = () => {
               <h1 className="heading heading--large">Descubrar lugares para descartar lixos eletrônicos e eletrodométiscos em Sorocaba</h1>
               <div className="box">
                 <form className="form form--horizontal" action="/resultados" method="GET">
-                  <Input label="O que você deseja descartar?" id="search" name="search" type="text" placeholder="Ex: pilhas, baterias, lâmpadas, etc." required />
+                  <div className="form__item stack stack--small">
+                    <Input label="O que você deseja descartar?" id="search" name="search" type="text" placeholder="Ex: pilhas, baterias, lâmpadas, etc." required />
+                    <p className="text text--small text--gray-color">Digite o que você deseja descartar e clique em "Buscar"</p>
+                  </div>
                   <Input label="Onde você está?" id="location" name="location" type="text" placeholder="Ex: Rua São Paulo, 123" required />
                   <button className="button button--primary" type="submit">
                     Buscar por locais

@@ -54,11 +54,13 @@ const Header = () => {
    */
 
   useEffect(() => {
-    const navbar = document.querySelector('#navbar');
-    const firstFocusableElement = navbar.querySelector('a');
-    const firstFocusableListElement = navbar.querySelector('ul a');
-    const focusableElements = navbar.querySelectorAll('a, button');
-    const lastFocusableElement = focusableElements[focusableElements.length - 1];
+    const navbar = document.querySelector('#navbar'); // Select the navbar element.
+    const toggleButton = navbar.querySelector('button'); // Select the toggle button.
+
+    const focusableElements = navbar.querySelectorAll('a, button'); // Select all focusable elements.
+    const firstFocusableElement = navbar.querySelector('a'); // Select the first focusable element.
+    const firstFocusableListElement = navbar.querySelector('ul a'); // Select the first focusable element to be focused when the last focusable element is blurred.
+    const lastFocusableElement = focusableElements[focusableElements.length - 1]; // Select the last focusable element.
 
     const handleTab = (event) => {
       if (event.key === 'Tab') {
@@ -80,6 +82,7 @@ const Header = () => {
       firstFocusableListElement.focus();
       window.addEventListener('keydown', handleTab);
     } else {
+      toggleButton.focus();
       window.removeEventListener('keydown', handleTab);
     }
 
@@ -90,7 +93,7 @@ const Header = () => {
     <header className={style.header}>
       <div className="container">
         <nav className={style.nav} data-menu-open={isNavbarOpen} id="navbar">
-          <Brand />
+          <Brand className={style.brand} />
 
           <button className={style.toggle} onClick={handleToggle} aria-expanded={isNavbarOpen} aria-label={handleButtonLabel()} aria-haspopup="true" type="button">
             <span className={style.toggleLine} />
@@ -100,22 +103,22 @@ const Header = () => {
 
           <ul className={style.menu}>
             <li className={style.menuItem}>
-              <a className="link" href="/">
+              <a className={`link ${style.menuLink}`} href="/">
                 Sobre o projeto
               </a>
             </li>
             <li className={style.menuItem}>
-              <a className="link" href="/">
+              <a className={`link ${style.menuLink}`} href="/">
                 O que são lixos eletrônicos
               </a>
             </li>
             <li className={style.menuItem}>
-              <a className="link" href="/">
+              <a className={`link ${style.menuLink}`} href="/">
                 Contato
               </a>
             </li>
             <li className={style.menuItem}>
-              <a className="link link--highlight" href="/">
+              <a className={`link ${style.menuLink}`} href="/">
                 Cadastre-se
               </a>
             </li>
