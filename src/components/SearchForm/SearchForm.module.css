@@ -1,0 +1,45 @@
+.field {
+  position: relative;
+}
+
+.label {
+  display: block;
+  margin-bottom: var(--spacing-s);
+}
+
+.input,
+.dropdownButton {
+  background: var(--color-neutral-300);
+  border-radius: 0.5rem;
+  line-height: 3rem;
+  width: 100%;
+  height: 3rem;
+  padding: 0 1.5rem;
+}
+
+.caption {
+  font-size: 0.875rem;
+  margin-top: 1rem;
+}
+
+/* Fitler */
+
+.dropdownButton {
+  text-align: left;
+}
+
+.dropdownButton[aria-expanded='true'] {
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.dropdownContent[aria-hidden='true'] {
+  display: none;
+}
+
+.dropdownContent {
+  background: var(--color-neutral-300);
+  border-radius: 0 0 0.5rem 0.5rem;
+  padding: 0 1.5rem 1.5rem;
+  width: 100%;
+  position: absolute;
+}

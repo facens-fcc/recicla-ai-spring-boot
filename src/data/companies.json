@@ -1,21 +1,16 @@
 [
   {
     "id": 1,
-    "featured": true,
     "name": "Recicladora Facens",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
     "whatsapp": true,
     "phone": "11 99999-9999",
     "adress": "Rua dos Bobos, 0",
     "services": {
-      "plastic": true,
-      "paper": true,
-      "glass": true,
-      "metal": true,
-      "organic": true,
-      "electronic": true,
-      "clothes": true,
-      "others": true
+      "batteries": true,
+      "appliances": true,
+      "mobile_devices": true,
+      "computer_accessories": true
     },
     "opening_hours": {
       "monday": "08:00 - 18:00",
@@ -30,21 +25,16 @@
   },
   {
     "id": 2,
-    "featured": true,
     "name": "Recicladora FCC",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
     "whatsapp": true,
     "phone": "11 99999-9999",
     "adress": "Rua dos Bobos, 0",
     "services": {
-      "plastic": true,
-      "paper": true,
-      "glass": true,
-      "metal": true,
-      "organic": true,
-      "electronic": true,
-      "clothes": true,
-      "others": true
+      "batteries": true,
+      "appliances": true,
+      "mobile_devices": true,
+      "computer_accessories": true
     },
     "opening_hours": {
       "monday": "08:00 - 18:00",
@@ -59,21 +49,16 @@
   },
   {
     "id": 3,
-    "featured": true,
     "name": "Recicladora Jogajunto",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
     "whatsapp": true,
     "phone": "11 99999-9999",
     "adress": "Rua dos Bobos, 0",
     "services": {
-      "plastic": true,
-      "paper": true,
-      "glass": true,
-      "metal": true,
-      "organic": true,
-      "electronic": true,
-      "clothes": true,
-      "others": true
+      "batteries": true,
+      "appliances": true,
+      "mobile_devices": true,
+      "computer_accessories": true
     },
     "opening_hours": {
       "monday": "08:00 - 18:00",
@@ -88,21 +73,16 @@
   },
   {
     "id": 4,
-    "featured": false,
     "name": "Recicladora Não Sei o Que Lá",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
     "whatsapp": true,
     "phone": "11 99999-9999",
     "adress": "Rua dos Bobos, 0",
     "services": {
-      "plastic": true,
-      "paper": true,
-      "glass": true,
-      "metal": true,
-      "organic": true,
-      "electronic": true,
-      "clothes": true,
-      "others": true
+      "batteries": true,
+      "appliances": true,
+      "mobile_devices": true,
+      "computer_accessories": true
     },
     "opening_hours": {
       "monday": "08:00 - 18:00",
@@ -117,21 +97,16 @@
   },
   {
     "id": 5,
-    "featured": false,
     "name": "Recicladora Fulanada da Silva",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
     "whatsapp": true,
     "phone": "11 99999-9999",
     "adress": "Rua dos Bobos, 0",
     "services": {
-      "plastic": true,
-      "paper": true,
-      "glass": true,
-      "metal": true,
-      "organic": true,
-      "electronic": true,
-      "clothes": true,
-      "others": true
+      "batteries": true,
+      "appliances": true,
+      "mobile_devices": true,
+      "computer_accessories": true
     },
     "opening_hours": {
       "monday": "08:00 - 18:00",

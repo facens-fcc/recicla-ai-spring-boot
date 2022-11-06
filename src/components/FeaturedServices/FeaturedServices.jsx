@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from '../Card/Card';
-import services from '../../data/services.json';
+import services from '../../data/categories.json';
 
 const FeaturedServices = () => {
   const featuredServices = services.filter((company) => company.featured);
