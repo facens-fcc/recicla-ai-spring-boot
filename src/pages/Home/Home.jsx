@@ -4,7 +4,7 @@ import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 
 import CallToAction from '../../components/CallToAction/CallToAction';
-import FeaturedServices from '../../components/FeaturedServices/FeaturedServices';
+import FeaturedCategories from '../../components/FeaturedCategories/FeaturedCategories';
 import SearchForm from '../../components/SearchForm/SearchForm';
 
 const Home = () => {
@@ -23,7 +23,7 @@ const Home = () => {
           </div>
         </section>
 
-        <FeaturedServices />
+        <FeaturedCategories />
 
         <section className="section section--light-grey-color">
           <div className="container">

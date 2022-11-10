@@ -11,12 +11,6 @@ const SearchForm = () => {
   const [selectedCategory, setSelectedCategory] = useState([]);
 
   const [formErrors, setFormErrors] = useState({});
-  const [isFormSubmit, setFormSubmit] = useState(false);
-
-  const [isFormValid, setFormValid] = useState({
-    zipCode: false,
-    category: false,
-  });
 
   /**
    * ============================================================================
@@ -66,20 +60,6 @@ const SearchForm = () => {
     }
   };
 
-  const handleCheckboxBlur = () => {
-    if (selectedCategory.length === 0) {
-      setFormErrors({
-        ...formErrors,
-        category: 'Please select at least one category',
-      });
-    } else {
-      setFormErrors({
-        ...formErrors,
-        category: '',
-      });
-    }
-  };
-
   /**
    * ============================================================================
    * Zip code
@@ -95,48 +75,14 @@ const SearchForm = () => {
     setZipCode(zipCodeMarked);
   };
 
-  const checkIfZipCodeIsValid = async () => {
-    const zipCodeWithoutDash = zipCode.replace('-', '');
-    const response = await fetch(`https://viacep.com.br/ws/${zipCodeWithoutDash}/json/`);
-    const data = await response.json();
-
-    if (data.erro) {
-      setZipCodeValid(false);
-      alert('CEP inválido');
-    }
-
-    setZipCodeValid(true);
-  };
-
   /**
    * Submit
    */
 
   const handleSubmit = (event) => {
-    event.preventDefault();
-    setFormErrors(validateForm());
-    setFormSubmit(true);
+    // event.preventDefault();
+    console.log('submit');
   };
-
-  const validateForm = () => {
-    const errors = {};
-
-    if (!zipCodeValid) {
-      errors.zipCode = 'CEP inválido';
-    }
-
-    if (selectedCategory.length === 0) {
-      errors.category = 'Please select at least one category';
-    }
-
-    return errors;
-  };
-
-  useEffect(() => {
-    if (Object.keys(formErrors).length === 0 && isFormSubmit) {
-      alert('Formulário enviado com sucesso!');
-    }
-  }, [formErrors]);
 
   return (
     <form className="form form--horizontal" action="/resultados" method="GET" onSubmit={handleSubmit}>

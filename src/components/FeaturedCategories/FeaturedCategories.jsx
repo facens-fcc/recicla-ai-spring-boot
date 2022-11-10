@@ -1,9 +1,9 @@
 import React from 'react';
 import Card from '../Card/Card';
-import services from '../../data/categories.json';
+import categories from '../../data/categories.json';
 
-const FeaturedServices = () => {
-  const featuredServices = services.filter((company) => company.featured);
+const FeaturedCategories = () => {
+  const featuredCategories = categories.filter((company) => company.featured);
 
   return (
     <section className="section">
@@ -14,9 +14,9 @@ const FeaturedServices = () => {
             <p className="headline headline--large">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
           </div>
           <div className="grid">
-            {featuredServices.map(({ id, name, logo, description }) => (
+            {featuredCategories.map(({ id, label, logo, description }) => (
               <div className="col" key={id}>
-                <Card id={id} title={name} logo={logo} description={description} />
+                <Card id={id} title={label} logo={logo} description={description} />
               </div>
             ))}
           </div>
@@ -31,4 +31,4 @@ const FeaturedServices = () => {
   );
 };
 
-export default FeaturedServices;
+export default FeaturedCategories;

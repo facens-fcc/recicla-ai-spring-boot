@@ -6,7 +6,7 @@
     "whatsapp": true,
     "phone": "11 99999-9999",
     "adress": "Rua dos Bobos, 0",
-    "services": {
+    "categories": {
       "batteries": true,
       "appliances": true,
       "mobile_devices": true,
@@ -30,7 +30,7 @@
     "whatsapp": true,
     "phone": "11 99999-9999",
     "adress": "Rua dos Bobos, 0",
-    "services": {
+    "categories": {
       "batteries": true,
       "appliances": true,
       "mobile_devices": true,
@@ -54,7 +54,7 @@
     "whatsapp": true,
     "phone": "11 99999-9999",
     "adress": "Rua dos Bobos, 0",
-    "services": {
+    "categories": {
       "batteries": true,
       "appliances": true,
       "mobile_devices": true,
@@ -78,7 +78,7 @@
     "whatsapp": true,
     "phone": "11 99999-9999",
     "adress": "Rua dos Bobos, 0",
-    "services": {
+    "categories": {
       "batteries": true,
       "appliances": true,
       "mobile_devices": true,
@@ -102,7 +102,7 @@
     "whatsapp": true,
     "phone": "11 99999-9999",
     "adress": "Rua dos Bobos, 0",
-    "services": {
+    "categories": {
       "batteries": true,
       "appliances": true,
       "mobile_devices": true,
