@@ -11,6 +11,7 @@ const SearchForm = () => {
   const [selectedCategory, setSelectedCategory] = useState([]);
 
   const [formErrors, setFormErrors] = useState({});
+  const [coordinates, setCoordinates] = useState([]);
 
   /**
    * ============================================================================
@@ -43,6 +44,35 @@ const SearchForm = () => {
       document.removeEventListener('keydown', handleDropdownEscape);
     };
   }, [isDropdownOpen]);
+
+  const getCoordinates = (value) => {
+    const test = value.replace(/\D/g, '');
+    fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${test}&key=AIzaSyDdE2m_2nAtfQN9CA3emww375xD5CELjiU`, {
+      method: "GET",
+    })
+      .then((res) => res.json())
+      .then((data) => {
+          const lat = data.results[0].geometry.location.lat;
+          const lng = data.results[0].geometry.location.lng;
+          setCoordinates([lat, lng]);
+      })
+      .catch(err => console.log(err))
+  }
+
+  const validateZipCode = async () => {
+    const zipCodeNumber = zipCode.replace(/\D/g, '');
+
+    if (response.status === 200) {
+      const data = await response.json();
+
+      if (data.erro) {
+        console.log(data.erro)
+      } else {
+        console.log('CEP válido');
+      }
+      return;
+    }
+  }
 
   /**
    * ============================================================================
@@ -80,7 +110,8 @@ const SearchForm = () => {
    */
 
   const handleSubmit = (event) => {
-    // event.preventDefault();
+    event.preventDefault();
+    getCoordinates(zipCode);
     console.log('submit');
   };
 
