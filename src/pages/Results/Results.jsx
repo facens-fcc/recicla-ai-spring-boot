@@ -8,7 +8,17 @@ import CallToAction from '../../components/CallToAction/CallToAction';
 import ResultsSidebar from '../../components/ResultsSidebar/ResultsSidebar';
 import ResultsFeed from '../../components/ResultsFeed/ResultsFeed';
 
+// import Map from '../../components/Map/Map';
+// import { GoogleMap, useLoadScript, Marker } from '@react-google-maps/api';
+
 const Results = () => {
+
+  // const { isLoaded } = useLoadScript({
+  //   id: 'google-map-script',
+  //   googleMapsApiKey: "AIzaSyDdE2m_2nAtfQN9CA3emww375xD5CELjiU",
+  //   //     libraries: ["places"],
+  //   });
+
   return (
     <div>
       <Header />
@@ -21,6 +31,9 @@ const Results = () => {
             <div className={style.results__wrapper}>
               <ResultsSidebar />
               aa
+              {/* {!isLoaded ? <div>Loading...</div> : (
+                <Map />
+              )} */}
               <ResultsFeed />
             </div>
           </div>
