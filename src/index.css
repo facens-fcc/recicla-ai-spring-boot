@@ -89,12 +89,13 @@ a {
 
   --spacing-xxs: 0.25rem;
   --spacing-xs: 0.5rem;
-  --spacing-s: 0.75rem;
-  --spacing-m: 1rem;
-  --spacing-l: 1.5rem;
-  --spacing-xl: 2rem;
-  --spacing-xxl: 3rem;
-  --spacing-xxxl: 4rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2.5rem;
+  --spacing-xl: 4rem;
+  --spacing-xxl: 6.5rem;
+  --spacing-xxxl: 10.5rem;
+  --spacing-xxxxl: 16rem;
 
   --z-index-default: 1;
   --z-index-xxs: 10;
@@ -107,27 +108,12 @@ a {
   --z-index-xxl: 80;
 }
 
-@font-face {
-  font-family: 'Inter';
-  src: url('./fonts/inter-bold.woff2') format('woff2'), url('./assets/fonts/inter-bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Inter';
-  src: url('./fonts/inter-regular.woff2') format('woff2'), url('./fonts/inter-regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 body {
   color: var(--color-body);
-  font-family: Inter, sans-serif;
+  font-family: 'Roboto Mono', monospace;
   font-size: 1.125rem;
   line-height: 1.7;
+  background: url('./assets/background-pattern.jpg') repeat;
 }
 
 /*  */
@@ -137,12 +123,27 @@ body {
   overflow-y: scroll;
 }
 
+/*  */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* */
 
 .container {
-  max-width: 67.5rem;
+  width: 100%;
+  max-width: 77.5rem;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 
 .container--narrow {
@@ -282,16 +283,4 @@ body {
   background: #ffffff;
   border-radius: 0.5rem;
   padding: var(--spacing-xxl);
-}
-
-/*  */
-
-.form {
-  display: grid;
-  gap: 1.5rem;
-}
-
-.form--horizontal {
-  grid-template-columns: 1fr 1fr auto;
-  align-items: flex-end;
 }

@@ -35,6 +35,13 @@ const SearchForm = () => {
     setDropdownOpen(!isDropdownOpen);
   };
 
+  const handleDropdownLabel = () => {
+    if (selectedCategory.length === 0) return 'Selecione';
+    if (selectedCategory.length === 1) return `(${selectedCategory.length}) Selecionados`;
+
+    return `(${selectedCategory.length}) Selecionados`;
+  };
+
   useEffect(() => {
     document.addEventListener('click', handleDropdownClickOutside);
     document.addEventListener('keydown', handleDropdownEscape);
@@ -131,35 +138,37 @@ const SearchForm = () => {
   };
 
   return (
-    <form className="form form--horizontal" action="/resultados" method="GET" onSubmit={handleSubmit}>
-      <div className={style.field}>
-        <label className={style.label} htmlFor="zipcode">
-          Qual é a sua localização?
-        </label>
-        <input className={style.input} value={zipCode} onChange={handleZipCodeChange} type="text" name="zipcode" id="zipcode" placeholder="00000-000" minLength="9" maxLength="9" required />
-      </div>
-
-      <div className={`${style.field} ${style.dropdown}`} ref={dropdownRef}>
-        <p className={style.label}>O que deseja descartar?</p>
-        <button className={style.dropdownButton} type="button" aria-expanded={isDropdownOpen} aria-controls="dropdown-content" id="dropdown-button" onClick={handleDropdownOpen}>
-          {selectedCategory.length > 0 ? `(${selectedCategory.length})` : ''} Selecione os tipos de resíduos
-        </button>
-        <div className={style.dropdownContent} aria-hidden={!isDropdownOpen} aria-labelledby="dropdown-button" id="dropdown-content" role="dialog">
-          {categories.map(({ id, name, label }) => (
-            <div key={id}>
-              <input type="checkbox" name={name} id={id} onChange={handleCheckboxChange} />
-              <label htmlFor={id}>{label}</label>
-            </div>
-          ))}
+    <div className={style.searchForm}>
+      <form className={style.form} action="/resultados" method="GET" onSubmit={handleSubmit}>
+        <div className={style.field}>
+          <label className={style.label} htmlFor="zipcode">
+            Qual é a sua localização?
+          </label>
+          <input className={style.input} value={zipCode} onChange={handleZipCodeChange} type="text" name="zipcode" id="zipcode" placeholder="00000-000" minLength="9" maxLength="9" required />
         </div>
-      </div>
 
-      <footer>
-        <button className="button button--primary" type="submit">
-          Buscar por locais
-        </button>
-      </footer>
-    </form>
+        <div className={`${style.field} ${style.dropdown}`} ref={dropdownRef}>
+          <p className={style.label}>O que deseja descartar?</p>
+          <button className={style.dropdownButton} type="button" aria-expanded={isDropdownOpen} aria-controls="dropdown-content" id="dropdown-button" onClick={handleDropdownOpen}>
+            {handleDropdownLabel()}
+          </button>
+          <div className={style.dropdownContent} aria-hidden={!isDropdownOpen} aria-labelledby="dropdown-button" id="dropdown-content" role="dialog">
+            {categories.map(({ id, name, label }) => (
+              <div key={id}>
+                <input type="checkbox" name={name} id={id} onChange={handleCheckboxChange} />
+                <label htmlFor={id}>{label}</label>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <footer>
+          <button className="button button--primary" type="submit">
+            Buscar por locais
+          </button>
+        </footer>
+      </form>
+    </div>
   );
 };
 

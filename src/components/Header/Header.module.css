@@ -1,5 +1,7 @@
 .header {
   padding: 1.5rem;
+  position: absolute;
+  width: 100%;
 }
 
 .nav {
