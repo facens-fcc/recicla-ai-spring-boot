@@ -7,11 +7,11 @@ const SearchForm = () => {
   const dropdownRef = React.useRef();
   const [isDropdownOpen, setDropdownOpen] = useState(false);
 
-  const [zipCode, setZipCode] = React.useState('');
-  const [selectedCategory, setSelectedCategory] = useState([]);
+  const [zipCode, setZipCode] = useState('');
+  const [isZipCodeValid, setZipCodeValid] = useState(false);
 
-  const [formErrors, setFormErrors] = useState({});
-  const [coordinates, setCoordinates] = useState([]);
+  const [selectedCategory, setSelectedCategory] = useState([]);
+  const [isCategoryValid, setCategoryValid] = useState(false);
 
   /**
    * ============================================================================
@@ -45,35 +45,6 @@ const SearchForm = () => {
     };
   }, [isDropdownOpen]);
 
-  const getCoordinates = (value) => {
-    const test = value.replace(/\D/g, '');
-    fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${test}&key=AIzaSyDdE2m_2nAtfQN9CA3emww375xD5CELjiU`, {
-      method: "GET",
-    })
-      .then((res) => res.json())
-      .then((data) => {
-          const lat = data.results[0].geometry.location.lat;
-          const lng = data.results[0].geometry.location.lng;
-          setCoordinates([lat, lng]);
-      })
-      .catch(err => console.log(err))
-  }
-
-  const validateZipCode = async () => {
-    const zipCodeNumber = zipCode.replace(/\D/g, '');
-
-    if (response.status === 200) {
-      const data = await response.json();
-
-      if (data.erro) {
-        console.log(data.erro)
-      } else {
-        console.log('CEP válido');
-      }
-      return;
-    }
-  }
-
   /**
    * ============================================================================
    * Checkbox
@@ -90,6 +61,10 @@ const SearchForm = () => {
     }
   };
 
+  useEffect(() => {
+    selectedCategory.length > 0 ? setCategoryValid(true) : setCategoryValid(false);
+  }, [selectedCategory]);
+
   /**
    * ============================================================================
    * Zip code
@@ -105,14 +80,54 @@ const SearchForm = () => {
     setZipCode(zipCodeMarked);
   };
 
+  // Function to return full address or false if not found based on zip code using Google Maps API
+
+  const validateZipCode = async (zipCode) => {
+    const zipCodeValue = zipCode.replace(/\D/g, '');
+
+    fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${zipCodeValue}&key=AIzaSyDdE2m_2nAtfQN9CA3emww375xD5CELjiU`, {
+      method: 'GET',
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        data.status === 'OK' ? setZipCodeValid(true) : setZipCodeValid(false);
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+  };
+
+  useEffect(() => {
+    if (zipCode.length === 9) {
+      validateZipCode(zipCode);
+    } else {
+      setZipCodeValid(false);
+    }
+  }, [zipCode]);
+
   /**
    * Submit
    */
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    getCoordinates(zipCode);
-    console.log('submit');
+    validateZipCode(zipCode);
+
+    if (isZipCodeValid && !isCategoryValid) {
+      alert('Selecione pelo menos um tipo de resíduo.');
+    }
+
+    if (!isZipCodeValid && isCategoryValid) {
+      alert('Digite um CEP válido.');
+    }
+
+    if (!isZipCodeValid && !isCategoryValid) {
+      alert('Digite um CEP válido e selecione pelo menos um tipo de resíduo.');
+    }
+
+    if (isZipCodeValid && isCategoryValid) {
+      window.location.href = `/resultados?zipCode=${zipCode}&category=${selectedCategory}`;
+    }
   };
 
   return (
@@ -122,7 +137,6 @@ const SearchForm = () => {
           Qual é a sua localização?
         </label>
         <input className={style.input} value={zipCode} onChange={handleZipCodeChange} type="text" name="zipcode" id="zipcode" placeholder="00000-000" minLength="9" maxLength="9" required />
-        {formErrors.zipCode && <span className={style.error}>{formErrors.zipCode}</span>}
       </div>
 
       <div className={`${style.field} ${style.dropdown}`} ref={dropdownRef}>
@@ -138,7 +152,6 @@ const SearchForm = () => {
             </div>
           ))}
         </div>
-        {formErrors.category && <span className={style.error}>{formErrors.category}</span>}
       </div>
 
       <footer>
