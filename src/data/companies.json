@@ -5,7 +5,13 @@
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
     "whatsapp": true,
     "phone": "11 99999-9999",
-    "adress": "Rua dos Bobos, 0",
+    "address": {
+      "street": "Rua dos Bobos",
+      "number": "0",
+      "city": "Sorocaba",
+      "state": "São Paulo",
+      "zip_code": "18025710"
+    },
     "categories": {
       "batteries": true,
       "appliances": true,
@@ -29,7 +35,13 @@
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
     "whatsapp": true,
     "phone": "11 99999-9999",
-    "adress": "Rua dos Bobos, 0",
+    "address": {
+      "street": "Rua dos Bobos",
+      "number": "0",
+      "city": "Sorocaba",
+      "state": "São Paulo",
+      "zip_code": "18070671"
+    },
     "categories": {
       "batteries": true,
       "appliances": true,
@@ -53,7 +65,13 @@
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
     "whatsapp": true,
     "phone": "11 99999-9999",
-    "adress": "Rua dos Bobos, 0",
+    "address": {
+      "street": "Rua dos Bobos",
+      "number": "0",
+      "city": "Sorocaba",
+      "state": "São Paulo",
+      "zip_code": "18025000"
+    },
     "categories": {
       "batteries": true,
       "appliances": true,
@@ -77,7 +95,13 @@
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
     "whatsapp": true,
     "phone": "11 99999-9999",
-    "adress": "Rua dos Bobos, 0",
+    "address": {
+      "street": "Rua dos Bobos",
+      "number": "0",
+      "city": "Sorocaba",
+      "state": "São Paulo",
+      "zip_code": "18080000"
+    },
     "categories": {
       "batteries": true,
       "appliances": true,
@@ -101,7 +125,13 @@
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
     "whatsapp": true,
     "phone": "11 99999-9999",
-    "adress": "Rua dos Bobos, 0",
+    "address": {
+      "street": "Rua dos Bobos",
+      "number": "0",
+      "city": "Sorocaba",
+      "state": "São Paulo",
+      "zip_code": "18075042"
+    },
     "categories": {
       "batteries": true,
       "appliances": true,
