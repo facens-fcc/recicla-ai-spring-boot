@@ -49,12 +49,6 @@
   transform: rotate(-45deg);
 }
 
-@media (min-width: 48rem) {
-  .toggle {
-    display: none;
-  }
-}
-
 /*  */
 
 .menu {
@@ -86,6 +80,6 @@
 
 @media (min-width: 48rem) {
   .menu {
-    display: flex;
+    display: none;
   }
 }
