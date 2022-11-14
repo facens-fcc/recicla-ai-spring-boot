@@ -109,7 +109,7 @@ const SearchForm = () => {
   };
 
   const handleZipCodeBlur = () => {
-    zipCode.length === 9 ? validateZipCode(zipCode) : setZipCodeValid(false);
+    zipCode.length === 9 && validateZipCode(zipCode);
   };
 
   /**
