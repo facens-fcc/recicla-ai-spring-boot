@@ -5,6 +5,9 @@ import categories from '../../data/categories.json';
 
 const SearchForm = () => {
   const dropdownRef = React.useRef();
+  const dropdownButton = React.useRef();
+  const zipCodeRef = React.useRef();
+
   const [isDropdownOpen, setDropdownOpen] = useState(false);
 
   const [zipCode, setZipCode] = useState('');
@@ -12,6 +15,8 @@ const SearchForm = () => {
 
   const [selectedCategory, setSelectedCategory] = useState([]);
   const [isCategoryValid, setCategoryValid] = useState(false);
+
+  const [isFormValid, setFormValid] = useState();
 
   /**
    * ============================================================================
@@ -85,9 +90,8 @@ const SearchForm = () => {
       .replace(/(-\d{3})\d+?$/, '$1');
 
     setZipCode(zipCodeMarked);
+    console.log(zipCodeMarked);
   };
-
-  // Function to return full address or false if not found based on zip code using Google Maps API
 
   const validateZipCode = async (zipCode) => {
     const zipCodeValue = zipCode.replace(/\D/g, '');
@@ -104,16 +108,14 @@ const SearchForm = () => {
       });
   };
 
-  useEffect(() => {
-    if (zipCode.length === 9) {
-      validateZipCode(zipCode);
-    } else {
-      setZipCodeValid(false);
-    }
-  }, [zipCode]);
+  const handleZipCodeBlur = () => {
+    zipCode.length === 9 ? validateZipCode(zipCode) : setZipCodeValid(false);
+  };
 
   /**
+   * ============================================================================
    * Submit
+   * ============================================================================
    */
 
   const handleSubmit = (event) => {
@@ -121,20 +123,20 @@ const SearchForm = () => {
     validateZipCode(zipCode);
 
     if (isZipCodeValid && !isCategoryValid) {
-      alert('Selecione pelo menos um tipo de resíduo.');
+      setFormValid(false);
+      dropdownButton.current.focus();
     }
 
-    if (!isZipCodeValid && isCategoryValid) {
-      alert('Digite um CEP válido.');
-    }
-
-    if (!isZipCodeValid && !isCategoryValid) {
-      alert('Digite um CEP válido e selecione pelo menos um tipo de resíduo.');
+    if ((!isZipCodeValid && isCategoryValid) || (!isZipCodeValid && !isCategoryValid)) {
+      setFormValid(false);
+      zipCodeRef.current.focus();
     }
 
     if (isZipCodeValid && isCategoryValid) {
-      window.location.href = `/resultados?zipCode=${zipCode}&category=${selectedCategory}`;
+      setFormValid(true);
     }
+
+    isFormValid && (window.location.href = `/resultados?zipCode=${zipCode}&category=${selectedCategory}`);
   };
 
   return (
@@ -144,12 +146,12 @@ const SearchForm = () => {
           <label className={style.label} htmlFor="zipcode">
             Qual é a sua localização?
           </label>
-          <input className={style.input} value={zipCode} onChange={handleZipCodeChange} type="text" name="zipcode" id="zipcode" placeholder="00000-000" minLength="9" maxLength="9" required />
+          <input className={style.input} value={zipCode} onChange={handleZipCodeChange} onBlur={handleZipCodeBlur} type="text" name="zipcode" id="zipcode" placeholder="00000-000" minLength="9" maxLength="9" required ref={zipCodeRef} />
         </div>
 
         <div className={`${style.field} ${style.dropdown}`} ref={dropdownRef}>
           <p className={style.label}>O que deseja descartar?</p>
-          <button className={style.dropdownButton} type="button" aria-expanded={isDropdownOpen} aria-controls="dropdown-content" id="dropdown-button" onClick={handleDropdownOpen}>
+          <button className={style.dropdownButton} type="button" aria-expanded={isDropdownOpen} aria-controls="dropdown-content" id="dropdown-button" onClick={handleDropdownOpen} ref={dropdownButton}>
             {handleDropdownLabel()}
           </button>
           <div className={style.dropdownContent} aria-hidden={!isDropdownOpen} aria-labelledby="dropdown-button" id="dropdown-content" role="dialog">
@@ -166,6 +168,12 @@ const SearchForm = () => {
           <button className="button button--primary" type="submit">
             Buscar por locais
           </button>
+
+          {/* Errors */}
+          <ul role="alert" className={style.errors}>
+            {isFormValid === false && !isZipCodeValid && <li className={style.error}>⚠️ Digite um CEP válido.</li>}
+            {isFormValid === false && !isCategoryValid && <li className={style.error}>⚠️ Selecione pelo menos um tipo de resíduo.</li>}
+          </ul>
         </footer>
       </form>
     </div>
