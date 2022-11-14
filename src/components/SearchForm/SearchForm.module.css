@@ -16,24 +16,33 @@
   align-items: flex-end;
 }
 
+.field {
+  position: relative;
+}
+
 .label {
   display: block;
   font-size: 1rem;
   margin-bottom: var(--spacing-sm);
 }
 
-.errors {
-  display: flex;
-  justify-content: center;
+.errorsList {
   gap: 0.5rem;
   position: fixed;
   top: -1.5rem;
   left: 0;
   transform: translateY(-100%);
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.error {
+.errorsList {
+  display: flex;
+  justify-content: center;
+}
+
+.errorsItem {
   border-radius: 8px;
   padding: 1em;
   color: #856404;
@@ -59,10 +68,6 @@
 
   font-size: 1rem;
   text-align: left;
-}
-
-.dropdown {
-  position: relative;
 }
 
 .dropdownButton {

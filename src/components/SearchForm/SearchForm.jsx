@@ -168,11 +168,14 @@ const SearchForm = () => {
             Buscar por locais
           </button>
 
-          {/* Errors */}
-          <ul role="alert" className={style.errors}>
-            {isFormValid === false && !isZipCodeValid && <li className={style.error}>⚠️ Digite um CEP válido.</li>}
-            {isFormValid === false && !isCategoryValid && <li className={style.error}>⚠️ Selecione pelo menos um tipo de resíduo.</li>}
-          </ul>
+          <div role="alert" aria-live="assertive" aria-atomic="true" className={style.errors}>
+            {isFormValid === false && (
+              <ul className={style.errorsList}>
+                {!isZipCodeValid && <li className={style.errorsItem}>⚠️ Digite um CEP válido.</li>}
+                {!isCategoryValid && <li className={style.errorsItem}>⚠️ Selecione pelo menos um tipo de resíduo.</li>}
+              </ul>
+            )}
+          </div>
         </footer>
       </form>
     </div>
