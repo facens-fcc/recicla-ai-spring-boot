@@ -18,6 +18,9 @@ const SearchForm = () => {
 
   const [isFormValid, setFormValid] = useState();
 
+  const [address, setAddress] = useState(null);
+  const [coordinates, setCoordinates] = useState(null);
+
   /**
    * ============================================================================
    * Dropdown
@@ -84,32 +87,37 @@ const SearchForm = () => {
    */
 
   const handleZipCodeChange = ({ target }) => {
-    const zipCodeMarked = target.value
+    const zipCode = target.value
       .replace(/\D/g, '')
       .replace(/(\d{5})(\d)/, '$1-$2')
       .replace(/(-\d{3})\d+?$/, '$1');
 
-    setZipCode(zipCodeMarked);
-    console.log(zipCodeMarked);
-  };
-
-  const validateZipCode = async (zipCode) => {
-    const zipCodeValue = zipCode.replace(/\D/g, '');
-
-    fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${zipCodeValue}&key=AIzaSyDdE2m_2nAtfQN9CA3emww375xD5CELjiU`, {
-      method: 'GET',
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        data.status === 'OK' ? setZipCodeValid(true) : setZipCodeValid(false);
-      })
-      .catch((error) => {
-        console.error('Error:', error);
-      });
+    setZipCode(zipCode);
   };
 
   const handleZipCodeBlur = () => {
-    zipCode.length === 9 && validateZipCode(zipCode);
+    zipCode.length === 9 && getAdressData(zipCode);
+  };
+
+  const getAdressData = async (zipCode) => {
+    const zipCodeValue = zipCode.replace(/\D/g, '');
+
+    fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${zipCodeValue}&key=AIzaSyDdE2m_2nAtfQN9CA3emww375xD5CELjiU`)
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.status === 'OK') {
+          setZipCodeValid(true);
+          setAddress(data.results[0].formatted_address);
+          setCoordinates(data.results[0].geometry.location);
+        } else {
+          setZipCodeValid(false);
+          setAddress(null);
+          setCoordinates(null);
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
 
   /**
@@ -120,7 +128,6 @@ const SearchForm = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    validateZipCode(zipCode);
 
     if (isZipCodeValid && !isCategoryValid) {
       setFormValid(false);
@@ -134,7 +141,7 @@ const SearchForm = () => {
 
     if (isZipCodeValid && isCategoryValid) {
       setFormValid(true);
-      window.location.href = `/resultados?zipCode=${zipCode}&category=${selectedCategory}`;
+      window.location.href = `/resultados?zipCode=${zipCode}&lat=${coordinates.lat}&lng=${coordinates.lng}&category=${selectedCategory}`;
     }
   };
 
