@@ -4,68 +4,41 @@ import style from './Results.module.css';
 import Companies from '../../data/companies.json';
 
 import CallToAction from '../../components/CallToAction/CallToAction';
-import ResultsSidebar from '../../components/ResultsSidebar/ResultsSidebar';
-import ResultsFeed from '../../components/ResultsFeed/ResultsFeed';
-
-// import Map from '../../components/Map/Map';
-// import { GoogleMap, useLoadScript, Marker } from '@react-google-maps/api';
 
 const Results = () => {
+  const queryParams = new URLSearchParams(window.location.search);
 
-  // const { isLoaded } = useLoadScript({
-  //   id: 'google-map-script',
-  //   googleMapsApiKey: "AIzaSyDdE2m_2nAtfQN9CA3emww375xD5CELjiU",
-  //   //     libraries: ["places"],
-  //   });
-
-  const [originCoordinates, setOriginCoordinates] = useState([]);
-  const [destinationCoordinates, setDestinationCoordinates] = useState([]);
-  const [distance, setDistance] = useState(0);
-
-  const queryParams = new URLSearchParams(window.location.search)
   const zipCode = queryParams.get('zipCode');
+  const originCoordinates = [queryParams.get('lat'), queryParams.get('lng')];
 
-  const getOriginCoordinates = async (value) => {
-    value.toString().includes("-") ? value.replace(/\D/g, '') : value;
-    await fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${value}&key=AIzaSyDdE2m_2nAtfQN9CA3emww375xD5CELjiU`)
-      .then((res) => res.json())
-      .then((data) => {
-          const lat = data.results[0].geometry.location.lat.toString();
-          const lng = data.results[0].geometry.location.lng.toString();
-          setOriginCoordinates([lat, lng]);
-      })
-      .catch(err => console.log(err))
-  }
+  /**
+   * Calculates the distance between two points in km using the Haversine formula.
+   * @param {Array} origin - [lat, lng]
+   * @link https://www.movable-type.co.uk/scripts/latlong.html
+   */
 
-  useEffect(() => {
-    getOriginCoordinates(zipCode);
-  }, [])
+  const calculateDistance = (origin, destination) => {
+    const toRad = (value) => (value * Math.PI) / 180; // Converts numeric degrees to radians
+    const R = 6371; // Radius of the earth in km
+    const dLat = toRad(destination[0] - origin[0]);
+    const dLon = toRad(destination[1] - origin[1]);
+    const lat1 = toRad(origin[0]);
+    const lat2 = toRad(destination[0]);
 
-  let companyLat = [];
-  let companyLng = [];
-  Companies.map(company => {
-    companyLat.push(company.address.lat);
-    companyLng.push(company.address.lng);
-  })
+    const a = Math.sin(dLat / 2) * Math.sin(dLat / 2) + Math.sin(dLon / 2) * Math.sin(dLon / 2) * Math.cos(lat1) * Math.cos(lat2);
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    const d = R * c;
+    return d;
+  };
 
-  const getDistanceByCoordinates = async (latOrigin, lngOrigin, latDestination, lngDestination) => {
-    await fetch(`https://maps.googleapis.com/maps/api/distancematrix/json?origins=${latOrigin}%2C${lngOrigin}&destinations=${latDestination}%2C${lngDestination}&key=AIzaSyDdE2m_2nAtfQN9CA3emww375xD5CELjiU`, {
-      method: "GET",
-      headers: { 
-        "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
-        "Access-Control-Allow-Headers": "Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers",
-        },
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data)
-      })
-      .catch(err => console.log(err))
-  }
+  const companiesWithDistance = Companies.map((company) => {
+    const companyCoordinates = [company.address.lat, company.address.lng];
+    const distance = calculateDistance(originCoordinates, companyCoordinates);
+    company.address.distance = distance;
+    return company;
+  });
 
-  getDistanceByCoordinates(originCoordinates[0], originCoordinates[1], companyLat[0], companyLng[0]);
+  const sortedCompanies = companiesWithDistance.sort((a, b) => a.distance - b.distance);
 
   return (
     <main>
@@ -75,9 +48,14 @@ const Results = () => {
         </div>
         <div className="container">
           <div className={style.results__wrapper}>
-            <ResultsSidebar />
-            {originCoordinates}
-            <ResultsFeed />
+            {sortedCompanies.map(({ name, address }) => (
+              <div key={name}>
+                <p>{address.street}</p>
+                <p>{address.city}</p>
+                <p>{address.state}</p>
+                <p>{address.distance.toFixed(2)} km</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
