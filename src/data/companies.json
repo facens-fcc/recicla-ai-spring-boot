@@ -6,18 +6,114 @@
     "whatsapp": true,
     "phone": "11 99999-9999",
     "address": {
-      "street": "Rua dos Bobos",
-      "number": "0",
+      "street": "Rua Isaltino Guanabara Rodrigues Costa",
+      "number": "720",
       "city": "Sorocaba",
       "state": "São Paulo",
-      "zip_code": "18025710",
-      "lat": "-23.5212555",
-      "lng": "-47.4441701"
+      "zip_code": "18085784",
+      "lat": "-23.4857683",
+      "lng": "-47.48440069999999"
     },
     "categories": {
       "batteries": true,
       "appliances": true,
       "mobile_devices": true,
+      "computer_accessories": true
+    },
+    "opening_hours": {
+      "monday": "08:00 - 18:00",
+      "tuesday": "08:00 - 18:00",
+      "wednesday": "08:00 - 18:00",
+      "thursday": "08:00 - 18:00",
+      "friday": "08:00 - 18:00",
+      "saturday": "08:00 - 18:00",
+      "sunday": "08:00 - 18:00"
+    },
+    "image": "https://images.unsplash.com/photo-1593642532972-7e8c2a6c3d1a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8cmVjaWNsYWNvJTIwZmFjZW58ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80"
+  },
+  {
+    "id": 2,
+    "name": "Recicladora Jogajunto",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    "whatsapp": true,
+    "phone": "11 99999-9999",
+    "address": {
+      "street": "Rua Isaltino Guanabara Rodrigues Costa",
+      "number": "720",
+      "city": "Sorocaba",
+      "state": "São Paulo",
+      "zip_code": "18085784",
+      "lat": "-23.4857683",
+      "lng": "-47.48440069999999"
+    },
+    "categories": {
+      "batteries": false,
+      "appliances": false,
+      "mobile_devices": true,
+      "computer_accessories": true
+    },
+    "opening_hours": {
+      "monday": "08:00 - 18:00",
+      "tuesday": "08:00 - 18:00",
+      "wednesday": "08:00 - 18:00",
+      "thursday": "08:00 - 18:00",
+      "friday": "08:00 - 18:00",
+      "saturday": "08:00 - 18:00",
+      "sunday": "08:00 - 18:00"
+    },
+    "image": "https://images.unsplash.com/photo-1593642532972-7e8c2a6c3d1a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8cmVjaWNsYWNvJTIwZmFjZW58ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80"
+  },
+  {
+    "id": 3,
+    "name": "Recicladora Fulana",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    "whatsapp": true,
+    "phone": "11 99999-9999",
+    "address": {
+      "street": "Rua Isaltino Guanabara Rodrigues Costa",
+      "number": "720",
+      "city": "Sorocaba",
+      "state": "São Paulo",
+      "zip_code": "18085784",
+      "lat": "-23.4857683",
+      "lng": "-47.48440069999999"
+    },
+    "categories": {
+      "batteries": true,
+      "appliances": false,
+      "mobile_devices": false,
+      "computer_accessories": false
+    },
+    "opening_hours": {
+      "monday": "08:00 - 18:00",
+      "tuesday": "08:00 - 18:00",
+      "wednesday": "08:00 - 18:00",
+      "thursday": "08:00 - 18:00",
+      "friday": "08:00 - 18:00",
+      "saturday": "08:00 - 18:00",
+      "sunday": "08:00 - 18:00"
+    },
+    "image": "https://images.unsplash.com/photo-1593642532972-7e8c2a6c3d1a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8cmVjaWNsYWNvJTIwZmFjZW58ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80"
+  },
+  {
+    "id": 4,
+    "name": "Recicladora Ciclana",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    "whatsapp": true,
+    "phone": "11 99999-9999",
+    "address": {
+      "street": "Rua Isaltino Guanabara Rodrigues Costa",
+      "number": "720",
+      "city": "Sorocaba",
+      "state": "São Paulo",
+      "zip_code": "18085784",
+      "lat": "-23.4857683",
+      "lng": "-47.48440069999999"
+    },
+    "categories": {
+      "batteries": false,
+      "appliances": true,
+      "mobile_devices": false,
       "computer_accessories": true
     },
     "opening_hours": {
