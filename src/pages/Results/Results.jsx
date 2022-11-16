@@ -4,12 +4,31 @@ import style from './Results.module.css';
 import Companies from '../../data/companies.json';
 
 import CallToAction from '../../components/CallToAction/CallToAction';
+import Card from '../../components/Card/Card';
 
 const Results = () => {
   const queryParams = new URLSearchParams(window.location.search);
+  
+  const [filteredCompanies, setFilteredCompanies] = useState(Companies);
 
   const zipCode = queryParams.get('zipCode');
   const originCoordinates = [queryParams.get('lat'), queryParams.get('lng')];
+  const categories = [queryParams.get('category')];
+
+  /*
+  const ordersSellers = Sellers.map(seller => {
+        const orders = Orders.filter(order => order.seller === seller.id);
+        const totalPrice = orders.reduce((acc, order) => {
+            return acc + order.price;
+        }, 0);
+
+        return {
+            ...seller,
+            totalPrice
+        }
+    })  
+  */
+
 
   /**
    * Calculates the distance between two points in km using the Haversine formula.
@@ -48,13 +67,14 @@ const Results = () => {
         </div>
         <div className="container">
           <div className={style.results__wrapper}>
-            {sortedCompanies.map(({ name, address }) => (
-              <div key={name}>
-                <p>{address.street}</p>
-                <p>{address.city}</p>
-                <p>{address.state}</p>
-                <p>{address.distance.toFixed(2)} km</p>
-              </div>
+            {sortedCompanies.map(({ id, name, address }) => (
+              <Card key={id}
+                name={name}
+                street={address.street}
+                city={address.city}
+                state={address.state}
+                distance={address.distance.toFixed(2)}
+              />
             ))}
           </div>
         </div>

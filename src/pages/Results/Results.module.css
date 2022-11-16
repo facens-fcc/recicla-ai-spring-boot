@@ -7,5 +7,9 @@
 }
 
 .results__wrapper {
-  margin-top: 4rem;
+  max-width: 50rem;
+  margin: 4rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
 }
