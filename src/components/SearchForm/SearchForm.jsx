@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import style from './SearchForm.module.css';
 
 import categories from '../../data/categories.json';
+import Companies from '../../data/companies.json';
 
 const SearchForm = () => {
   const dropdownRef = React.useRef();
@@ -74,6 +75,7 @@ const SearchForm = () => {
     } else {
       setSelectedCategory(selectedCategory.filter((category) => category !== name));
     }
+
   };
 
   useEffect(() => {

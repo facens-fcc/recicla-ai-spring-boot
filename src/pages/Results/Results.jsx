@@ -11,24 +11,17 @@ const Results = () => {
   
   const [filteredCompanies, setFilteredCompanies] = useState(Companies);
 
-  const zipCode = queryParams.get('zipCode');
   const originCoordinates = [queryParams.get('lat'), queryParams.get('lng')];
-  const categories = [queryParams.get('category')];
+  const categories = [queryParams.get('category')].flatMap(category => category.split(","));
+  console.log(categories);
 
-  /*
-  const ordersSellers = Sellers.map(seller => {
-        const orders = Orders.filter(order => order.seller === seller.id);
-        const totalPrice = orders.reduce((acc, order) => {
-            return acc + order.price;
-        }, 0);
+    // const companyCategories = Companies.map(company => {
+    //   const entries = Object.entries(company.categories);
+    //   const values = entries.filter(value => value[1] === true);
+    //   return company;
+    // })
 
-        return {
-            ...seller,
-            totalPrice
-        }
-    })  
-  */
-
+    // console.log(companyCategories)
 
   /**
    * Calculates the distance between two points in km using the Haversine formula.
