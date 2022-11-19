@@ -21,6 +21,24 @@ const SearchForm = () => {
   const [address, setAddress] = useState(null);
   const [coordinates, setCoordinates] = useState(null);
 
+  useEffect(() => {
+    document.addEventListener('click', handleDropdownClickOutside);
+    document.addEventListener('keydown', handleDropdownEscape);
+
+    return () => {
+      document.removeEventListener('click', handleDropdownClickOutside);
+      document.removeEventListener('keydown', handleDropdownEscape);
+    };
+  }, [isDropdownOpen]);
+
+  useEffect(() => {
+    selectedCategory.length > 0 ? setCategoryValid(true) : setCategoryValid(false);
+  }, [selectedCategory]);
+
+  useEffect(() => {
+    zipCode.length === 9 && getAdressData(zipCode);
+  }, [zipCode]);
+
   /**
    * ============================================================================
    * Dropdown
@@ -49,16 +67,6 @@ const SearchForm = () => {
     if (selectedCategory.length > 1) return `(${selectedCategory.length}) Selecionados`;
   };
 
-  useEffect(() => {
-    document.addEventListener('click', handleDropdownClickOutside);
-    document.addEventListener('keydown', handleDropdownEscape);
-
-    return () => {
-      document.removeEventListener('click', handleDropdownClickOutside);
-      document.removeEventListener('keydown', handleDropdownEscape);
-    };
-  }, [isDropdownOpen]);
-
   /**
    * ============================================================================
    * Checkbox
@@ -75,10 +83,6 @@ const SearchForm = () => {
     }
   };
 
-  useEffect(() => {
-    selectedCategory.length > 0 ? setCategoryValid(true) : setCategoryValid(false);
-  }, [selectedCategory]);
-
   /**
    * ============================================================================
    * Zip code
@@ -87,15 +91,11 @@ const SearchForm = () => {
 
   const handleZipCodeChange = ({ target }) => {
     const zipCode = target.value
-      .replace(/\D/g, '')
-      .replace(/(\d{5})(\d)/, '$1-$2')
-      .replace(/(-\d{3})\d+?$/, '$1');
+      .replace(/\D/g, '') // Remove all non-digits.
+      .replace(/(\d{5})(\d)/, '$1-$2') // Add a hyphen after the fifth digit.
+      .replace(/(-\d{3})\d+?$/, '$1'); // Limit to 9 digits.
 
     setZipCode(zipCode);
-  };
-
-  const handleZipCodeBlur = () => {
-    zipCode.length === 9 && getAdressData(zipCode);
   };
 
   const getAdressData = async (zipCode) => {
@@ -140,7 +140,7 @@ const SearchForm = () => {
 
     if (isZipCodeValid && isCategoryValid) {
       setFormValid(true);
-      window.location.href = `/resultados?zipCode=${zipCode}&lat=${coordinates.lat}&lng=${coordinates.lng}&category=${selectedCategory}`;
+      window.location.href = `/resultados?zipCode=${zipCode}&lat=${coordinates.lat}&lng=${coordinates.lng}&categories=${selectedCategory}&address=${address}`;
     }
   };
 
@@ -151,12 +151,12 @@ const SearchForm = () => {
           <label className={style.label} htmlFor="zipcode">
             Qual é a sua localização?
           </label>
-          <input className={style.input} value={zipCode} onChange={handleZipCodeChange} onBlur={handleZipCodeBlur} type="text" name="zipcode" id="zipcode" placeholder="00000-000" minLength="9" maxLength="9" required ref={zipCodeRef} />
+          <input className={style.input} value={zipCode} onChange={handleZipCodeChange} type="text" name="zipcode" id="zipcode" placeholder="00000-000" minLength="9" maxLength="9" required ref={zipCodeRef} />
         </div>
 
         <div className={style.field} ref={dropdownRef}>
           <p className={style.label}>O que deseja descartar?</p>
-          <button className={style.dropdownButton} type="button" aria-expanded={isDropdownOpen} aria-controls="dropdown-content" id="dropdown-button" onClick={handleDropdownOpen} ref={dropdownButtonRef}>
+          <button className={style.dropdownButton} type="button" aria-expanded={isDropdownOpen} aria-controls="dropdown-content" id="dropdown-button" onClick={handleDropdown} ref={dropdownButtonRef}>
             {handleDropdownLabel()}
           </button>
           <div className={style.dropdownContent} aria-hidden={!isDropdownOpen} aria-labelledby="dropdown-button" id="dropdown-content" role="dialog">
@@ -168,12 +168,10 @@ const SearchForm = () => {
             ))}
           </div>
         </div>
-
         <footer>
           <button className="button button--primary" type="submit">
             Buscar por locais
           </button>
-
           <div role="alert" aria-live="assertive" aria-atomic="true" className={style.errors}>
             {isFormValid === false && (
               <ul className={style.errorsList}>
