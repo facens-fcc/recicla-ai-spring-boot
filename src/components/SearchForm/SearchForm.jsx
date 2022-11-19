@@ -28,6 +28,10 @@ const SearchForm = () => {
    * ============================================================================
    */
 
+  const handleDropdown = () => {
+    setDropdownOpen(!isDropdownOpen);
+  };
+
   const handleDropdownClickOutside = ({ target }) => {
     if (dropdownRef.current && !dropdownRef.current.contains(target)) {
       setDropdownOpen(false);
@@ -40,15 +44,10 @@ const SearchForm = () => {
     }
   };
 
-  const handleDropdownOpen = () => {
-    setDropdownOpen(!isDropdownOpen);
-  };
-
   const handleDropdownLabel = () => {
     if (selectedCategory.length === 0) return 'Selecione';
-    if (selectedCategory.length === 1) return `(${selectedCategory.length}) Selecionados`;
-
-    return `(${selectedCategory.length}) Selecionados`;
+    if (selectedCategory.length === 1) return `(${selectedCategory.length}) Selecionado`;
+    if (selectedCategory.length > 1) return `(${selectedCategory.length}) Selecionados`;
   };
 
   useEffect(() => {
