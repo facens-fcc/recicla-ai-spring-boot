@@ -1,5 +1,4 @@
 .header {
-  padding: 1.5rem;
   position: absolute;
   width: 100%;
 }
@@ -8,6 +7,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1.5rem;
 }
 
 .brand {
@@ -15,71 +15,85 @@
   z-index: var(--z-index-xl);
 }
 
+.corner {
+  margin-right: 1rem;
+  margin-left: auto;
+}
+
+@media (max-width: 480[x]) {
+  .corner {
+    display: none;
+  }
+}
+
 /*  */
 
-.toggle {
+.menu {
+}
+
+.menuToggle {
   display: block;
   background: none;
   position: relative;
   z-index: var(--z-index-xl);
 }
 
-.toggleLine {
+.menuToggleLine {
   display: block;
-  width: 1.625rem;
-  height: 0.125rem;
-  background-color: var(--color-body);
+  width: 26px;
+  height: 2px;
+  background-color: currentColor;
   transition: all 0.3s ease-in-out;
   transform-origin: 3px 1px;
 }
 
-.toggleLine:not(last-child) {
-  margin-bottom: 5px;
+.menuToggleLine + .menuToggleLine {
+  margin-top: 5px;
 }
 
-[data-menu-open='true'] .toggleLine:nth-child(1) {
+[data-menu-open='true'] .menuToggleLine {
+  color: white;
+}
+
+[data-menu-open='true'] .menuToggleLine:nth-child(1) {
   transform: rotate(45deg);
 }
 
-[data-menu-open='true'] .toggleLine:nth-child(2) {
+[data-menu-open='true'] .menuToggleLine:nth-child(2) {
   opacity: 0;
 }
 
-[data-menu-open='true'] .toggleLine:nth-child(3) {
+[data-menu-open='true'] .menuToggleLine:nth-child(3) {
   transform: rotate(-45deg);
 }
 
 /*  */
 
-.menu {
+.menuList {
   display: none;
 }
 
-.menuItem {
+.menuListItem {
   padding: 0.5rem;
 }
 
-[data-menu-open='true'] .menu {
-  background-color: var(--color-primary-light);
+[data-menu-open='true'] .menuList {
+  background-color: rgba(0, 0, 0, 0.85);
   display: grid;
   place-content: center;
 
   height: 100vh;
   width: 100vw;
+  transform: translateX(-50%);
 
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 50%;
   z-index: 1;
 
   text-align: center;
 }
 
-[data-menu-open='true'] .menuLink {
+[data-menu-open='true'] .menuListLink {
   color: var(--color-neutral-100);
-}
-
-@media (min-width: 48rem) {
-  .menu {
-    display: none;
-  }
 }

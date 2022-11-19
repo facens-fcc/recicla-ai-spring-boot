@@ -1,92 +1,71 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import style from './Header.module.css';
 import Brand from '../Brand/Brand';
 
 const Header = () => {
+  const menuRef = useRef();
+  const menuToggleRef = useRef();
+
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
 
-  const handleButtonLabel = () => {
-    return isNavbarOpen ? 'Fechar menu' : 'Abrir menu';
-  };
+  /**
+   * Toggle Menu state.
+   */
 
   const handleToggle = () => {
     setIsNavbarOpen(!isNavbarOpen);
   };
 
   /**
-   * Close the navbar when resizing the window to a larger size.
+   * Close Menu when pressing Escape.
+   * After closing, focus on the menu toggle.
    */
 
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth > 768) setIsNavbarOpen(false);
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-  /**
-   * Close the navbar when pressing the escape key.
-   */
+  const handleEscape = ({ key }) => {
+    if (key === 'Escape') {
+      setIsNavbarOpen(false);
+      menuToggleRef.current.focus();
+    }
+  };
 
   useEffect(() => {
-    const handleEsc = (event) => {
-      if (event.key === 'Escape') setIsNavbarOpen(false);
-    };
-
-    window.addEventListener('keydown', handleEsc);
-
-    return () => window.removeEventListener('keydown', handleEsc);
-  }, [setIsNavbarOpen]);
-
-  /**
-   * Disable scrolling when the navbar is open.
-   */
-
-  useEffect(() => {
-    return isNavbarOpen ? document.body.classList.add('no-scroll') : document.body.classList.remove('no-scroll');
+    document.addEventListener('keydown', handleEscape);
+    return () => document.removeEventListener('keydown', handleEscape);
   }, [isNavbarOpen]);
 
   /**
-   * Trap focus inside the navbar when it is open.
+   * Block scrolling when menu is open and unblock when menu is closed.
+   * This is done by adding/removing the 'no-scroll' class to the body.
    */
 
   useEffect(() => {
-    const navbar = document.querySelector('#navbar'); // Select the navbar element.
-    const toggleButton = navbar.querySelector('button'); // Select the toggle button.
+    isNavbarOpen ? document.body.classList.add('no-scroll') : document.body.classList.remove('no-scroll');
+  }, [isNavbarOpen]);
 
-    const focusableElements = navbar.querySelectorAll('a, button'); // Select all focusable elements.
-    const firstFocusableElement = navbar.querySelector('a'); // Select the first focusable element.
-    const firstFocusableListElement = navbar.querySelector('ul a'); // Select the first focusable element to be focused when the last focusable element is blurred.
-    const lastFocusableElement = focusableElements[focusableElements.length - 1]; // Select the last focusable element.
+  /**
+   * Trap focus inside the menu when it is open.
+   * When the menu is open, the focus is trapped inside the menuRef.
+   */
 
-    const handleTab = (event) => {
-      if (event.key === 'Tab') {
-        if (event.shiftKey) {
-          if (document.activeElement === firstFocusableElement) {
-            lastFocusableElement.focus();
-            event.preventDefault();
-          }
-        } else {
-          if (document.activeElement === lastFocusableElement) {
-            firstFocusableElement.focus();
-            event.preventDefault();
-          }
-        }
-      }
-    };
-
+  const handleFocus = (event) => {
     if (isNavbarOpen) {
-      firstFocusableListElement.focus();
-      window.addEventListener('keydown', handleTab);
-    } else {
-      toggleButton.focus();
-      window.removeEventListener('keydown', handleTab);
-    }
+      const focusableElements = menuRef.current.querySelectorAll('a[href], button');
+      const firstFocusableElement = focusableElements[0];
+      const lastFocusableElement = focusableElements[focusableElements.length - 1];
 
-    return () => window.removeEventListener('keydown', handleTab);
+      if (event.target === lastFocusableElement && !event.shiftKey) {
+        event.preventDefault();
+        firstFocusableElement.focus();
+      } else if (event.target === firstFocusableElement && event.shiftKey) {
+        event.preventDefault();
+        lastFocusableElement.focus();
+      }
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('keydown', handleFocus);
+    return () => document.removeEventListener('keydown', handleFocus);
   }, [isNavbarOpen]);
 
   return (
@@ -95,34 +74,41 @@ const Header = () => {
         <nav className={style.nav} data-menu-open={isNavbarOpen} id="navbar">
           <Brand className={style.brand} />
 
-          <button className={style.toggle} onClick={handleToggle} aria-expanded={isNavbarOpen} aria-label={handleButtonLabel()} aria-haspopup="true" type="button">
-            <span className={style.toggleLine} />
-            <span className={style.toggleLine} />
-            <span className={style.toggleLine} />
-          </button>
+          <div className={`${style.corner} hide-at-phone`} ref={menuRef}>
+            <a className="button button--secondary button--small" href="">
+              Sou empresa e quero coletar
+            </a>
+          </div>
 
-          <ul className={style.menu}>
-            <li className={style.menuItem}>
-              <a className={`link ${style.menuLink}`} href="/">
-                Sobre o projeto
-              </a>
-            </li>
-            <li className={style.menuItem}>
-              <a className={`link ${style.menuLink}`} href="/">
-                O que são lixos eletrônicos
-              </a>
-            </li>
-            <li className={style.menuItem}>
-              <a className={`link ${style.menuLink}`} href="/">
-                Contato
-              </a>
-            </li>
-            <li className={style.menuItem}>
-              <a className={`link ${style.menuLink}`} href="/">
-                Cadastre-se
-              </a>
-            </li>
-          </ul>
+          <div className={style.menu} ref={menuRef}>
+            <button className={style.menuToggle} onClick={handleToggle} aria-expanded={isNavbarOpen} aria-label={isNavbarOpen ? 'Fechar menu' : 'Abrir menu'} aria-haspopup="true" type="button" ref={menuToggleRef}>
+              <span className={style.menuToggleLine} />
+              <span className={style.menuToggleLine} />
+              <span className={style.menuToggleLine} />
+            </button>
+            <ul className={style.menuList} aria-label="Menu" role="menu">
+              <li className={style.menuListItem}>
+                <a className={`link ${style.menuListLink}`} href="/">
+                  Sobre o projeto
+                </a>
+              </li>
+              <li className={style.menuListItem}>
+                <a className={`link ${style.menuListLink}`} href="/">
+                  O que são lixos eletrônicos
+                </a>
+              </li>
+              <li className={style.menuListItem}>
+                <a className={`link ${style.menuListLink}`} href="/">
+                  Contato
+                </a>
+              </li>
+              <li className={style.menuListItem}>
+                <a className={`link ${style.menuListLink}`} href="/">
+                  Cadastre-se
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
