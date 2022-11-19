@@ -14,12 +14,7 @@
       "lat": "-23.4857683",
       "lng": "-47.48440069999999"
     },
-    "categories": {
-      "batteries": true,
-      "appliances": true,
-      "mobile_devices": true,
-      "computer_accessories": true
-    },
+    "categories": ["Metal"],
     "opening_hours": {
       "monday": "08:00 - 18:00",
       "tuesday": "08:00 - 18:00",
@@ -46,12 +41,7 @@
       "lat": "-23.4857683",
       "lng": "-47.48440069999999"
     },
-    "categories": {
-      "batteries": false,
-      "appliances": false,
-      "mobile_devices": true,
-      "computer_accessories": true
-    },
+    "categories": ["Plástico"],
     "opening_hours": {
       "monday": "08:00 - 18:00",
       "tuesday": "08:00 - 18:00",
@@ -78,12 +68,7 @@
       "lat": "-23.4857683",
       "lng": "-47.48440069999999"
     },
-    "categories": {
-      "batteries": true,
-      "appliances": false,
-      "mobile_devices": false,
-      "computer_accessories": false
-    },
+    "categories": ["Vidro"],
     "opening_hours": {
       "monday": "08:00 - 18:00",
       "tuesday": "08:00 - 18:00",
@@ -110,12 +95,7 @@
       "lat": "-23.4857683",
       "lng": "-47.48440069999999"
     },
-    "categories": {
-      "batteries": false,
-      "appliances": true,
-      "mobile_devices": false,
-      "computer_accessories": true
-    },
+    "categories": ["Papel e Papelão"],
     "opening_hours": {
       "monday": "08:00 - 18:00",
       "tuesday": "08:00 - 18:00",

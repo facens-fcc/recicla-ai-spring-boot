@@ -8,24 +8,27 @@ import Card from '../../components/Card/Card';
 
 const Results = () => {
   const queryParams = new URLSearchParams(window.location.search);
-  
-  const [filteredCompanies, setFilteredCompanies] = useState(Companies);
 
-  const originCoordinates = [queryParams.get('lat'), queryParams.get('lng')];
-  const categories = [queryParams.get('category')].flatMap(category => category.split(","));
-  console.log(categories);
+  const [categories, setCategories] = useState([]);
+  const [companies, setCompanies] = useState(Companies);
+  const [filteredCompanies, setFilteredCompanies] = useState([]);
 
-    // const companyCategories = Companies.map(company => {
-    //   const entries = Object.entries(company.categories);
-    //   const values = entries.filter(value => value[1] === true);
-    //   return company;
-    // })
+  const selectedCategories = queryParams.get('category').split(',');
+  const userCoordinates = [queryParams.get('lat'), queryParams.get('lng')];
 
-    // console.log(companyCategories)
+  useEffect(() => {
+    setCategories(selectedCategories);
+    setCompanies(companiesWithDistance);
+  }, []);
+
+  useEffect(() => {
+    setFilteredCompanies(filterCompaniesByCategory.sort((a, b) => a.address.distance - b.address.distance));
+  }, [companies]);
 
   /**
    * Calculates the distance between two points in km using the Haversine formula.
    * @param {Array} origin - [lat, lng]
+   * @param {Array} destination - [lat, lng]
    * @link https://www.movable-type.co.uk/scripts/latlong.html
    */
 
@@ -43,14 +46,32 @@ const Results = () => {
     return d;
   };
 
-  const companiesWithDistance = Companies.map((company) => {
+  /**
+   * Define the distance between the user and the company.
+   * @param {Object} company
+   * @param {Array} userCoordinates
+   * @returns {Object} company
+   */
+
+  const companiesWithDistance = companies.map((company) => {
     const companyCoordinates = [company.address.lat, company.address.lng];
-    const distance = calculateDistance(originCoordinates, companyCoordinates);
+    const distance = calculateDistance(userCoordinates, companyCoordinates);
     company.address.distance = distance;
     return company;
   });
 
-  const sortedCompanies = companiesWithDistance.sort((a, b) => a.distance - b.distance);
+  /**
+   * Filter companies by category. If at least one category matches, the company is added to the filteredCompanies array.
+   * @param {Array} categories
+   * @param {Array} companies
+   * @returns {Array} filteredCompanies
+   */
+
+  const filterCompaniesByCategory = companies.filter((company) => {
+    const companyCategories = company.categories;
+    const matches = companyCategories.filter((category) => categories.includes(category));
+    return matches.length > 0;
+  });
 
   return (
     <main>
@@ -60,14 +81,8 @@ const Results = () => {
         </div>
         <div className="container">
           <div className={style.results__wrapper}>
-            {sortedCompanies.map(({ id, name, address }) => (
-              <Card key={id}
-                name={name}
-                street={address.street}
-                city={address.city}
-                state={address.state}
-                distance={address.distance.toFixed(2)}
-              />
+            {filteredCompanies.map((company) => (
+              <Card key={company.id} name={company.name} address={company.address} />
             ))}
           </div>
         </div>

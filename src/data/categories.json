@@ -1,34 +1,18 @@
 [
   {
     "id": 1,
-    "featured": true,
-    "name": "batteries",
-    "label": "Baterias e Pilhas",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
-    "image": "https://source.unsplash.com/random/400x300"
+    "label": "Papel e Papelão"
   },
   {
     "id": 2,
-    "featured": true,
-    "name": "appliances",
-    "label": "Eletrodomésticos e Aparelhos",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
-    "image": "https://source.unsplash.com/random/400x300"
+    "label": "Vidro"
   },
   {
     "id": 3,
-    "featured": true,
-    "name": "mobile_devices",
-    "label": "Celulares e Tablets",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
-    "image": "https://source.unsplash.com/random/400x300"
+    "label": "Plástico"
   },
   {
     "id": 4,
-    "featured": false,
-    "name": "computer_accessories",
-    "label": "Informática",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
-    "image": "https://source.unsplash.com/random/400x300"
+    "label": "Metal"
   }
 ]

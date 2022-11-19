@@ -1,13 +1,12 @@
 import React from 'react';
 import style from './Card.module.css';
 
-const Card = ({ name, street, city, state, distance }) => {
-
+const Card = ({ name, address }) => {
   return (
     <div className={style.card}>
       <h3 className={style.card__title}>{name}</h3>
-      <p>{street}, {city}, {state}</p>
-      <p>{distance} km</p>
+      <p>{address.street}, {address.city}, {address.state}</p>
+      <p>{address.distance} km</p>
     </div>
   );
 };

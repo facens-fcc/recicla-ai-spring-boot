@@ -75,7 +75,6 @@ const SearchForm = () => {
     } else {
       setSelectedCategory(selectedCategory.filter((category) => category !== name));
     }
-
   };
 
   useEffect(() => {
@@ -163,9 +162,9 @@ const SearchForm = () => {
             {handleDropdownLabel()}
           </button>
           <div className={style.dropdownContent} aria-hidden={!isDropdownOpen} aria-labelledby="dropdown-button" id="dropdown-content" role="dialog">
-            {categories.map(({ id, name, label }) => (
+            {categories.map(({ id, label }) => (
               <div className={style.field} key={id}>
-                <input type="checkbox" name={name} id={id} onChange={handleCheckboxChange} />
+                <input type="checkbox" name={label} id={id} onChange={handleCheckboxChange} />
                 <label htmlFor={id}>{label}</label>
               </div>
             ))}
