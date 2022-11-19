@@ -1,18 +1,34 @@
 [
   {
     "id": 1,
-    "label": "Papel e Papelão"
+    "label": "Pilhas e Baterias"
   },
   {
     "id": 2,
-    "label": "Vidro"
+    "label": "Celulares e Tablets"
   },
   {
     "id": 3,
-    "label": "Plástico"
+    "label": "Baterias de celular"
   },
   {
     "id": 4,
-    "label": "Metal"
+    "label": "Eletrodomésticos de Pequeno Porte"
+  },
+  {
+    "id": 4,
+    "label": "Eletrodomésticos de Grande Porte"
+  },
+  {
+    "id": 4,
+    "label": "Acessórios de informática"
+  },
+  {
+    "id": 4,
+    "label": "Notebook, computadores e vídeos games"
+  },
+  {
+    "id": 4,
+    "label": "Lâmpadas"
   }
 ]
