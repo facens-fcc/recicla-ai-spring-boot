@@ -3,17 +3,17 @@ import style from './SearchForm.module.css';
 
 import categories from '../../data/categories.json';
 
-const SearchForm = () => {
+const SearchForm = ({ userZipCode = '', userSelectedCategories = [] }) => {
   const dropdownRef = React.useRef();
   const dropdownButtonRef = React.useRef();
   const zipCodeRef = React.useRef();
 
   const [isDropdownOpen, setDropdownOpen] = useState(false);
 
-  const [zipCode, setZipCode] = useState('');
+  const [zipCode, setZipCode] = useState(userZipCode);
   const [isZipCodeValid, setZipCodeValid] = useState(false);
 
-  const [selectedCategory, setSelectedCategory] = useState([]);
+  const [selectedCategories, setSelectedCategories] = useState(userSelectedCategories);
   const [isCategoryValid, setCategoryValid] = useState(false);
 
   const [isFormValid, setFormValid] = useState();
@@ -32,12 +32,16 @@ const SearchForm = () => {
   }, [isDropdownOpen]);
 
   useEffect(() => {
-    selectedCategory.length > 0 ? setCategoryValid(true) : setCategoryValid(false);
-  }, [selectedCategory]);
+    selectedCategories.length > 0 ? setCategoryValid(true) : setCategoryValid(false);
+  }, [selectedCategories]);
 
   useEffect(() => {
-    zipCode.length === 9 && getAdressData(zipCode);
+    zipCode.length === 9 ? setZipCodeValid(true) : setZipCodeValid(false);
   }, [zipCode]);
+
+  useEffect(() => {
+    isZipCodeValid && getAdressData(zipCode);
+  }, [isZipCodeValid]);
 
   /**
    * Dropdown
@@ -63,13 +67,13 @@ const SearchForm = () => {
   };
 
   const handleDropdownLabel = () => {
-    if (selectedCategory.length === 0) return 'Selecione';
-    if (selectedCategory.length === 1) return `(${selectedCategory.length}) Selecionado`;
-    if (selectedCategory.length > 1) return `(${selectedCategory.length}) Selecionados`;
+    if (selectedCategories.length === 0) return 'Selecione';
+    if (selectedCategories.length === 1) return `(${selectedCategories.length}) Selecionado`;
+    if (selectedCategories.length > 1) return `(${selectedCategories.length}) Selecionados`;
   };
 
   /**
-   * Add and remove category from selectedCategory array when clicking on the category.
+   * Add and remove category from selectedCategories array when clicking on the category.
    * If the category is already selected, remove it from the array.
    */
 
@@ -77,11 +81,21 @@ const SearchForm = () => {
     const { name, checked } = target;
 
     if (checked) {
-      setSelectedCategory([...selectedCategory, name]);
+      setSelectedCategories([...selectedCategories, name]);
     } else {
-      setSelectedCategory(selectedCategory.filter((category) => category !== name));
+      setSelectedCategories(selectedCategories.filter((category) => category !== name));
     }
   };
+
+  /**
+   * Mark the checkbox as checked with the selectedCategories array.
+   */
+
+  useEffect(() => {
+    document.querySelectorAll('input[type="checkbox"]').forEach((checkbox) => {
+      userSelectedCategories.includes(checkbox.name) && (checkbox.checked = true);
+    });
+  }, []);
 
   /**
    * Set input mask while the user is typing.
@@ -144,7 +158,7 @@ const SearchForm = () => {
 
     if (isZipCodeValid && isCategoryValid) {
       setFormValid(true);
-      window.location.href = `/resultados?zipCode=${zipCode}&lat=${coordinates.lat}&lng=${coordinates.lng}&categories=${selectedCategory}&address=${address}`;
+      window.location.href = `/resultados?zipCode=${zipCode}&lat=${coordinates.lat}&lng=${coordinates.lng}&categories=${selectedCategories}&address=${address}`;
     }
   };
 

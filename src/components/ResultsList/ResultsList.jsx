@@ -3,18 +3,15 @@ import React, { useState, useEffect } from 'react';
 import Companies from '../../data/companies.json';
 import Card from '../../components/Card/Card';
 
-const ResultsList = () => {
+const ResultsList = ({ userSelectedCategories = [], userCoordinates = [] }) => {
   const queryParams = new URLSearchParams(window.location.search);
 
   const [categories, setCategories] = useState([]);
   const [companies, setCompanies] = useState(Companies);
   const [filteredCompanies, setFilteredCompanies] = useState([]);
 
-  const selectedCategories = queryParams.get('categories').split(',');
-  const userCoordinates = [queryParams.get('lat'), queryParams.get('lng')];
-
   useEffect(() => {
-    setCategories(selectedCategories);
+    setCategories(userSelectedCategories);
     setCompanies(companiesWithDistance);
   }, []);
 
