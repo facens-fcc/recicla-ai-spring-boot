@@ -24,8 +24,6 @@ const ResultsList = () => {
 
   /**
    * Calculates the distance between two points in km using the Haversine formula.
-   * @param {Array} origin - [lat, lng]
-   * @param {Array} destination - [lat, lng]
    * @link https://www.movable-type.co.uk/scripts/latlong.html
    */
 
@@ -44,10 +42,8 @@ const ResultsList = () => {
   };
 
   /**
-   * Define the distance between the user and the company.
-   * @param {Object} company
-   * @param {Array} userCoordinates
-   * @returns {Object} company
+   * Calculates the distance between the user and the company.
+   * Sets the distance in the company address object.
    */
 
   const companiesWithDistance = companies.map((company) => {
@@ -58,10 +54,8 @@ const ResultsList = () => {
   });
 
   /**
-   * Filter companies by category. If at least one category matches, the company is added to the filteredCompanies array.
-   * @param {Array} categories
-   * @param {Array} companies
-   * @returns {Array} filteredCompanies
+   * Filters the companies by the selected categories.
+   * If the company has at least one category in common with the selected categories, it's included in the filtered list.
    */
 
   const filterCompaniesByCategory = companies.filter((company) => {

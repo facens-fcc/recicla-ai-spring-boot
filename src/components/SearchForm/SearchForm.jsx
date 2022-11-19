@@ -40,9 +40,10 @@ const SearchForm = () => {
   }, [zipCode]);
 
   /**
-   * ============================================================================
    * Dropdown
-   * ============================================================================
+   *  • Open/close dropdown,
+   *  • Close dropdown when clicking outside or pressing escape.
+   *  • Update label according to the length of the selected categories.
    */
 
   const handleDropdown = () => {
@@ -68,9 +69,8 @@ const SearchForm = () => {
   };
 
   /**
-   * ============================================================================
-   * Checkbox
-   * ============================================================================
+   * Add and remove category from selectedCategory array when clicking on the category.
+   * If the category is already selected, remove it from the array.
    */
 
   const handleCheckboxChange = ({ target }) => {
@@ -84,9 +84,9 @@ const SearchForm = () => {
   };
 
   /**
-   * ============================================================================
-   * Zip code
-   * ============================================================================
+   * Set input mask while the user is typing.
+   * Only numbers are allowed. Expected format: 00000-000.
+   * If the input is valid, set the zipCode state.
    */
 
   const handleZipCodeChange = ({ target }) => {
@@ -97,6 +97,11 @@ const SearchForm = () => {
 
     setZipCode(zipCode);
   };
+
+  /**
+   * Validate if the zipCode is valid through the Google Maps API.
+   * If the zipCode is valid, set the address and coordinates states.
+   */
 
   const getAdressData = async (zipCode) => {
     const zipCodeValue = zipCode.replace(/\D/g, '');
@@ -120,9 +125,8 @@ const SearchForm = () => {
   };
 
   /**
-   * ============================================================================
-   * Submit
-   * ============================================================================
+   * Validate the form data when clicking on the submit button.
+   * If the form is valid, redirect to the results page and pass the form data as query params.
    */
 
   const handleSubmit = (event) => {
