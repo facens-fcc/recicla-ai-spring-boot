@@ -98,7 +98,7 @@ const Header = () => {
                 </a>
               </li>
               <li className={style.menuListItem}>
-                <a className={`link ${style.menuListLink}`} href="/">
+                <a className={`link ${style.menuListLink}`} href="mailto:recicla.ai.sorocaba@gmail.com">
                   Contato
                 </a>
               </li>
