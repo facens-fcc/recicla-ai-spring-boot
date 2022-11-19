@@ -4,8 +4,6 @@ import Companies from '../../data/companies.json';
 import Card from '../../components/Card/Card';
 
 const ResultsList = ({ userSelectedCategories = [], userCoordinates = [] }) => {
-  const queryParams = new URLSearchParams(window.location.search);
-
   const [categories, setCategories] = useState([]);
   const [companies, setCompanies] = useState(Companies);
   const [filteredCompanies, setFilteredCompanies] = useState([]);

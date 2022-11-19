@@ -74,12 +74,6 @@ const Header = () => {
         <nav className={style.nav} data-menu-open={isNavbarOpen} id="navbar">
           <Brand className={style.brand} />
 
-          <div className={`${style.corner} hide-at-phone`} ref={menuRef}>
-            <a className="button button--secondary button--small" href="">
-              Sou empresa e quero coletar
-            </a>
-          </div>
-
           <div className={style.menu} ref={menuRef}>
             <button className={style.menuToggle} onClick={handleToggle} aria-expanded={isNavbarOpen} aria-label={isNavbarOpen ? 'Fechar menu' : 'Abrir menu'} aria-haspopup="true" type="button" ref={menuToggleRef}>
               <span className={style.menuToggleLine} />

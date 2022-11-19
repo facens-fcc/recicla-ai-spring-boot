@@ -163,23 +163,26 @@ const SearchForm = ({ userZipCode = '', userSelectedCategories = [] }) => {
   };
 
   return (
-    <div className={style.searchForm}>
+    <div className={style.box}>
+      <div className={style.content}>
+        <h2 className="heading">Descarte o seu lixo eletrônicos e eletrodométiscos em Sorocaba</h2>
+      </div>
       <form className={style.form} action="/resultados" method="GET" onSubmit={handleSubmit}>
-        <div className={style.field}>
-          <label className={style.label} htmlFor="zipcode">
+        <div className="field">
+          <label className="label" htmlFor="zipcode">
             Qual é a sua localização?
           </label>
-          <input className={style.input} value={zipCode} onChange={handleZipCodeChange} type="text" name="zipcode" id="zipcode" placeholder="00000-000" minLength="9" maxLength="9" required ref={zipCodeRef} />
+          <input className="input" value={zipCode} onChange={handleZipCodeChange} type="text" name="zipcode" id="zipcode" placeholder="00000-000" minLength="9" maxLength="9" required ref={zipCodeRef} />
         </div>
 
-        <div className={style.field} ref={dropdownRef}>
-          <p className={style.label}>O que deseja descartar?</p>
-          <button className={style.dropdownButton} type="button" aria-expanded={isDropdownOpen} aria-controls="dropdown-content" id="dropdown-button" onClick={handleDropdown} ref={dropdownButtonRef}>
+        <div className="field" ref={dropdownRef}>
+          <p className="label">O que deseja descartar?</p>
+          <button className="dropdownButton" type="button" aria-expanded={isDropdownOpen} aria-controls="dropdown-content" id="dropdown-button" onClick={handleDropdown} ref={dropdownButtonRef}>
             {handleDropdownLabel()}
           </button>
-          <div className={style.dropdownContent} aria-hidden={!isDropdownOpen} aria-labelledby="dropdown-button" id="dropdown-content" role="dialog">
+          <div className="dropdownContent" aria-hidden={!isDropdownOpen} aria-labelledby="dropdown-button" id="dropdown-content" role="dialog">
             {categories.map(({ id, label }) => (
-              <div className={style.field} key={id}>
+              <div className="field" key={id}>
                 <input type="checkbox" name={label} id={id} onChange={handleCheckboxChange} />
                 <label htmlFor={id}>{label}</label>
               </div>
@@ -188,7 +191,7 @@ const SearchForm = ({ userZipCode = '', userSelectedCategories = [] }) => {
         </div>
         <footer>
           <button className="button button--primary" type="submit">
-            Buscar por locais
+            Pesquisar
           </button>
           <div role="alert" aria-live="assertive" aria-atomic="true" className={style.errors}>
             {isFormValid === false && (

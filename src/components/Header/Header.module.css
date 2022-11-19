@@ -1,29 +1,16 @@
 .header {
-  position: absolute;
-  width: 100%;
 }
 
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem;
+  padding: var(--spacing-md) var(--side-padding) 3vh;
 }
 
 .brand {
   position: relative;
   z-index: var(--z-index-xl);
-}
-
-.corner {
-  margin-right: 1rem;
-  margin-left: auto;
-}
-
-@media (max-width: 480[x]) {
-  .corner {
-    display: none;
-  }
 }
 
 /*  */
