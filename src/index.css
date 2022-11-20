@@ -20,6 +20,7 @@
 
 html {
   block-size: 100%; /* Allow percentage-based heights in the application */
+  scroll-behavior: smooth; /* Smooth scrolling */
   -webkit-text-size-adjust: none; /* Making sure text size is only controlled by font-size */
 }
 
