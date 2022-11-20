@@ -68,6 +68,14 @@ const Header = () => {
     return () => document.removeEventListener('keydown', handleFocus);
   }, [isNavbarOpen]);
 
+  /**
+   * Close after clicking on a link.
+   */
+
+  const handleLinkClick = () => {
+    setIsNavbarOpen(false);
+  };
+
   return (
     <header className={style.header}>
       <div className="container">
@@ -82,23 +90,28 @@ const Header = () => {
             </button>
             <ul className={style.menuList} aria-label="Menu" role="menu">
               <li className={style.menuListItem}>
-                <a className={`link ${style.menuListLink}`} href="/">
-                  Sobre o projeto
+                <a className={`link ${style.menuListLink}`} href="/" onClick={handleLinkClick}>
+                  Início
                 </a>
               </li>
               <li className={style.menuListItem}>
-                <a className={`link ${style.menuListLink}`} href="/">
-                  O que são lixos eletrônicos
+                <a className={`link ${style.menuListLink}`} href="/#por-que-reciclar" onClick={handleLinkClick}>
+                  Por que reciclar?
                 </a>
               </li>
               <li className={style.menuListItem}>
-                <a className={`link ${style.menuListLink}`} href="mailto:recicla.ai.sorocaba@gmail.com">
+                <a className={`link ${style.menuListLink}`} href="/#" onClick={handleLinkClick}>
+                  Onde descartar?
+                </a>
+              </li>
+              <li className={style.menuListItem}>
+                <a className={`link ${style.menuListLink}`} href="https://google.com/" target="_blank" rel="noopener" onClick={handleLinkClick}>
+                  Como coletar?
+                </a>
+              </li>
+              <li className={style.menuListItem}>
+                <a className={`link ${style.menuListLink}`} href="mailto:recicla.ai.sorocaba@gmail.com" onClick={handleLinkClick}>
                   Contato
-                </a>
-              </li>
-              <li className={style.menuListItem}>
-                <a className={`link ${style.menuListLink}`} href="/">
-                  Cadastre-se
                 </a>
               </li>
             </ul>

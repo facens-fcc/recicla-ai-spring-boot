@@ -65,9 +65,9 @@
 }
 
 [data-menu-open='true'] .menuList {
-  background-color: rgba(0, 0, 0, 0.85);
+  background: var(--bg-black-noise);
   display: grid;
-  place-content: center;
+  align-content: center;
 
   height: 100vh;
   width: 100vw;
@@ -76,11 +76,23 @@
   position: absolute;
   top: 0;
   left: 50%;
-  z-index: 1;
+  z-index: 3;
 
-  text-align: center;
+  text-align: right;
 }
 
 [data-menu-open='true'] .menuListLink {
   color: var(--color-white);
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+
+  width: 80%;
+  margin: auto;
+  display: block;
+}
+
+[data-menu-open='true'] .menuListLink:hover {
+  color: var(--color-orange);
 }
