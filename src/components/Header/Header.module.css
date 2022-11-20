@@ -82,5 +82,5 @@
 }
 
 [data-menu-open='true'] .menuListLink {
-  color: var(--color-neutral-100);
+  color: var(--color-white);
 }

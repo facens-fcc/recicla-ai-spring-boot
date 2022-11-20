@@ -8,13 +8,17 @@
 
   padding: var(--spacing-md);
   display: grid;
+  gap: var(--spacing-md);
   align-items: center;
-  grid-template-columns: 23.5rem 1fr;
+  grid-template-columns: 3fr 5fr;
+
+  position: relative;
+  z-index: 1;
 }
 
 .form {
   display: grid;
-  gap: 1.5rem;
+  gap: var(--spacing-sm);
   grid-template-columns: 1fr 1fr auto;
   align-items: flex-end;
 }
@@ -22,7 +26,8 @@
 .content {
 }
 
-@media (max-width: 60rem) {
+@media (max-width: 61.25rem) {
+  .box,
   .form {
     grid-template-columns: 1fr;
   }

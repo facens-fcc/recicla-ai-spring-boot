@@ -75,23 +75,15 @@ a {
 /* ======================================================================== */
 
 :root {
-  --color-primary: #298435;
-  --color-primary-light: #298435;
   --color-black: #000000;
-
+  --color-white: #ffffff;
   --color-orange: #ffac52;
+  --color-sand: #efe0d6;
 
   --bg-sand: linear-gradient(102.34deg, #efe0d6 0%, #fff7eb 100%);
-  --bg-orange-noise: url(./assets/pattern-orange.png) repeat, var(--color-orange);
-  --bg-sand-noise: url(./assets/pattern-sand.png) repeat;
-
-  --color-neutral-100: #fff;
-  --color-neutral-200: #f2f2f2;
-  --color-neutral-300: #eaeaea;
-  --color-neutral-400: #999;
-  --color-neutral-500: #666;
-  --color-neutral-600: #333;
-  --color-neutral-700: #000;
+  --bg-orange-noise: url(./assets/pattern-black.png) repeat, var(--color-orange);
+  --bg-sand-noise: url(./assets/pattern-black.png) repeat, var(--bg-sand);
+  --bg-black-noise: url(./assets/pattern-white.png) repeat, var(--color-black);
 
   --spacing-xxs: 0.25rem;
   --spacing-xs: 0.5rem;
@@ -128,9 +120,9 @@ a {
 body {
   background: var(--bg-sand-noise);
   color: var(--color-black);
-  font-family: 'Work Sans', sans-serif;
-  font-size: 1.125rem;
-  line-height: 1.7;
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 /**
@@ -211,18 +203,14 @@ body {
 
 .display {
   font-family: 'DM Serif Display', serif;
-  font-size: calc(4rem + 2vw);
+  font-size: clamp(3rem, -1rem + 8.5vw, 5.5rem);
   line-height: 0.9;
   text-align: center;
   order: 2;
 }
 
-.display--light {
-  color: #fff;
-}
-
-.display--dark {
-  color: #000;
+.display--large {
+  font-size: clamp(4rem, -1rem + 10vw, 10rem);
 }
 
 /**
@@ -234,19 +222,6 @@ body {
   font-size: 1.5rem;
   font-weight: normal;
   line-height: 110%;
-}
-
-/**
- *
- */
-
-.link {
-  text-decoration: none;
-}
-
-.link--highlight {
-  color: var(--color-primary);
-  font-weight: bold;
 }
 
 /**
@@ -347,10 +322,6 @@ body {
   background-size: contain;
 }
 
-.dropdownButton[aria-expanded='true'] {
-  border-radius: 0.5rem 0.5rem 0 0;
-}
-
 .dropdownButton[aria-expanded='true']::after {
   transform: translateY(-50%) rotate(180deg);
 }
@@ -360,9 +331,15 @@ body {
 }
 
 .dropdownContent {
-  background: var(--color-neutral-300);
-  border-radius: 0 0 0.5rem 0.5rem;
-  padding: 0 1.5rem 1.5rem;
+  background: var(--bg-sand-noise);
+  border: 1px solid var(--color-black);
+  border-radius: var(--radius-md);
+  padding: 1em;
   width: 100%;
   position: absolute;
+  margin-top: 0.5rem;
 }
+
+/**
+ *
+ */

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import style from './ResultsList.module.css';
 
 import Companies from '../../data/companies.json';
 import Card from '../../components/Card/Card';
@@ -60,11 +61,18 @@ const ResultsList = ({ userSelectedCategories = [], userCoordinates = [] }) => {
   });
 
   return (
-    <div>
-      {filteredCompanies.map((company) => (
-        <Card key={company.id} company={company} />
-      ))}
-    </div>
+    <>
+      <p className={style.counter}>
+        {filteredCompanies.length} {filteredCompanies.length === 1 ? 'resultado' : 'resultados'} encontrados
+      </p>
+      <ul className={style.list}>
+        {filteredCompanies.map((company) => (
+          <li className={style.listItem} key={company.id}>
+            <Card company={company} />
+          </li>
+        ))}
+      </ul>
+    </>
   );
 };
 
