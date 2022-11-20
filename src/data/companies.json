@@ -11,8 +11,8 @@
       "city": "Sorocaba",
       "state": "São Paulo",
       "zip_code": "18060-630",
-      "lat": "",
-      "lng": ""
+      "lat": "-23.4973243",
+      "lng": "-47.4826211"
     },
     "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Acessórios de informática"]
   },
@@ -28,8 +28,8 @@
       "city": "Sorocaba",
       "state": "São Paulo",
       "zip_code": "18025-280",
-      "lat": "",
-      "lng": ""
+      "lat": "-23.5157219",
+      "lng": "-47.4382419"
     },
     "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Acessórios de informática"]
   },
@@ -45,8 +45,8 @@
       "city": "Sorocaba",
       "state": "São Paulo",
       "zip_code": "18078-395",
-      "lat": "",
-      "lng": ""
+      "lat": "-23.4289349",
+      "lng": "-47.4561666"
     },
     "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Acessórios de informática"]
   },
@@ -62,8 +62,8 @@
       "city": "Sorocaba",
       "state": "São Paulo",
       "zip_code": "18085-460",
-      "lat": "",
-      "lng": ""
+      "lat": "-23.4723075",
+      "lng": "-47.4392272"
     },
     "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Acessórios de informática"]
   },
@@ -79,8 +79,8 @@
       "city": "Sorocaba",
       "state": "São Paulo",
       "zip_code": "18025-000",
-      "lat": "",
-      "lng": ""
+      "lat": "-23.5132873",
+      "lng": "-47.4472793"
     },
     "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Acessórios de informática", "Notebook, computadores e vídeos games"]
   },
@@ -96,8 +96,8 @@
       "city": "Sorocaba",
       "state": "São Paulo",
       "zip_code": "18071-325",
-      "lat": "",
-      "lng": ""
+      "lat": "-23.467163",
+      "lng": "-47.505694"
     },
     "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Acessórios de informática", "Notebook, computadores e vídeos games"]
   },
@@ -113,8 +113,8 @@
       "city": "Sorocaba",
       "state": "São Paulo",
       "zip_code": "18020-242",
-      "lat": "",
-      "lng": ""
+      "lat": "-23.5087363",
+      "lng": "-47.4427354"
     },
     "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Acessórios de informática", "Notebook, computadores e vídeos games"]
   },
@@ -130,8 +130,8 @@
       "city": "Sorocaba",
       "state": "São Paulo",
       "zip_code": "18071-801",
-      "lat": "",
-      "lng": ""
+      "lat": "-23.4793839",
+      "lng": "-47.4829895"
     },
     "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Acessórios de informática"]
   },
@@ -147,8 +147,8 @@
       "city": "Sorocaba",
       "state": "São Paulo",
       "zip_code": "18074-621",
-      "lat": "",
-      "lng": ""
+      "lat": "-23.4495",
+      "lng": "-47.4893015"
     },
     "categories": ["Acessórios de informática", "Notebook, computadores e vídeos games"]
   },
@@ -181,8 +181,8 @@
       "city": "Sorocaba",
       "state": "São Paulo",
       "zip_code": "18066-200",
-      "lat": "",
-      "lng": ""
+      "lat": "-23.4768362",
+      "lng": "-47.4933206"
     },
     "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Acessórios de informática"]
   },
@@ -198,8 +198,8 @@
       "city": "Sorocaba",
       "state": "São Paulo",
       "zip_code": "18108-000",
-      "lat": "",
-      "lng": ""
+      "lat": "-23.5072698",
+      "lng": "-47.3688862"
     },
     "categories": ["Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Acessórios de informática"]
   },
@@ -215,8 +215,8 @@
       "city": "Sorocaba",
       "state": "São Paulo",
       "zip_code": "18010-190",
-      "lat": "",
-      "lng": ""
+      "lat": "-23.4976431",
+      "lng": "-47.4577734"
     },
     "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Acessórios de informática"]
   },
@@ -266,8 +266,8 @@
       "city": "Sorocaba",
       "state": "São Paulo",
       "zip_code": "18078-005",
-      "lat": "",
-      "lng": ""
+      "lat": "-23.4540606",
+      "lng": "-47.4824502"
     },
     "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Acessórios de informática"]
   },
@@ -283,8 +283,8 @@
       "city": "Sorocaba",
       "state": "São Paulo",
       "zip_code": "18010-160",
-      "lat": "",
-      "lng": ""
+      "lat": "-23.4997697",
+      "lng": "-47.4585753"
     },
     "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Acessórios de informática"]
   },
@@ -300,8 +300,8 @@
       "city": "Sorocaba",
       "state": "São Paulo",
       "zip_code": "18035-110",
-      "lat": "",
-      "lng": ""
+      "lat": "-23.4996998",
+      "lng": "-47.4639032"
     },
     "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Acessórios de informática"]
   },
@@ -317,8 +317,8 @@
       "city": "Votorantim",
       "state": "São Paulo",
       "zip_code": "18112-180",
-      "lat": "",
-      "lng": ""
+      "lat": "-23.527338",
+      "lng": "-47.4306048"
     },
     "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Acessórios de informática"]
   },
@@ -334,8 +334,8 @@
       "city": "Sorocaba",
       "state": "São Paulo",
       "zip_code": "18020-216",
-      "lat": "",
-      "lng": ""
+      "lat": "-23.5047759",
+      "lng": "-47.4485801"
     },
     "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Acessórios de informática"]
   },
@@ -419,8 +419,8 @@
       "city": "Sorocaba",
       "state": "São Paulo",
       "zip_code": "18090-002",
-      "lat": "",
-      "lng": ""
+      "lat": "-23.4892743",
+      "lng": "-47.4400011"
     },
     "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Acessórios de informática"]
   },
@@ -470,8 +470,8 @@
       "city": "Sorocaba",
       "state": "São Paulo",
       "zip_code": "18119-055",
-      "lat": "",
-      "lng": ""
+      "lat": "-23.5376123",
+      "lng": "-47.5023073"
     },
     "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Acessórios de informática"]
   },
@@ -487,8 +487,8 @@
       "city": "Sorocaba",
       "state": "São Paulo",
       "zip_code": "18047-620",
-      "lat": "",
-      "lng": ""
+      "lat": "-23.5217748",
+      "lng": "-47.46481559999999"
     },
     "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Acessórios de informática"]
   },
@@ -503,9 +503,9 @@
       "district": "Vila Hortênia",
       "city": "Sorocaba",
       "state": "São Paulo",
-      "zip_code": "18020-003.",
-      "lat": "",
-      "lng": ""
+      "zip_code": "18020-003",
+      "lat": "-23.5120483",
+      "lng": "-47.4328786"
     },
     "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Acessórios de informática"]
   },
@@ -520,9 +520,9 @@
       "district": "Jardim Faculdade",
       "city": "Sorocaba",
       "state": "São Paulo",
-      "zip_code": "18030-160.",
-      "lat": "",
-      "lng": ""
+      "zip_code": "18030-160",
+      "lat": "-23.512181",
+      "lng": "-47.4611259"
     },
     "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Acessórios de informática"]
   } 
