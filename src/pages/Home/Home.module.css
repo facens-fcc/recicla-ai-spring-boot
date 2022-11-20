@@ -8,54 +8,60 @@
 }
 
 .hero__form {
-  margin-top: var(--spacing-xl);
+  margin-top: clamp(var(--spacing-lg), 5vw, var(--spacing-xl));
 }
 
 /* 
  *
  */
 
-.quote {
+.whyRecycle {
   padding: 8rem var(--side-padding);
   text-align: center;
 }
 
-.quote__text {
+.whyRecycle__quote {
+}
+
+.whyRecycle__quote__content {
   max-width: 28ch;
   margin: auto;
 }
 
-.quote__source {
+.whyRecycle__quote__source {
   font-size: 0.875rem;
   margin-top: var(--spacing-md);
 }
 
-.quote__text__highlight {
+.whyRecycle__quote__highlight {
   position: relative;
+  display: inline-flex;
+  align-items: center;
+  align-content: center;
   padding: 0 0.25em;
 }
 
-.quote__text__highlight::before,
-.quote__text__highlight::after {
+.whyRecycle__quote__highlight::before,
+.whyRecycle__quote__highlight::after {
   content: '';
   position: absolute;
 }
 
-.quote__text__highlight::before {
+.whyRecycle__quote__highlight::before {
   border: 2px solid var(--color-black);
   border-radius: 100rem;
 
   width: 100%;
-  height: 70%;
-  margin: 0.5rem auto;
+  height: 100%;
+  margin: auto;
 
-  top: 10%;
+  top: 55%;
   left: 50%;
   z-index: 1;
-  transform: translate(-50%, 0%);
+  transform: translate(-50%, -50%);
 }
 
-.quote__text__highlight::after {
+.whyRecycle__quote__highlight::after {
   background: radial-gradient(50% 50% at 50% 50%, #ffac52 0%, rgba(255, 172, 82, 0) 99.99%, rgba(255, 172, 82, 0) 100%);
 
   width: 150%;
@@ -76,19 +82,28 @@
   background: var(--bg-black-noise);
   color: var(--color-white);
   padding: 8rem var(--side-padding) 0;
+  position: relative;
 }
 
-.worldCount__text {
+.worldCount__quote {
 }
 
-.worldCount__title {
+.worldCount__quote__title {
   margin: 0 auto clamp(var(--spacing-lg), 5vw, var(--spacing-xxl));
   max-width: 28ch;
 }
 
-.worldCount__number {
+.worldCount__quote__text {
+}
+
+.worldCount__quote__number {
   color: var(--color-orange);
   margin-top: clamp(var(--spacing-lg), 5vw, var(--spacing-xxl));
+}
+
+.worldCount__quote__source {
+  text-align: center;
+  margin-top: var(--spacing-md);
 }
 
 .worldCount__earth {
@@ -107,6 +122,7 @@
   height: 100%;
   object-fit: cover;
   object-position: top center;
+  animation: float 8s ease-in-out infinite;
 }
 
 .worldCount__earth__text {
@@ -117,6 +133,18 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-1.25rem);
+  }
+  100% {
+    transform: translatey(0px);
+  }
 }
 
 /* 
@@ -131,14 +159,11 @@
 
 .benefits__list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(40ch, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
   gap: var(--spacing-lg);
 }
 
 .benefits__item {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--spacing-xs);
   padding-left: 2.5rem;
   position: relative;
 }
@@ -151,4 +176,10 @@
   left: 0;
   top: 3%;
   background: url('../../assets/check.svg') no-repeat center center;
+}
+
+.benefits__item__description {
+  color: var(--color-sand);
+  margin-top: var(--spacing-xs);
+  opacity: 0.65;
 }
