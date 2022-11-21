@@ -33,3 +33,7 @@
   align-items: center;
   gap: var(--spacing-sm);
 }
+
+.card__list {
+  max-width: 34ch;
+}

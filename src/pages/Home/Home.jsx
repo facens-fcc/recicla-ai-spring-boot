@@ -22,7 +22,6 @@ const Home = () => {
             —<cite>World Economic Forum</cite>
           </figcaption>
         </figure>
-        <h2></h2>
       </section>
 
       <section className={style.worldCount}>

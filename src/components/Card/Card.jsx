@@ -31,9 +31,9 @@ const Card = ({ company }) => {
         )}
       </div>
       <div className={style.card__body}>
-        <ul className="checklist checklist--black">
-          {payment && <li>Pagamento em troca do lixo</li>}
-          {residential_collection && <li>Retira em residência</li>}
+        <ul className={`${style.card__list} checklist checklist--black`}>
+          {payment && <li>Possibilidade de pagamento em troca do lixo descartado</li>}
+          {residential_collection && <li>Retirada em residência (a consultar)</li>}
         </ul>
       </div>
       <div className={style.card__footer}>
