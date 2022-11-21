@@ -18,7 +18,6 @@ const Search = ({ userZipCode = '', userSelectedCategories = [] }) => {
 
   const [isFormValid, setFormValid] = useState();
 
-  const [address, setAddress] = useState(null);
   const [coordinates, setCoordinates] = useState(null);
 
   useEffect(() => {
@@ -125,11 +124,9 @@ const Search = ({ userZipCode = '', userSelectedCategories = [] }) => {
       .then((data) => {
         if (data.status === 'OK') {
           setZipCodeValid(true);
-          setAddress(data.results[0].formatted_address);
           setCoordinates(data.results[0].geometry.location);
         } else {
           setZipCodeValid(false);
-          setAddress(null);
           setCoordinates(null);
         }
       })
@@ -158,7 +155,7 @@ const Search = ({ userZipCode = '', userSelectedCategories = [] }) => {
 
     if (isZipCodeValid && isCategoryValid) {
       setFormValid(true);
-      window.location.href = `/onde-descartar?zipCode=${zipCode}&lat=${coordinates.lat}&lng=${coordinates.lng}&categories=${selectedCategories}&address=${address}`;
+      window.location.href = `/onde-descartar?zipCode=${zipCode}&lat=${coordinates.lat}&lng=${coordinates.lng}&categories=${selectedCategories}`;
     }
   };
 

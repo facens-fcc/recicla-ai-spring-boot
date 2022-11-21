@@ -11,12 +11,10 @@ const OndeDescartar = () => {
 
   const userSelectedCategories = queryParams.get('categories') ? queryParams.get('categories').split(',') : [];
   const userCoordinates = queryParams.get('lat') ? [queryParams.get('lat'), queryParams.get('lng')] : [];
-
-  const userAddress = queryParams.get('address') ? queryParams.get('address') : '';
   const userZipCode = queryParams.get('zipCode') ? queryParams.get('zipCode') : '';
 
   useEffect(() => {
-    if (userSelectedCategories.length > 0 || userZipCode.length > 0 || userAddress.length > 0 || userCoordinates.length > 0) {
+    if (userSelectedCategories.length > 0 || userZipCode.length > 0 || userCoordinates.length > 0) {
       setIsFiltered(true);
     }
   }, []);
