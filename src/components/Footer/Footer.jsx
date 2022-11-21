@@ -6,12 +6,12 @@ const Footer = () => {
   const isHomePage = window.location.pathname === '/';
 
   return (
-    <footer className={`${style.footer} ${isHomePage ? style.footerBlack : ''}`}>
-      <div className="container">
-        <div className={style.footer__inner}>
+    <footer className={`${style.footer} ${isHomePage ? style.footerDark : ''}`}>
+      <div className="container container--narrow">
+        <div className={style.footer__wrapper}>
           <Brand />
           <div className={style.footer__about}>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam quos facere in quidem iusto rerum consequatur facilis neque ut amet ipsum obcaecati, dicta iste nihil optio distinctio rem dolores error.</p>
+            <p>A Recicla Aí nasceu com intuito de contribuir com a sustentabilidade e, tendo como inspiração os Objetivos de Desenvolvimento Sustentável (ODS), desenvolvemos uma plataforma de informações sobre locais de descarte de lixo eletrônico nacidade de Sorocaba.</p>
           </div>
         </div>
       </div>

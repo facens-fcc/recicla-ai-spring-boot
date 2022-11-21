@@ -1,4 +1,25 @@
 .footer {
-    text-align: center;
-    padding: 2rem;
+  padding: var(--spacing-md) var(--side-padding) var(--spacing-xl);
+}
+
+.footerDark {
+  background: var(--bg-black-noise);
+  color: var(--color-white);
+}
+
+.footer__wrapper {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-md) var(--spacing-xl);
+}
+
+.footer__about {
+  font-size: 0.875rem;
+}
+
+@media (min-width: 768px) {
+  .footer__wrapper {
+    grid-template-columns: auto 1fr;
+  }
 }
