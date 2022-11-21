@@ -1,14 +1,11 @@
-.counter {
+.results__counter {
   text-align: center;
   margin-top: var(--spacing-lg);
 }
 
-.list {
+.results__list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   gap: 1rem;
   margin-top: var(--spacing-md);
-}
-
-.listItem {
 }

@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import style from './ResultsList.module.css';
+import style from './Results.module.css';
 
 import Companies from '../../data/companies.json';
-import Card from '../../components/Card/Card';
+import Card from '../Card/Card';
 
-const ResultsList = ({ userSelectedCategories = [], userCoordinates = [] }) => {
+const Results = ({ userSelectedCategories = [], userCoordinates = [] }) => {
   const [categories, setCategories] = useState([]);
   const [companies, setCompanies] = useState(Companies);
   const [filteredCompanies, setFilteredCompanies] = useState([]);
@@ -62,22 +62,20 @@ const ResultsList = ({ userSelectedCategories = [], userCoordinates = [] }) => {
 
   return (
     <>
-      <p className={style.counter}>
+      <p className={style.results__counter}>
         Encontramos{' '}
         <strong>
           {filteredCompanies.length} {filteredCompanies.length === 1 ? 'local' : 'locais'}
         </strong>{' '}
         próximos a você!
       </p>
-      <ul className={style.list}>
+      <ul className={style.results__list}>
         {filteredCompanies.map((company) => (
-          <li className={style.listItem} key={company.id}>
-            <Card company={company} />
-          </li>
+          <Card key={company.id} company={company} />
         ))}
       </ul>
     </>
   );
 };
 
-export default ResultsList;
+export default Results;

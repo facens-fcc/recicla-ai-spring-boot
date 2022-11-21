@@ -5,7 +5,7 @@ const Card = ({ company }) => {
   const { name, address, whatsapp, phone } = company;
 
   return (
-    <div className={style.card}>
+    <li className={style.card}>
       <div className={style.card__header}>
         <h3 className={`${style.card__title} heading`}>{name}</h3>
         <p>{address.distance < 1 ? `${Math.round(address.distance * 1000)}m` : `${address.distance.toFixed(2)}km`} de distância</p>
@@ -34,7 +34,7 @@ const Card = ({ company }) => {
           </a>
         )}
       </div>
-    </div>
+    </li>
   );
 };
 
