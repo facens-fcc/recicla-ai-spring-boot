@@ -112,7 +112,7 @@ const Header = () => {
                     </a>
                   </li>
                   <li className={style.menu__list__item}>
-                    <a className={`link ${style.menu__list__link}`} href="mailto:recicla.ai.sorocaba@gmail.com" onClick={handleLinkClick}>
+                    <a className={`link ${style.menu__list__link}`} href="https://docs.google.com/forms/d/e/1FAIpQLSfhJKpZWB0m6akjqDgRwUry90EeyU3IfTmV_1WsCVZpwxA0Lg/viewform" target="_blank" rel="noopener" onClick={handleLinkClick}>
                       Contato
                     </a>
                   </li>
