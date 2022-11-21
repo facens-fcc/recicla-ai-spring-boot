@@ -277,6 +277,25 @@ strong {
  *
  */
 
+.link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  gap: var(--spacing-xxs);
+}
+
+/**
+ *
+ */
+
+.icon {
+  width: 1.125rem;
+}
+
+/**
+ *
+ */
+
 :where(.checklist) {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));

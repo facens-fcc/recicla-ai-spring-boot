@@ -1,6 +1,8 @@
 import React from 'react';
 import style from './Card.module.css';
 
+import iconEnvironment from '../../assets/environment.svg';
+
 const Card = ({ company }) => {
   const { name, address, whatsapp, phone } = company;
 
@@ -21,7 +23,8 @@ const Card = ({ company }) => {
         </ul>
       </div>
       <div className={style.card__footer}>
-        <a href={`https://www.google.com/maps/search/?api=1&query=${address.lat},${address.lng}`} target="_blank" rel="noreferrer">
+        <a className="link" href={`https://www.google.com/maps/search/?api=1&query=${address.lat},${address.lng}`} target="_blank" rel="noreferrer">
+          <img className="icon" src={iconEnvironment} alt="Icone de localização" />
           Ver no mapa
         </a>
         {whatsapp ? (
