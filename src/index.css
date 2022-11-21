@@ -224,6 +224,10 @@ strong {
   order: 2;
 }
 
+.display--small {
+  font-size: clamp(4rem, -1rem + 10vw, 4rem);
+}
+
 .display--large {
   font-size: clamp(4rem, -1rem + 10vw, 10rem);
 }

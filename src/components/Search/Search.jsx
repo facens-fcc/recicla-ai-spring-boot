@@ -160,46 +160,48 @@ const Search = ({ userZipCode = '', userSelectedCategories = [] }) => {
   };
 
   return (
-    <div className={style.search__box}>
-      <div className={style.search__content}>
-        <h2 className="heading">Descarte o seu lixo eletrônicos e eletrodométiscos em Sorocaba</h2>
-      </div>
-      <form className={style.search__form} method="GET" onSubmit={handleSubmit}>
-        <div className="field">
-          <label className="label" htmlFor="zipcode">
-            Qual é a sua localização?
-          </label>
-          <input className="input" value={zipCode} onChange={handleZipCodeChange} type="text" name="zipcode" id="zipcode" placeholder="00000-000" minLength="9" maxLength="9" required ref={zipCodeRef} />
+    <div className={style.search}>
+      <div className={style.search__box}>
+        <div className={style.search__content}>
+          <h2 className="heading">Encontre pontos de coleta próximos a você para descartar seus resíduos</h2>
         </div>
+        <form className={style.search__form} method="GET" onSubmit={handleSubmit}>
+          <div className="field">
+            <label className="label" htmlFor="zipcode">
+              Qual é a sua localização?
+            </label>
+            <input className="input" value={zipCode} onChange={handleZipCodeChange} type="text" name="zipcode" id="zipcode" placeholder="00000-000" minLength="9" maxLength="9" required ref={zipCodeRef} />
+          </div>
 
-        <div className="field" ref={dropdownRef}>
-          <p className="label">O que deseja descartar?</p>
-          <button className="dropdownButton" type="button" aria-expanded={isDropdownOpen} aria-controls="dropdown-content" id="dropdown-button" onClick={handleDropdown} ref={dropdownButtonRef}>
-            {handleDropdownLabel()}
-          </button>
-          <div className="dropdownContent" aria-hidden={!isDropdownOpen} aria-labelledby="dropdown-button" id="dropdown-content" role="dialog">
-            {categories.map(({ id, label }) => (
-              <div className="field" key={id}>
-                <input type="checkbox" name={label} id={id} onChange={handleCheckboxChange} />
-                <label htmlFor={id}>{label}</label>
-              </div>
-            ))}
+          <div className="field" ref={dropdownRef}>
+            <p className="label">O que deseja descartar?</p>
+            <button className="dropdownButton" type="button" aria-expanded={isDropdownOpen} aria-controls="dropdown-content" id="dropdown-button" onClick={handleDropdown} ref={dropdownButtonRef}>
+              {handleDropdownLabel()}
+            </button>
+            <div className="dropdownContent" aria-hidden={!isDropdownOpen} aria-labelledby="dropdown-button" id="dropdown-content" role="dialog">
+              {categories.map(({ id, label }) => (
+                <div className="field" key={id}>
+                  <input type="checkbox" name={label} id={id} onChange={handleCheckboxChange} />
+                  <label htmlFor={id}>{label}</label>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-        <footer>
-          <button className="button button--primary" type="submit">
-            Pesquisar
-          </button>
-          <div role="alert" aria-live="assertive" aria-atomic="true" className={style.search__errors}>
-            {isFormValid === false && (
-              <ul className={style.search__errors__list}>
-                {!isZipCodeValid && <li className={style.search__errors__item}>⚠️ Digite um CEP válido.</li>}
-                {!isCategoryValid && <li className={style.search__errors__item}>⚠️ Selecione pelo menos um tipo de resíduo.</li>}
-              </ul>
-            )}
-          </div>
-        </footer>
-      </form>
+          <footer>
+            <button className="button button--primary" type="submit">
+              Pesquisar
+            </button>
+            <div role="alert" aria-live="assertive" aria-atomic="true" className={style.search__errors}>
+              {isFormValid === false && (
+                <ul className={style.search__errors__list}>
+                  {!isZipCodeValid && <li className={style.search__errors__item}>⚠️ Digite um CEP válido.</li>}
+                  {!isCategoryValid && <li className={style.search__errors__item}>⚠️ Selecione pelo menos um tipo de resíduo.</li>}
+                </ul>
+              )}
+            </div>
+          </footer>
+        </form>
+      </div>
     </div>
   );
 };

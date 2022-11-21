@@ -8,10 +8,7 @@ const Home = () => {
     <main className="main">
       <section className={style.hero}>
         <div className="container">
-          <h1 className="visually-hidden">Descubra onde descatar lixos eletrônicos em Sorocaba</h1>
-          <h2 className="display">
-            Use e recicle, <br /> Não desperdice!
-          </h2>
+          <h1 className={`display display--small ${style.hero__title}`}>Descarte o seu lixo eletrônico de forma consciente em Sorocaba</h1>
           <Search />
         </div>
       </section>
@@ -31,8 +28,8 @@ const Home = () => {
       <section className={style.worldCount}>
         <figure className={style.worldCount__quote}>
           <blockquote className={style.quote__content} cite="https://www.theworldcounts.com/challenges/waste/electronic-waste-facts">
-            <p className={`${style.worldCount__quote__title} display`}>Toneladas de lixo eletrônico são jogadas fora no mundo todo</p>
-            <p className={`${style.worldCount__quote__text} display`}>...sendo mais preciso</p>
+            <p className={`${style.worldCount__quote__title} display`}>Por ano, toneladas de lixo eletrônico são jogadas fora no mundo todo</p>
+            <p className={`${style.worldCount__quote__text} display`}>...mais precisamente</p>
             <p className={`${style.worldCount__quote__number} display display--large`}>50.000.000t</p>
           </blockquote>
           <figcaption className={style.worldCount__quote__source}>
