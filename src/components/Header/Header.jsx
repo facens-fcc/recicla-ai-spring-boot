@@ -105,8 +105,8 @@ const Header = () => {
                 </a>
               </li>
               <li className={style.menuListItem}>
-                <a className={`link ${style.menuListLink}`} href="https://google.com/" target="_blank" rel="noopener" onClick={handleLinkClick}>
-                  Como coletar?
+                <a className={`link ${style.menuListLink}`} href="https://docs.google.com/forms/d/e/1FAIpQLSfgJz_tUJcSYwrfeFvPi2J4R6IVz4XS768srHT82WIm2s_mnw/viewform" target="_blank" rel="noopener" onClick={handleLinkClick}>
+                  Cadastro para empresas
                 </a>
               </li>
               <li className={style.menuListItem}>
