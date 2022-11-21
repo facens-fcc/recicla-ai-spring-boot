@@ -17,7 +17,7 @@ const Home = () => {
       <section className={style.whyRecycle} id="por-que-reciclar">
         <figure className={style.whyRecycle__quote}>
           <blockquote className={`${style.whyRecycle__quote__content} display display--medium`} cite="https://www.theworldcounts.com/challenges/waste/electronic-waste-facts">
-            Mais de <span className="display__hightlight">80%</span> do lixo eletrônico e eletrodométisco não é reciclados
+            Mais de <span className="display__hightlight">80%</span> do lixo eletrônico e eletrodométisco não é reciclado
           </blockquote>
           <figcaption className={style.whyRecycle__quote__source}>
             —<cite>World Economic Forum</cite>
