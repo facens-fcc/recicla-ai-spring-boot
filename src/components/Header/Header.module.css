@@ -52,15 +52,18 @@
 
 /*  */
 
-.menu__list {
+.menu__wrapper {
   display: none;
+}
+
+.menu__list {
 }
 
 .menu__list__item {
   padding: 0.5rem;
 }
 
-[data-menu-open='true'] .menu__list {
+[data-menu-open='true'] .menu__wrapper {
   background: var(--bg-black-noise);
   display: grid;
   align-content: center;
@@ -84,7 +87,6 @@
   text-decoration: none;
   transition: color 0.3s ease-in-out;
 
-  width: 80%;
   margin: auto;
   display: block;
 }

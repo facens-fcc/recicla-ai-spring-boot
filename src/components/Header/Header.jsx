@@ -88,33 +88,37 @@ const Header = () => {
               <span className={style.menu__toggle__line} />
               <span className={style.menu__toggle__line} />
             </button>
-            <ul className={style.menu__list} aria-label="Menu" role="menu">
-              <li className={style.menu__list__item}>
-                <a className={`link ${style.menu__list__link}`} href="/" onClick={handleLinkClick}>
-                  Início
-                </a>
-              </li>
-              <li className={style.menu__list__item}>
-                <a className={`link ${style.menu__list__link}`} href="/#por-que-reciclar" onClick={handleLinkClick}>
-                  Por que reciclar?
-                </a>
-              </li>
-              <li className={style.menu__list__item}>
-                <a className={`link ${style.menu__list__link}`} href="/onde-descartar/" onClick={handleLinkClick}>
-                  Onde descartar?
-                </a>
-              </li>
-              <li className={style.menu__list__item}>
-                <a className={`link ${style.menu__list__link}`} href="https://docs.google.com/forms/d/e/1FAIpQLSfgJz_tUJcSYwrfeFvPi2J4R6IVz4XS768srHT82WIm2s_mnw/viewform" target="_blank" rel="noopener" onClick={handleLinkClick}>
-                  Cadastro para empresas
-                </a>
-              </li>
-              <li className={style.menu__list__item}>
-                <a className={`link ${style.menu__list__link}`} href="mailto:recicla.ai.sorocaba@gmail.com" onClick={handleLinkClick}>
-                  Contato
-                </a>
-              </li>
-            </ul>
+            <div className={style.menu__wrapper} aria-hidden={!isNavbarOpen}>
+              <div className="container">
+                <ul className={style.menu__list} aria-label="Menu" role="menu">
+                  <li className={style.menu__list__item}>
+                    <a className={`link ${style.menu__list__link}`} href="/" onClick={handleLinkClick}>
+                      Início
+                    </a>
+                  </li>
+                  <li className={style.menu__list__item}>
+                    <a className={`link ${style.menu__list__link}`} href="/#por-que-reciclar" onClick={handleLinkClick}>
+                      Por que reciclar?
+                    </a>
+                  </li>
+                  <li className={style.menu__list__item}>
+                    <a className={`link ${style.menu__list__link}`} href="/onde-descartar/" onClick={handleLinkClick}>
+                      Onde descartar?
+                    </a>
+                  </li>
+                  <li className={style.menu__list__item}>
+                    <a className={`link ${style.menu__list__link}`} href="https://docs.google.com/forms/d/e/1FAIpQLSfgJz_tUJcSYwrfeFvPi2J4R6IVz4XS768srHT82WIm2s_mnw/viewform" target="_blank" rel="noopener" onClick={handleLinkClick}>
+                      Cadastro para empresas
+                    </a>
+                  </li>
+                  <li className={style.menu__list__item}>
+                    <a className={`link ${style.menu__list__link}`} href="mailto:recicla.ai.sorocaba@gmail.com" onClick={handleLinkClick}>
+                      Contato
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </nav>
       </div>
