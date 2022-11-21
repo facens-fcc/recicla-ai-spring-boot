@@ -2,6 +2,7 @@ import React from 'react';
 import style from './Home.module.css';
 import Search from '../../components/Search/Search';
 import earth from '../../assets/earth.png';
+import earthDesktop from '../../assets/earth-desktop.png';
 
 const Home = () => {
   return (
@@ -36,7 +37,10 @@ const Home = () => {
           </figcaption>
         </figure>
         <div className={style.worldCount__earth}>
-          <img className={style.worldCount__earth__image} src={earth} alt="Imagem do planeta Terra" loading="lazy" />
+          <picture>
+            <source media="(min-width: 768px)" srcSet={earthDesktop} />
+            <img className={style.worldCount__earth__image} src={earth} alt="Imagem do planeta Terra" loading="lazy" />
+          </picture>
           <p className={`${style.worldCount__earth__text} display display--medium`}>A mudança começa com você</p>
         </div>
       </section>
