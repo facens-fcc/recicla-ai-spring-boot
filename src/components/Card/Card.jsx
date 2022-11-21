@@ -26,7 +26,9 @@ const Card = ({ company }) => {
         </p>
         {phone && (
           <p>
-            <a href={`tel:${formatPhone(phone)}`}>{phone}</a>
+            <a className="link" href={`tel:${formatPhone(phone)}`}>
+              {phone}
+            </a>
           </p>
         )}
       </div>
