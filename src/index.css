@@ -83,7 +83,7 @@ a {
 
   --bg-sand: linear-gradient(102.34deg, #efe0d6 0%, #fff7eb 100%);
   --bg-orange-noise: url(./assets/pattern-black.png) repeat, var(--color-orange);
-  --bg-sand-noise: url(./assets/pattern-black.png) repeat, var(--bg-sand);
+  --bg-sand-noise: url(./assets/pattern-black.png) repeat, var(--color-sand);
   --bg-black-noise: url(./assets/pattern-white.png) repeat, var(--color-black);
 
   --spacing-xxs: 0.25rem;
