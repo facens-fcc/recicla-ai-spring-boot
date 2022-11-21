@@ -4,7 +4,7 @@ import style from './Card.module.css';
 import iconEnvironment from '../../assets/environment.svg';
 
 const Card = ({ company }) => {
-  const { name, address, whatsapp, phone } = company;
+  const { name, address, whatsapp, phone, payment, residential_collection, selective_collection } = company;
 
   return (
     <li className={style.card}>
@@ -17,9 +17,9 @@ const Card = ({ company }) => {
       </div>
       <div className={style.card__body}>
         <ul className="checklist checklist--black">
-          <li>Remuneração</li>
-          <li>Coleta residencial</li>
-          <li>Coleta seletiva</li>
+          {payment && <li>Coleta remunerada</li>}
+          {residential_collection && <li>Coleta residencial</li>}
+          {selective_collection && <li>Coleta seletiva</li>}
         </ul>
       </div>
       <div className={style.card__footer}>
