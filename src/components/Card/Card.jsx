@@ -16,8 +16,6 @@ const Card = ({ company }) => {
     return cleanPhone;
   };
 
-  console.log(phone);
-
   return (
     <li className={style.card}>
       <div className={style.card__header}>
