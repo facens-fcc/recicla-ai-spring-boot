@@ -38,7 +38,7 @@ const Card = ({ company }) => {
       </div>
       <div className={style.card__footer}>
         <a className="link" href={`https://www.google.com/maps/search/?api=1&query=${address.lat},${address.lng}`} target="_blank" rel="noreferrer">
-          <img className="icon" src={iconEnvironment} alt="Icone de localização" />
+          <img className="icon" src={iconEnvironment} alt="Icone de localização" aria-hidden="true" />
           Ver no mapa
         </a>
         {whatsapp ? (
