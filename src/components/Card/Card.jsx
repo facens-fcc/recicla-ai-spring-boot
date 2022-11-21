@@ -22,16 +22,14 @@ const Card = ({ company }) => {
     <li className={style.card}>
       <div className={style.card__header}>
         <h3 className={`${style.card__title} heading`}>{name}</h3>
-        <p>{address.distance < 1 ? `${Math.round(address.distance * 1000)}m` : `${address.distance.toFixed(2)}km`} de distância</p>
+        <p>{address.distance < 1 ? `${Math.round(address.distance * 1000)}m` : `${Math.round(address.distance)}km`} de distância</p>
         <p>
           {address.street}, {address.city}, {address.state}
         </p>
         {phone && (
-          <p>
-            <a className="link" href={`tel:${formatPhone(phone)}`}>
-              {phone}
-            </a>
-          </p>
+          <a className="link" href={`tel:${formatPhone(phone)}`}>
+            {phone}
+          </a>
         )}
       </div>
       <div className={style.card__body}>
