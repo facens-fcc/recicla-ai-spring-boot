@@ -31,7 +31,7 @@ const OndeDescartar = () => {
       <section className={style.archive}>
         <div className="container">
           {isFiltered && <Results userSelectedCategories={userSelectedCategories} userCoordinates={userCoordinates} />}
-          {!isFiltered && <p className={style.archive__message}>Preencha o filtro e mostraremos os locais próximos a você! .</p>}
+          {!isFiltered && <p className={style.archive__message}>Preencha o filtro e mostraremos os locais próximos a você!</p>}
         </div>
       </section>
     </main>
