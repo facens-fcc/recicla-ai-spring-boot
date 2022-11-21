@@ -99,6 +99,7 @@ a {
   --spacing-xxl: 6.5rem;
   --side-padding: 1.5rem;
 
+  --radius-sm: 0.25rem;
   --radius-md: 0.5rem;
   --radius-lg: 1rem;
 
@@ -233,6 +234,47 @@ strong {
 
 .display--large {
   font-size: clamp(4rem, -1rem + 10vw, 10rem);
+}
+
+.display__hightlight {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  align-content: center;
+  padding: 0 0.25em;
+}
+
+.display__hightlight::before,
+.display__hightlight::after {
+  content: '';
+  position: absolute;
+}
+
+.display__hightlight::before {
+  border: 2px solid var(--color-black);
+  border-radius: 100rem;
+
+  width: 100%;
+  height: 100%;
+  margin: auto;
+
+  top: 55%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+}
+
+.display__hightlight::after {
+  background: radial-gradient(50% 50% at 50% 50%, #ffac52 0%, rgba(255, 172, 82, 0) 99.99%, rgba(255, 172, 82, 0) 100%);
+
+  width: 150%;
+  height: 120%;
+  margin: 0.5rem auto;
+
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  transform: translate(-50%, -50%);
 }
 
 @media (max-width: 25rem) {
@@ -406,6 +448,58 @@ strong {
   }
 }
 
-/**
- *
- */
+.checkbox {
+  cursor: pointer;
+  font-size: var(--text-md);
+  user-select: none;
+  position: relative;
+
+  display: flex;
+  gap: var(--spacing-xs);
+  align-items: center;
+}
+
+.checkbox + .checkbox {
+  margin-top: var(--spacing-xxs);
+}
+
+.checkbox__mark {
+  border: 1px solid var(--color-black);
+  border-radius: var(--radius-sm);
+  height: 1.15em;
+  width: 1.15em;
+
+  position: relative;
+  top: 0;
+  left: 0;
+
+  transition: background 0.3s;
+}
+
+.checkbox__input:checked ~ .checkbox__mark {
+  background: var(--bg-orange-noise);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkbox__mark:after {
+  content: '';
+  display: none;
+  position: absolute;
+}
+
+/* Show the checkmark when checked */
+.checkbox__input:checked ~ .checkbox__mark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox .checkbox__mark:after {
+  border: solid currentColor;
+  border-width: 0 0.09em 0.09em 0;
+  width: 0.25em;
+  height: 0.5em;
+
+  left: 0.45em;
+  top: 0.25em;
+  transform: rotate(45deg);
+}
