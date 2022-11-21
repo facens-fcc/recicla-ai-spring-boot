@@ -79,38 +79,38 @@ const Header = () => {
   return (
     <header className={style.header}>
       <div className="container">
-        <nav className={style.nav} data-menu-open={isNavbarOpen} id="navbar">
-          <Brand className={style.brand} />
+        <nav className={style.header__nav} data-menu-open={isNavbarOpen} id="navbar">
+          <Brand />
 
           <div className={style.menu} ref={menuRef}>
-            <button className={style.menuToggle} onClick={handleToggle} aria-expanded={isNavbarOpen} aria-label={isNavbarOpen ? 'Fechar menu' : 'Abrir menu'} aria-haspopup="true" type="button" ref={menuToggleRef}>
-              <span className={style.menuToggleLine} />
-              <span className={style.menuToggleLine} />
-              <span className={style.menuToggleLine} />
+            <button className={style.menu__toggle} onClick={handleToggle} aria-expanded={isNavbarOpen} aria-label={isNavbarOpen ? 'Fechar menu' : 'Abrir menu'} aria-haspopup="true" type="button" ref={menuToggleRef}>
+              <span className={style.menu__toggle__line} />
+              <span className={style.menu__toggle__line} />
+              <span className={style.menu__toggle__line} />
             </button>
-            <ul className={style.menuList} aria-label="Menu" role="menu">
-              <li className={style.menuListItem}>
-                <a className={`link ${style.menuListLink}`} href="/" onClick={handleLinkClick}>
+            <ul className={style.menu__list} aria-label="Menu" role="menu">
+              <li className={style.menu__list__item}>
+                <a className={`link ${style.menu__list__link}`} href="/" onClick={handleLinkClick}>
                   Início
                 </a>
               </li>
-              <li className={style.menuListItem}>
-                <a className={`link ${style.menuListLink}`} href="/#por-que-reciclar" onClick={handleLinkClick}>
+              <li className={style.menu__list__item}>
+                <a className={`link ${style.menu__list__link}`} href="/#por-que-reciclar" onClick={handleLinkClick}>
                   Por que reciclar?
                 </a>
               </li>
-              <li className={style.menuListItem}>
-                <a className={`link ${style.menuListLink}`} href="/onde-descartar/" onClick={handleLinkClick}>
+              <li className={style.menu__list__item}>
+                <a className={`link ${style.menu__list__link}`} href="/onde-descartar/" onClick={handleLinkClick}>
                   Onde descartar?
                 </a>
               </li>
-              <li className={style.menuListItem}>
-                <a className={`link ${style.menuListLink}`} href="https://docs.google.com/forms/d/e/1FAIpQLSfgJz_tUJcSYwrfeFvPi2J4R6IVz4XS768srHT82WIm2s_mnw/viewform" target="_blank" rel="noopener" onClick={handleLinkClick}>
+              <li className={style.menu__list__item}>
+                <a className={`link ${style.menu__list__link}`} href="https://docs.google.com/forms/d/e/1FAIpQLSfgJz_tUJcSYwrfeFvPi2J4R6IVz4XS768srHT82WIm2s_mnw/viewform" target="_blank" rel="noopener" onClick={handleLinkClick}>
                   Cadastro para empresas
                 </a>
               </li>
-              <li className={style.menuListItem}>
-                <a className={`link ${style.menuListLink}`} href="mailto:recicla.ai.sorocaba@gmail.com" onClick={handleLinkClick}>
+              <li className={style.menu__list__item}>
+                <a className={`link ${style.menu__list__link}`} href="mailto:recicla.ai.sorocaba@gmail.com" onClick={handleLinkClick}>
                   Contato
                 </a>
               </li>

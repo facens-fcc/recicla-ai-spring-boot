@@ -26,11 +26,11 @@ const Card = ({ company }) => {
         </a>
         {whatsapp ? (
           <a className="button" href={`https://api.whatsapp.com/send?phone=55${phone}`} target="_blank" rel="noreferrer">
-            Entrar em contato
+            Abrir WhatsApp
           </a>
         ) : (
           <a className="button" href={`tel:${phone}`} target="_blank" rel="noreferrer">
-            Abrir WhatsApp
+            Entrar em contato
           </a>
         )}
       </div>

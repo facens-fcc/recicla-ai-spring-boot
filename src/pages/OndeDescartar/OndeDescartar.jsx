@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import style from './OndeDescartar.module.css';
 
-import SearchForm from '../../components/SearchForm/SearchForm';
+import Search from '../../components/Search/Search';
 import Results from '../../components/Results/Results';
 
 const OndeDescartar = () => {
@@ -27,7 +27,7 @@ const OndeDescartar = () => {
         <div className="container">
           <h1 className="display">Onde descartar?</h1>
           <div className={style.hero__form}>
-            <SearchForm userZipCode={userZipCode} userSelectedCategories={userSelectedCategories} />
+            <Search userZipCode={userZipCode} userSelectedCategories={userSelectedCategories} />
           </div>
         </div>
       </section>

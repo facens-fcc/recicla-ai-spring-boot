@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import style from './SearchForm.module.css';
+import style from './Search.module.css';
 
 import categories from '../../data/categories.json';
 
-const SearchForm = ({ userZipCode = '', userSelectedCategories = [] }) => {
+const Search = ({ userZipCode = '', userSelectedCategories = [] }) => {
   const dropdownRef = React.useRef();
   const dropdownButtonRef = React.useRef();
   const zipCodeRef = React.useRef();
@@ -163,11 +163,11 @@ const SearchForm = ({ userZipCode = '', userSelectedCategories = [] }) => {
   };
 
   return (
-    <div className={style.box}>
-      <div className={style.content}>
+    <div className={style.search__box}>
+      <div className={style.search__content}>
         <h2 className="heading">Descarte o seu lixo eletrônicos e eletrodométiscos em Sorocaba</h2>
       </div>
-      <form className={style.form} method="GET" onSubmit={handleSubmit}>
+      <form className={style.search__form} method="GET" onSubmit={handleSubmit}>
         <div className="field">
           <label className="label" htmlFor="zipcode">
             Qual é a sua localização?
@@ -193,11 +193,11 @@ const SearchForm = ({ userZipCode = '', userSelectedCategories = [] }) => {
           <button className="button button--primary" type="submit">
             Pesquisar
           </button>
-          <div role="alert" aria-live="assertive" aria-atomic="true" className={style.errors}>
+          <div role="alert" aria-live="assertive" aria-atomic="true" className={style.search__errors}>
             {isFormValid === false && (
-              <ul className={style.errorsList}>
-                {!isZipCodeValid && <li className={style.errorsItem}>⚠️ Digite um CEP válido.</li>}
-                {!isCategoryValid && <li className={style.errorsItem}>⚠️ Selecione pelo menos um tipo de resíduo.</li>}
+              <ul className={style.search__errors__list}>
+                {!isZipCodeValid && <li className={style.search__errors__item}>⚠️ Digite um CEP válido.</li>}
+                {!isCategoryValid && <li className={style.search__errors__item}>⚠️ Selecione pelo menos um tipo de resíduo.</li>}
               </ul>
             )}
           </div>
@@ -207,4 +207,4 @@ const SearchForm = ({ userZipCode = '', userSelectedCategories = [] }) => {
   );
 };
 
-export default SearchForm;
+export default Search;
