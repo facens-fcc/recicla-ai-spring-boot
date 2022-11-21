@@ -12,9 +12,7 @@ const Home = () => {
           <h2 className="display">
             Use e recicle, <br /> Não desperdice!
           </h2>
-          <div className={style.hero__form}>
-            <Search />
-          </div>
+          <Search />
         </div>
       </section>
 

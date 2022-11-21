@@ -26,9 +26,7 @@ const OndeDescartar = () => {
       <section className={style.hero}>
         <div className="container">
           <h1 className="display">Onde descartar?</h1>
-          <div className={style.hero__form}>
-            <Search userZipCode={userZipCode} userSelectedCategories={userSelectedCategories} />
-          </div>
+          <Search userZipCode={userZipCode} userSelectedCategories={userSelectedCategories} />
         </div>
       </section>
 
