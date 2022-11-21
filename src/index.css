@@ -396,9 +396,14 @@ strong {
   border-radius: var(--radius-md);
   padding: 1em;
   width: 100%;
-  position: absolute;
-  z-index: var(--z-index-md);
   margin-top: 0.5rem;
+}
+
+@media (min-width: 62rem) {
+  .dropdownContent {
+    position: absolute;
+    z-index: var(--z-index-md);
+  }
 }
 
 /**
