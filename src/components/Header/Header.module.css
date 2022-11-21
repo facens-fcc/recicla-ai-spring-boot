@@ -15,17 +15,19 @@
 }
 
 .menu__toggle {
-  display: block;
   background: none;
+  color: currentColor;
+  display: block;
+
   position: relative;
   z-index: var(--z-index-xl);
 }
 
 .menu__toggle__line {
+  background-color: currentColor;
   display: block;
   width: 26px;
   height: 2px;
-  background-color: currentColor;
   transition: all 0.3s ease-in-out;
   transform-origin: 3px 1px;
 }
