@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import style from './Search.module.css';
 
 import categories from '../../data/categories.json';
+import siren from '../../assets/siren.svg';
 
 const Search = ({ userZipCode = '', userSelectedCategories = [] }) => {
   const dropdownRef = React.useRef();
@@ -194,8 +195,18 @@ const Search = ({ userZipCode = '', userSelectedCategories = [] }) => {
             <div role="alert" aria-live="assertive" aria-atomic="true" className={style.search__errors}>
               {isFormValid === false && (
                 <ul className={style.search__errors__list}>
-                  {!isZipCodeValid && <li className={style.search__errors__item}>Digite um CEP válido.</li>}
-                  {!isCategoryValid && <li className={style.search__errors__item}>Selecione o que deseja descartar.</li>}
+                  {!isZipCodeValid && (
+                    <li className={style.search__errors__item}>
+                      <img className="icon" src={siren} alt="Ícone de erro" aria-hidden="true" />
+                      Digite um CEP válido
+                    </li>
+                  )}
+                  {!isCategoryValid && (
+                    <li className={style.search__errors__item}>
+                      <img className="icon" src={siren} alt="Ícone de erro" aria-hidden="true" />
+                      Selecione o que deseja descartar
+                    </li>
+                  )}
                 </ul>
               )}
             </div>
