@@ -94,7 +94,7 @@
       "lat": "-23.5132873",
       "lng": "-47.4472793"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Acessórios de informática", "Notebook, computadores e vídeos games"],
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Acessórios de informática", "Computadores e vídeos games"],
     "payment": true,
     "residential_collection": true,
     "selective_collection": true
@@ -114,7 +114,7 @@
       "lat": "-23.467163",
       "lng": "-47.505694"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Acessórios de informática", "Notebook, computadores e vídeos games"],
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Acessórios de informática", "Computadores e vídeos games"],
     "payment": false,
     "residential_collection": false,
     "selective_collection": true
@@ -134,7 +134,7 @@
       "lat": "-23.5087363",
       "lng": "-47.4427354"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Acessórios de informática", "Notebook, computadores e vídeos games"],
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Acessórios de informática", "Computadores e vídeos games"],
     "payment": true,
     "residential_collection": false,
     "selective_collection": false
@@ -174,7 +174,7 @@
       "lat": "-23.4495",
       "lng": "-47.4893015"
     },
-    "categories": ["Acessórios de informática", "Notebook, computadores e vídeos games"],
+    "categories": ["Acessórios de informática", "Computadores e vídeos games"],
     "payment": true,
     "residential_collection": false,
     "selective_collection": false
@@ -182,7 +182,6 @@
   {
     "id": 10,
     "name": "ECOPONTO",
-    "whatsapp": true,
     "address": {
       "street": "R. Roque Sampaio",
       "number": "",
@@ -490,7 +489,7 @@
       "lat": "-23.532998531368815",
       "lng": "-47.47624297848851"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Acessórios de informática", "Notebook, computadores e vídeos games"],
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Acessórios de informática", "Computadores e vídeos games"],
     "payment": true,
     "residential_collection": true,
     "selective_collection": true

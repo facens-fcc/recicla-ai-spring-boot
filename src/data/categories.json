@@ -9,26 +9,22 @@
   },
   {
     "id": 3,
-    "label": "Baterias de celular"
-  },
-  {
-    "id": 4,
     "label": "Eletrodomésticos de Pequeno Porte"
   },
   {
-    "id": 5,
+    "id": 4,
     "label": "Eletrodomésticos de Grande Porte"
   },
   {
-    "id": 6,
+    "id": 5,
     "label": "Acessórios de informática"
   },
   {
-    "id": 7,
-    "label": "Notebook, computadores e vídeos games"
+    "id": 6,
+    "label": "Computadores e vídeos games"
   },
   {
-    "id": 8,
+    "id": 7,
     "label": "Lâmpadas"
   }
 ]
