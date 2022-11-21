@@ -14,7 +14,10 @@
       "lat": "-23.4973243",
       "lng": "-47.4826211"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Acessórios de informática"]
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Acessórios de informática"],
+    "payment": true,
+    "residential_collection": true,
+    "selective_collection": true
   },
   {
     "id": 2,
@@ -31,7 +34,10 @@
       "lat": "-23.5157219",
       "lng": "-47.4382419"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Acessórios de informática"]
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Acessórios de informática"],
+    "payment": true,
+    "residential_collection": true,
+    "selective_collection": true
   },
   {
     "id": 3,
@@ -48,7 +54,10 @@
       "lat": "-23.4289349",
       "lng": "-47.4561666"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Acessórios de informática"]
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Acessórios de informática"],
+    "payment": true,
+    "residential_collection": true,
+    "selective_collection": true
   },
   {
     "id": 4,
@@ -65,7 +74,10 @@
       "lat": "-23.4723075",
       "lng": "-47.4392272"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Acessórios de informática"]
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Acessórios de informática"],
+    "payment": false,
+    "residential_collection": false,
+    "selective_collection": false
   },
   {
     "id": 5,
@@ -82,7 +94,10 @@
       "lat": "-23.5132873",
       "lng": "-47.4472793"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Acessórios de informática", "Notebook, computadores e vídeos games"]
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Acessórios de informática", "Notebook, computadores e vídeos games"],
+    "payment": true,
+    "residential_collection": true,
+    "selective_collection": true
   },
   {
     "id": 6,
@@ -99,7 +114,10 @@
       "lat": "-23.467163",
       "lng": "-47.505694"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Acessórios de informática", "Notebook, computadores e vídeos games"]
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Acessórios de informática", "Notebook, computadores e vídeos games"],
+    "payment": false,
+    "residential_collection": false,
+    "selective_collection": true
   },
   {
     "id": 7,
@@ -116,7 +134,10 @@
       "lat": "-23.5087363",
       "lng": "-47.4427354"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Acessórios de informática", "Notebook, computadores e vídeos games"]
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Acessórios de informática", "Notebook, computadores e vídeos games"],
+    "payment": true,
+    "residential_collection": false,
+    "selective_collection": false
   },
   {
     "id": 8,
@@ -133,7 +154,10 @@
       "lat": "-23.4793839",
       "lng": "-47.4829895"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Acessórios de informática"]
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Acessórios de informática"],
+    "payment": true,
+    "residential_collection": true,
+    "selective_collection": true
   },
   {
     "id": 9,
@@ -150,27 +174,13 @@
       "lat": "-23.4495",
       "lng": "-47.4893015"
     },
-    "categories": ["Acessórios de informática", "Notebook, computadores e vídeos games"]
+    "categories": ["Acessórios de informática", "Notebook, computadores e vídeos games"],
+    "payment": true,
+    "residential_collection": false,
+    "selective_collection": false
   },
   {
     "id": 10,
-    "name": "ECOPONTO",
-    "whatsapp": true,
-    "phone": "",
-    "address": {
-      "street": "Unnamed Road",
-      "number": "",
-      "district": "",
-      "city": "Votorantim",
-      "state": "São Paulo",
-      "zip_code": "",
-      "lat": "",
-      "lng": ""
-    },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Acessórios de informática"]
-  },
-  {
-    "id": 11,
     "name": "ECOPONTO",
     "whatsapp": true,
     "phone": "",
@@ -184,10 +194,13 @@
       "lat": "-23.4768362",
       "lng": "-47.4933206"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Acessórios de informática"]
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Acessórios de informática"],
+    "payment": false,
+    "residential_collection": false,
+    "selective_collection": false
   },
   {
-    "id": 12,
+    "id": 11,
     "name": "Salmeron",
     "whatsapp": false,
     "phone": "1532322425",
@@ -201,10 +214,13 @@
       "lat": "-23.5072698",
       "lng": "-47.3688862"
     },
-    "categories": ["Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Acessórios de informática"]
+    "categories": ["Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Acessórios de informática"],
+    "payment": true,
+    "residential_collection": false,
+    "selective_collection": true
   },
   {
-    "id": 13,
+    "id": 12,
     "name": "Casas Bahia",
     "whatsapp": false,
     "phone": "1533315200",
@@ -218,10 +234,13 @@
       "lat": "-23.4976431",
       "lng": "-47.4577734"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Acessórios de informática"]
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Acessórios de informática"],
+    "payment": false,
+    "residential_collection": true,
+    "selective_collection": false
   },
   {
-    "id": 14,
+    "id": 13,
     "name": "Casas Bahia - Shopping Cidade Sorocaba",
     "whatsapp": false,
     "phone": "",
@@ -231,14 +250,17 @@
       "district": "Jardim Santa Cecilia",
       "city": "Sorocaba",
       "state": "São Paulo",
-      "zip_code": "",
-      "lat": "",
-      "lng": ""
+      "zip_code": "18078-005",
+      "lat": "-23.4540606",
+      "lng": "-47.4824502"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Acessórios de informática"]
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Acessórios de informática"],
+    "payment": false,
+    "residential_collection": true,
+    "selective_collection": false
   },
   {
-    "id": 15,
+    "id": 14,
     "name": "Casas Bahia - Shopping Iguatemi Esplanada",
     "whatsapp": false,
     "phone": "",
@@ -248,14 +270,17 @@
       "district": "Parque Campolim",
       "city": "Sorocaba",
       "state": "São Paulo",
-      "zip_code": "",
-      "lat": "",
-      "lng": ""
+      "zip_code": "18110-650",
+      "lat": "-23.5417545",
+      "lng": "-47.4665344"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Acessórios de informática"]
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Acessórios de informática"],
+    "payment": false,
+    "residential_collection": true,
+    "selective_collection": false
   },
   {
-    "id": 16,
+    "id": 15,
     "name": "COOP",
     "whatsapp": false,
     "phone": "1532392911",
@@ -269,10 +294,13 @@
       "lat": "-23.4540606",
       "lng": "-47.4824502"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Acessórios de informática"]
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Acessórios de informática"],
+    "payment": true,
+    "residential_collection": true,
+    "selective_collection": true
   },
   {
-    "id": 17,
+    "id": 16,
     "name": "TIM",
     "whatsapp": false,
     "phone": "1540030941",
@@ -286,10 +314,13 @@
       "lat": "-23.4997697",
       "lng": "-47.4585753"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Acessórios de informática"]
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Acessórios de informática"],
+    "payment": false,
+    "residential_collection": false,
+    "selective_collection": false
   },
   {
-    "id": 18,
+    "id": 17,
     "name": "VIVO",
     "whatsapp": false,
     "phone": "",
@@ -303,10 +334,13 @@
       "lat": "-23.4996998",
       "lng": "-47.4639032"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Acessórios de informática"]
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Acessórios de informática"],
+    "payment": false,
+    "residential_collection": true,
+    "selective_collection": false
   },
   {
-    "id": 19,
+    "id": 18,
     "name": "Cooperativa de Votorantim - Coopervot",
     "whatsapp": true,
     "phone": "15997967641",
@@ -320,10 +354,13 @@
       "lat": "-23.527338",
       "lng": "-47.4306048"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Acessórios de informática"]
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Acessórios de informática"],
+    "payment": true,
+    "residential_collection": true,
+    "selective_collection": true
   },
   {
-    "id": 20,
+    "id": 19,
     "name": "SEMA – Secretaria do Meio Ambiente",
     "whatsapp": false,
     "phone": "1532192280",
@@ -337,10 +374,13 @@
       "lat": "-23.5047759",
       "lng": "-47.4485801"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Acessórios de informática"]
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Acessórios de informática"],
+    "payment": true,
+    "residential_collection": true,
+    "selective_collection": true
   },
   {
-    "id": 21,
+    "id": 20,
     "name": "Fast Shop - Shopping Iguatemi Esplanada",
     "whatsapp": false,
     "phone": "1534154058",
@@ -350,14 +390,17 @@
       "district": "Parque Bela Vista",
       "city": "Votorantim",
       "state": "São Paulo",
-      "zip_code": "18110-902",
-      "lat": "",
-      "lng": ""
+      "zip_code": "18110-650",
+      "lat": "-47.4665344",
+      "lng": "-47.4665344"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Acessórios de informática"]
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Acessórios de informática"],
+    "payment": false,
+    "residential_collection": false,
+    "selective_collection": false
   },
   {
-    "id": 22,
+    "id": 21,
     "name": "Carrefour Sorocaba – Norte",
     "whatsapp": false,
     "phone": "1533329675",
@@ -367,31 +410,37 @@
       "district": "Terra Vermelha",
       "city": "Sorocaba",
       "state": "São Paulo",
-      "zip_code": "18065-100",
-      "lat": "",
-      "lng": ""
+      "zip_code": "18060-105",
+      "lat": "-23.4878648",
+      "lng": "-47.4743255"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Acessórios de informática"]
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Acessórios de informática"],
+    "payment": false,
+    "residential_collection": false,
+    "selective_collection": false
   },
   {
-    "id": 23,
+    "id": 22,
     "name": "Dicico - Shopping Esplanada Sorocaba",
     "whatsapp": false,
     "phone": "08007634622",
     "address": {
-      "street": "Av. Prof. Izoraida Marques Peres",
-      "number": "376",
-      "district": "Parque Campolim",
-      "city": "Sorocaba",
+      "street": "Av. Gisele Constantino",
+      "number": "401",
+      "district": "Parque Bela Vista",
+      "city": "Votoratim",
       "state": "São Paulo",
-      "zip_code": "18047-900",
-      "lat": "",
-      "lng": ""
+      "zip_code": "18110-650",
+      "lat": "-23.5417545",
+      "lng": "-47.4665344"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Acessórios de informática"]
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Acessórios de informática"],
+    "payment": false,
+    "residential_collection": false,
+    "selective_collection": false
   },
   {
-    "id": 24,
+    "id": 23,
     "name": "FACENS",
     "whatsapp": false,
     "phone": "1532381188",
@@ -401,14 +450,17 @@
       "district": "Jardim Constantino Matucci",
       "city": "Sorocaba",
       "state": "São Paulo",
-      "zip_code": "18047-900",
-      "lat": "",
-      "lng": ""
+      "zip_code": "18085-784",
+      "lat": "-23.469845090806796",
+      "lng": "-47.429796957092606"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Acessórios de informática"]
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Acessórios de informática"],
+    "payment": true,
+    "residential_collection": true,
+    "selective_collection": true
   },
   {
-    "id": 25,
+    "id": 24,
     "name": "Kalunga",
     "whatsapp": false,
     "phone": "1133469966",
@@ -422,10 +474,13 @@
       "lat": "-23.4892743",
       "lng": "-47.4400011"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Acessórios de informática"]
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Acessórios de informática"],
+    "payment": false,
+    "residential_collection": false,
+    "selective_collection": false
   },
   {
-    "id": 26,
+    "id": 25,
     "name": "Leroy Merlin",
     "whatsapp": false,
     "phone": "08000205376",
@@ -436,13 +491,16 @@
       "city": "Sorocaba",
       "state": "São Paulo",
       "zip_code": "18052-775",
-      "lat": "",
-      "lng": ""
+      "lat": "-23.532998531368815",
+      "lng": "-47.47624297848851"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Acessórios de informática", "Notebook, computadores e vídeos games"]
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Acessórios de informática", "Notebook, computadores e vídeos games"],
+    "payment": true,
+    "residential_collection": true,
+    "selective_collection": true
   },
   {
-    "id": 27,
+    "id": 26,
     "name": "Makro",
     "whatsapp": false,
     "phone": "1533162720",
@@ -453,13 +511,16 @@
       "city": "Sorocaba",
       "state": "São Paulo",
       "zip_code": "18090-602",
-      "lat": "",
-      "lng": ""
+      "lat": "-23.475367727981595",
+      "lng": "-47.455416886245985"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Acessórios de informática"]
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Acessórios de informática"],
+    "payment": false,
+    "residential_collection": true,
+    "selective_collection": true
   },
   {
-    "id": 28,
+    "id": 27,
     "name": "Makro Zona Norte",
     "whatsapp": false,
     "phone": "1533162720",
@@ -473,10 +534,13 @@
       "lat": "-23.5376123",
       "lng": "-47.5023073"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Acessórios de informática"]
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Acessórios de informática"],
+    "payment": false,
+    "residential_collection": true,
+    "selective_collection": true
   },
   {
-    "id": 29,
+    "id": 28,
     "name": "Sam's Club",
     "whatsapp": false,
     "phone": "1521013700",
@@ -490,10 +554,13 @@
       "lat": "-23.5217748",
       "lng": "-47.46481559999999"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Acessórios de informática"]
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Acessórios de informática"],
+    "payment": true,
+    "residential_collection": true,
+    "selective_collection": true
   },
   {
-    "id": 30,
+    "id": 29,
     "name": "Senac",
     "whatsapp": false,
     "phone": "1534122500",
@@ -507,10 +574,13 @@
       "lat": "-23.5120483",
       "lng": "-47.4328786"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Acessórios de informática"]
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Acessórios de informática"],
+    "payment": true,
+    "residential_collection": false,
+    "selective_collection": true
   },
   {
-    "id": 31,
+    "id": 30,
     "name": "Sesc",
     "whatsapp": false,
     "phone": "1533329933",
@@ -524,6 +594,9 @@
       "lat": "-23.512181",
       "lng": "-47.4611259"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Acessórios de informática"]
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Acessórios de informática"],
+    "payment": true,
+    "residential_collection": false,
+    "selective_collection": true
   }
 ]
