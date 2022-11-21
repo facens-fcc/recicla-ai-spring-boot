@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './Home.module.css';
-import SearchForm from '../../components/SearchForm/SearchForm';
+import Search from '../../components/Search/Search';
 import earth from '../../assets/earth.png';
 
 const Home = () => {
@@ -12,9 +12,7 @@ const Home = () => {
           <h2 className="display">
             Use e recicle, <br /> Não desperdice!
           </h2>
-          <div className={style.hero__form}>
-            <SearchForm />
-          </div>
+          <Search />
         </div>
       </section>
 

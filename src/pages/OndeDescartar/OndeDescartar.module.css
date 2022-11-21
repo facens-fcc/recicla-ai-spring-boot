@@ -18,9 +18,13 @@
   gap: 2rem;
 }
 
+.archive {
+  padding: 0 var(--side-padding) var(--spacing-xxl);
+}
+
 .archive__message {
   text-align: center;
-  font-size: 1.25rem;
-  max-width: 30ch;
+  font-size: var(--text-lg);
   margin: auto;
+  max-width: 30ch;
 }

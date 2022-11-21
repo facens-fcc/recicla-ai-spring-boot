@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import style from './OndeDescartar.module.css';
 
-import SearchForm from '../../components/SearchForm/SearchForm';
-import ResultsList from '../../components/ResultsList/ResultsList';
+import Search from '../../components/Search/Search';
+import Results from '../../components/Results/Results';
 
 const OndeDescartar = () => {
   const [isFiltered, setIsFiltered] = useState(false);
@@ -26,15 +26,13 @@ const OndeDescartar = () => {
       <section className={style.hero}>
         <div className="container">
           <h1 className="display">Onde descartar?</h1>
-          <div className={style.hero__form}>
-            <SearchForm userZipCode={userZipCode} userSelectedCategories={userSelectedCategories} />
-          </div>
+          <Search userZipCode={userZipCode} userSelectedCategories={userSelectedCategories} />
         </div>
       </section>
 
       <section className={style.archive}>
         <div className="container">
-          {isFiltered && <ResultsList userSelectedCategories={userSelectedCategories} userCoordinates={userCoordinates} />}
+          {isFiltered && <Results userSelectedCategories={userSelectedCategories} userCoordinates={userCoordinates} />}
           {!isFiltered && <p className={style.archive__message}>Preencha o filtro e mostraremos os locais próximos a você! .</p>}
         </div>
       </section>
