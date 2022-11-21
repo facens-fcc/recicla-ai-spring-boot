@@ -7,14 +7,16 @@ const Card = ({ company }) => {
   const { name, address, whatsapp, phone, payment, residential_collection, selective_collection } = company;
 
   const formatPhone = (phone) => {
-    const cleanPhone = phone.replace(/\D/g, '');
+    const cleanPhone = phone ? phone.replace(/\D/g, '') : '';
 
     if (!cleanPhone.startsWith('0800')) {
-      return `+55${cleanPhone}`;
+      return `55${cleanPhone}`;
     }
 
     return cleanPhone;
   };
+
+  console.log(phone);
 
   return (
     <li className={style.card}>
@@ -45,7 +47,7 @@ const Card = ({ company }) => {
           Ver no mapa
         </a>
         {whatsapp ? (
-          <a className="button" href={`https://api.whatsapp.com/send?phone=55${phone}`} target="_blank" rel="noreferrer">
+          <a className="button" href={`https://api.whatsapp.com/send?phone=${formatPhone(phone)}`} target="_blank" rel="noreferrer">
             Abrir WhatsApp
           </a>
         ) : (
