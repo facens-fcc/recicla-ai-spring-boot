@@ -48,8 +48,8 @@ const Home = () => {
       </section>
 
       <section className={style.benefits}>
-        <div className="container container--narrow">
-          <ul className={style.benefits__list}>
+        <div className="container container--compact">
+          <ul className={`${style.benefits__list} checklist checklist--orange`}>
             <li className={style.benefits__item}>
               <h2 className="heading">Salve o meio ambiente</h2>
               <p className={style.benefits__item__description}>Reduzindo a extracão de matéria prima para utilização nas indústrias.</p>

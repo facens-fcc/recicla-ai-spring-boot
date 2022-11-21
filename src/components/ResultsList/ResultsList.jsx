@@ -63,7 +63,11 @@ const ResultsList = ({ userSelectedCategories = [], userCoordinates = [] }) => {
   return (
     <>
       <p className={style.counter}>
-        {filteredCompanies.length} {filteredCompanies.length === 1 ? 'resultado' : 'resultados'} encontrados
+        Encontramos{' '}
+        <strong>
+          {filteredCompanies.length} {filteredCompanies.length === 1 ? 'local' : 'locais'}
+        </strong>{' '}
+        próximos a você!
       </p>
       <ul className={style.list}>
         {filteredCompanies.map((company) => (

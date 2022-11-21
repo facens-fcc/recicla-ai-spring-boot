@@ -153,24 +153,11 @@
 }
 
 .benefits__list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
   gap: var(--spacing-lg);
 }
 
 .benefits__item {
   padding-left: 2.5rem;
-  position: relative;
-}
-
-.benefits__item::before {
-  content: '';
-  position: absolute;
-  width: 1.5rem;
-  height: 1.5rem;
-  left: 0;
-  top: 3%;
-  background: url('../../assets/check.svg') no-repeat center center;
 }
 
 .benefits__item__description {
