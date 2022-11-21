@@ -80,9 +80,13 @@ a {
   --color-white: #ffffff;
   --color-orange: #ffac52;
   --color-sand: #efe0d6;
+  --color-red: #f5c6cb;
+  --color-red-lighter: #f8d7da;
+  --color-red-darker: #721c24;
 
   --bg-sand: linear-gradient(102.34deg, #efe0d6 0%, #fff7eb 100%);
   --bg-orange-noise: url(./assets/pattern-black.png) repeat, var(--color-orange);
+  --bg-red-noise: url(./assets/pattern-black.png) repeat, var(--color-red);
   --bg-sand-noise: url(./assets/pattern-black.png) repeat, var(--color-sand);
   --bg-black-noise: url(./assets/pattern-white.png) repeat, var(--color-black);
 
@@ -102,15 +106,10 @@ a {
   --text-md: 1rem;
   --text-lg: 1.25rem;
 
-  --z-index-default: 1;
-  --z-index-xxs: 10;
-  --z-index-xs: 20;
-  --z-index-s: 30;
-  --z-index-m: 40;
-  --z-index-l: 50;
-  --z-index-lg: 60;
-  --z-index-xl: 70;
-  --z-index-xxl: 80;
+  --z-index-sm: 10;
+  --z-index-md: 20;
+  --z-index-lg: 30;
+  --z-index-xl: 40;
 
   --button-height: 2.5rem;
 }
@@ -398,6 +397,7 @@ strong {
   padding: 1em;
   width: 100%;
   position: absolute;
+  z-index: var(--z-index-md);
   margin-top: 0.5rem;
 }
 
