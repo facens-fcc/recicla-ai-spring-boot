@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Metareciclagem",
     "whatsapp": false,
-    "phone": "1534173825",
+    "phone": "(15) 3417-3825",
     "address": {
       "street": "Av. Nove de Julho",
       "number": "1066",
@@ -23,7 +23,7 @@
     "id": 2,
     "name": "Eco Vida",
     "whatsapp": true,
-    "phone": "15996236924",
+    "phone": "(15) 99623-6924",
     "address": {
       "street": "R. Chile",
       "number": "401",
@@ -43,7 +43,7 @@
     "id": 3,
     "name": "Eco Vida",
     "whatsapp": true,
-    "phone": "15996236924",
+    "phone": "(15) 99623-6924",
     "address": {
       "street": "R. José Henrique Dias",
       "number": "215",
@@ -63,7 +63,7 @@
     "id": 4,
     "name": "Cooperativa de Col. Sel. Reviver",
     "whatsapp": false,
-    "phone": "1533261903",
+    "phone": "(15) 3326-1903",
     "address": {
       "street": "R. Ourinhos",
       "number": "241",
@@ -83,7 +83,7 @@
     "id": 5,
     "name": "Recycle",
     "whatsapp": true,
-    "phone": "15998177369",
+    "phone": "(15) 99817-7369",
     "address": {
       "street": "R. Dr. Campos Salles",
       "number": "1071",
@@ -103,7 +103,7 @@
     "id": 6,
     "name": "Resotech Ambiental",
     "whatsapp": true,
-    "phone": "15997990984",
+    "phone": "(15) 99799-0984",
     "address": {
       "street": "R. Estanislau Camargo Sampaio",
       "number": "680",
@@ -123,7 +123,7 @@
     "id": 7,
     "name": "Império Sucatas",
     "whatsapp": true,
-    "phone": "15991953191",
+    "phone": "(15) 99195-3191",
     "address": {
       "street": "R. Catalunha",
       "number": "125",
@@ -143,7 +143,7 @@
     "id": 8,
     "name": "Recicla Sorocaba",
     "whatsapp": true,
-    "phone": "15996995301",
+    "phone": "(15) 99699-5301",
     "address": {
       "street": "Av. Ipanema",
       "number": "3345",
@@ -163,7 +163,7 @@
     "id": 9,
     "name": "INFOBOM",
     "whatsapp": true,
-    "phone": "15988109371",
+    "phone": "(15) 98810-9371",
     "address": {
       "street": "Av. Edward Fru Fru Marciano da Silva",
       "number": "1159",
@@ -183,7 +183,6 @@
     "id": 10,
     "name": "ECOPONTO",
     "whatsapp": true,
-    "phone": "",
     "address": {
       "street": "R. Roque Sampaio",
       "number": "",
@@ -203,7 +202,7 @@
     "id": 11,
     "name": "Salmeron",
     "whatsapp": false,
-    "phone": "1532322425",
+    "phone": "(15) 3232-2425",
     "address": {
       "street": "Av. Bandeirantes",
       "number": "2480",
@@ -223,7 +222,7 @@
     "id": 12,
     "name": "Casas Bahia",
     "whatsapp": false,
-    "phone": "1533315200",
+    "phone": "(15) 3331-5200",
     "address": {
       "street": "R. Dr. Álvaro Soares",
       "number": "48",
@@ -243,7 +242,6 @@
     "id": 13,
     "name": "Casas Bahia - Shopping Cidade Sorocaba",
     "whatsapp": false,
-    "phone": "",
     "address": {
       "street": "Av. Itavuvu",
       "number": "3373",
@@ -263,7 +261,6 @@
     "id": 14,
     "name": "Casas Bahia - Shopping Iguatemi Esplanada",
     "whatsapp": false,
-    "phone": "",
     "address": {
       "street": "Av. Professora Izoraida Marques Peres",
       "number": "401",
@@ -283,7 +280,7 @@
     "id": 15,
     "name": "COOP",
     "whatsapp": false,
-    "phone": "1532392911",
+    "phone": "(15) 3239-2911",
     "address": {
       "street": "Av. Itavuvu",
       "number": "3799",
@@ -303,7 +300,7 @@
     "id": 16,
     "name": "TIM",
     "whatsapp": false,
-    "phone": "1540030941",
+    "phone": "(15) 40030941",
     "address": {
       "street": "Praça Cel. Fernando Prestes",
       "number": "46",
@@ -323,7 +320,6 @@
     "id": 17,
     "name": "VIVO",
     "whatsapp": false,
-    "phone": "",
     "address": {
       "street": "R. Prof. Toledo",
       "number": "373",
@@ -343,7 +339,7 @@
     "id": 18,
     "name": "Cooperativa de Votorantim - Coopervot",
     "whatsapp": true,
-    "phone": "15997967641",
+    "phone": "(15) 99796-7641",
     "address": {
       "street": "Av. Jaziel de Azeredo Ribeiro",
       "number": "680",
@@ -363,7 +359,7 @@
     "id": 19,
     "name": "SEMA – Secretaria do Meio Ambiente",
     "whatsapp": false,
-    "phone": "1532192280",
+    "phone": "(15) 3219-2280",
     "address": {
       "street": "R. Santa Maria",
       "number": "197",
@@ -383,7 +379,7 @@
     "id": 20,
     "name": "Fast Shop - Shopping Iguatemi Esplanada",
     "whatsapp": false,
-    "phone": "1534154058",
+    "phone": "(15) 3415-4058",
     "address": {
       "street": "Avenida Gisele Constantino",
       "number": "1850",
@@ -403,7 +399,7 @@
     "id": 21,
     "name": "Carrefour Sorocaba – Norte",
     "whatsapp": false,
-    "phone": "1533329675",
+    "phone": "(15) 3332-9675",
     "address": {
       "street": "Av. Brasil",
       "number": "376",
@@ -423,7 +419,7 @@
     "id": 22,
     "name": "Dicico - Shopping Esplanada Sorocaba",
     "whatsapp": false,
-    "phone": "08007634622",
+    "phone": "(08) 007634622",
     "address": {
       "street": "Av. Gisele Constantino",
       "number": "401",
@@ -443,7 +439,7 @@
     "id": 23,
     "name": "FACENS",
     "whatsapp": false,
-    "phone": "1532381188",
+    "phone": "(15) 3238-1188",
     "address": {
       "street": "Rodovia Senador José Ermírio de Moraes",
       "number": "1425",
@@ -463,7 +459,7 @@
     "id": 24,
     "name": "Kalunga",
     "whatsapp": false,
-    "phone": "1133469966",
+    "phone": "(11) 33469966",
     "address": {
       "street": "Av. Dom Aguirre",
       "number": "2121",
@@ -483,7 +479,7 @@
     "id": 25,
     "name": "Leroy Merlin",
     "whatsapp": false,
-    "phone": "08000205376",
+    "phone": "0800 020 5376",
     "address": {
       "street": "Rodovia Raposo Tavares",
       "number": "km 101",
@@ -503,7 +499,7 @@
     "id": 26,
     "name": "Makro",
     "whatsapp": false,
-    "phone": "1533162720",
+    "phone": "(15) 3316-2720",
     "address": {
       "street": "R. João Ribeiro de Barros",
       "number": "1411",
@@ -523,7 +519,7 @@
     "id": 27,
     "name": "Makro Zona Norte",
     "whatsapp": false,
-    "phone": "1533162720",
+    "phone": "(15) 3316-2720",
     "address": {
       "street": "R. Clemente Bernardino Pereira",
       "number": "92",
@@ -543,7 +539,7 @@
     "id": 28,
     "name": "Sam's Club",
     "whatsapp": false,
-    "phone": "1521013700",
+    "phone": "(15) 2101-3700",
     "address": {
       "street": "Avenida Antônio Carlos Comitre",
       "number": "80",
@@ -563,7 +559,7 @@
     "id": 29,
     "name": "Senac",
     "whatsapp": false,
-    "phone": "1534122500",
+    "phone": "(15) 3412-2500",
     "address": {
       "street": "Av. Cel. Nogueira Padilha",
       "number": "2392",
@@ -583,7 +579,7 @@
     "id": 30,
     "name": "Sesc",
     "whatsapp": false,
-    "phone": "1533329933",
+    "phone": "(15) 3332-9933",
     "address": {
       "street": "Rua Barão de Piratininga",
       "number": "555",

@@ -6,6 +6,16 @@ import iconEnvironment from '../../assets/environment.svg';
 const Card = ({ company }) => {
   const { name, address, whatsapp, phone, payment, residential_collection, selective_collection } = company;
 
+  const formatPhone = (phone) => {
+    const cleanPhone = phone.replace(/\D/g, '');
+
+    if (!cleanPhone.startsWith('0800')) {
+      return `+55${cleanPhone}`;
+    }
+
+    return cleanPhone;
+  };
+
   return (
     <li className={style.card}>
       <div className={style.card__header}>
@@ -14,6 +24,11 @@ const Card = ({ company }) => {
         <p>
           {address.street}, {address.city}, {address.state}
         </p>
+        {phone && (
+          <p>
+            <a href={`tel:${formatPhone(phone)}`}>{phone}</a>
+          </p>
+        )}
       </div>
       <div className={style.card__body}>
         <ul className="checklist checklist--black">
