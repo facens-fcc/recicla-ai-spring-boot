@@ -4,7 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import Header from '../src/components/Header/Header';
 import Footer from '../src/components/Footer/Footer';
 import Home from './pages/Home/Home';
-import Results from './pages/Results/Results';
+import OndeDescartar from './pages/OndeDescartar/OndeDescartar';
 
 const App = () => {
   return (
@@ -12,7 +12,7 @@ const App = () => {
       <Header />
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route exact path="/resultados" element={<Results />} />
+        <Route exact path="/onde-descartar" element={<OndeDescartar />} />
       </Routes>
       <Footer />
     </>

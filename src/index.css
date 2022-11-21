@@ -130,6 +130,25 @@ body {
  *
  */
 
+.root {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
+  min-block-size: 100vh;
+}
+
+.main {
+  grid-area: main;
+}
+
+/**
+ *
+ */
+
 .no-scroll {
   position: fixed;
   overflow-y: scroll;

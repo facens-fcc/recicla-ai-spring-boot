@@ -22,7 +22,7 @@ const Header = () => {
    */
 
   const handleEscape = ({ key }) => {
-    if (key === 'Escape') {
+    if (key === 'Escape' && isNavbarOpen) {
       setIsNavbarOpen(false);
       menuToggleRef.current.focus();
     }
@@ -100,7 +100,7 @@ const Header = () => {
                 </a>
               </li>
               <li className={style.menuListItem}>
-                <a className={`link ${style.menuListLink}`} href="/#" onClick={handleLinkClick}>
+                <a className={`link ${style.menuListLink}`} href="/onde-descartar/" onClick={handleLinkClick}>
                   Onde descartar?
                 </a>
               </li>

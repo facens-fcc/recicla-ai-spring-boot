@@ -158,7 +158,7 @@ const SearchForm = ({ userZipCode = '', userSelectedCategories = [] }) => {
 
     if (isZipCodeValid && isCategoryValid) {
       setFormValid(true);
-      window.location.href = `/resultados?zipCode=${zipCode}&lat=${coordinates.lat}&lng=${coordinates.lng}&categories=${selectedCategories}&address=${address}`;
+      window.location.href = `/onde-descartar?zipCode=${zipCode}&lat=${coordinates.lat}&lng=${coordinates.lng}&categories=${selectedCategories}&address=${address}`;
     }
   };
 
@@ -167,7 +167,7 @@ const SearchForm = ({ userZipCode = '', userSelectedCategories = [] }) => {
       <div className={style.content}>
         <h2 className="heading">Descarte o seu lixo eletrônicos e eletrodométiscos em Sorocaba</h2>
       </div>
-      <form className={style.form} action="/resultados" method="GET" onSubmit={handleSubmit}>
+      <form className={style.form} method="GET" onSubmit={handleSubmit}>
         <div className="field">
           <label className="label" htmlFor="zipcode">
             Qual é a sua localização?

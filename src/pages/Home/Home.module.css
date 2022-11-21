@@ -2,11 +2,6 @@
   padding: 0 1.5rem 8rem;
 }
 
-.hero__content {
-  display: grid;
-  gap: var(--spacing-md);
-}
-
 .hero__form {
   margin-top: clamp(var(--spacing-lg), 5vw, var(--spacing-xl));
 }

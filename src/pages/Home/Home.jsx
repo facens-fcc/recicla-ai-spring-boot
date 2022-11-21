@@ -5,15 +5,13 @@ import earth from '../../assets/earth.png';
 
 const Home = () => {
   return (
-    <main>
+    <main class="main">
       <section className={style.hero}>
         <div className="container">
-          <div className={style.hero__content}>
-            <h1 className="visually-hidden">Descubra onde descatar lixos eletrônicos em Sorocaba</h1>
-            <h2 className={`${style.hero__title} display`}>
-              Use e recicle, <br /> Não desperdice!
-            </h2>
-          </div>
+          <h1 className="visually-hidden">Descubra onde descatar lixos eletrônicos em Sorocaba</h1>
+          <h2 className="display">
+            Use e recicle, <br /> Não desperdice!
+          </h2>
           <div className={style.hero__form}>
             <SearchForm />
           </div>
