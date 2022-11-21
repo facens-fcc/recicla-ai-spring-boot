@@ -218,14 +218,18 @@ strong {
 
 .display {
   font-family: 'DM Serif Display', serif;
-  font-size: clamp(3rem, -1rem + 6.5vw, 5rem);
   line-height: 0.9;
   text-align: center;
   order: 2;
+  word-wrap: break-word;
 }
 
 .display--small {
-  font-size: clamp(4rem, -1rem + 10vw, 4rem);
+  font-size: clamp(2rem, -1rem + 10vw, 4rem);
+}
+
+.display--medium {
+  font-size: clamp(3rem, -1rem + 6.5vw, 5rem);
 }
 
 .display--large {
@@ -233,7 +237,7 @@ strong {
 }
 
 @media (max-width: 25rem) {
-  .display {
+  .display--medium {
     font-size: 2.5rem;
   }
 }

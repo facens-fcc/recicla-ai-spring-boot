@@ -1,5 +1,5 @@
 .hero {
-  padding: 0 1.5rem 0;
+  padding: var(--spacing-md) 1.5rem 0;
 }
 
 .results__title {

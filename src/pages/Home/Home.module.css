@@ -1,5 +1,10 @@
 .hero {
-  padding: 0 1.5rem 0;
+  padding: var(--spacing-md) 1.5rem 0;
+}
+
+.hero__title {
+  max-width: 30ch;
+  margin: auto;
 }
 
 .hero__form {

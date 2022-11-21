@@ -15,7 +15,7 @@ const Home = () => {
 
       <section className={style.whyRecycle} id="por-que-reciclar">
         <figure className={style.whyRecycle__quote}>
-          <blockquote className={`${style.whyRecycle__quote__content} display`} cite="https://www.theworldcounts.com/challenges/waste/electronic-waste-facts">
+          <blockquote className={`${style.whyRecycle__quote__content} display display--medium`} cite="https://www.theworldcounts.com/challenges/waste/electronic-waste-facts">
             Mais de <span className={style.whyRecycle__quote__highlight}>80%</span> dos lixos eletrônicos e eletrodométiscos não são reciclados
           </blockquote>
           <figcaption className={style.whyRecycle__quote__source}>
@@ -28,8 +28,8 @@ const Home = () => {
       <section className={style.worldCount}>
         <figure className={style.worldCount__quote}>
           <blockquote className={style.quote__content} cite="https://www.theworldcounts.com/challenges/waste/electronic-waste-facts">
-            <p className={`${style.worldCount__quote__title} display`}>Por ano, toneladas de lixo eletrônico são jogadas fora no mundo todo</p>
-            <p className={`${style.worldCount__quote__text} display`}>...mais precisamente</p>
+            <p className={`${style.worldCount__quote__title} display display--medium`}>Por ano, toneladas de lixo eletrônico são jogadas fora no mundo todo</p>
+            <p className={`${style.worldCount__quote__text} display display--medium`}>...mais precisamente</p>
             <p className={`${style.worldCount__quote__number} display display--large`}>50.000.000t</p>
           </blockquote>
           <figcaption className={style.worldCount__quote__source}>
@@ -38,7 +38,7 @@ const Home = () => {
         </figure>
         <div className={style.worldCount__earth}>
           <img className={style.worldCount__earth__image} src={earth} alt="Imagem do planeta Terra" loading="lazy" />
-          <p className={`${style.worldCount__earth__text} display`}>A mudança começa por você</p>
+          <p className={`${style.worldCount__earth__text} display display--medium`}>A mudança começa por você</p>
         </div>
       </section>
 

@@ -23,7 +23,7 @@ const OndeDescartar = () => {
     <main className="main">
       <section className={style.hero}>
         <div className="container">
-          <h1 className="display">Onde descartar?</h1>
+          <h1 className="display display--medium">Onde descartar?</h1>
           <Search userZipCode={userZipCode} userSelectedCategories={userSelectedCategories} />
         </div>
       </section>
