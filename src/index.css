@@ -479,6 +479,7 @@ strong {
   top: 0.2em;
   left: 0;
 
+  pointer-events: none;
   transition: background 0.3s;
 }
 
