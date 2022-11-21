@@ -163,7 +163,7 @@ const Search = ({ userZipCode = '', userSelectedCategories = [] }) => {
     <div className={style.search}>
       <div className={style.search__box}>
         <div className={style.search__content}>
-          <h2 className="heading">Encontre pontos de coleta próximos a você para descartar seus resíduos</h2>
+          <h2 className="heading">Encontre pontos de coleta próximos a você:</h2>
         </div>
         <form className={style.search__form} method="GET" onSubmit={handleSubmit}>
           <div className="field">
@@ -194,8 +194,8 @@ const Search = ({ userZipCode = '', userSelectedCategories = [] }) => {
             <div role="alert" aria-live="assertive" aria-atomic="true" className={style.search__errors}>
               {isFormValid === false && (
                 <ul className={style.search__errors__list}>
-                  {!isZipCodeValid && <li className={style.search__errors__item}>⚠️ Digite um CEP válido.</li>}
-                  {!isCategoryValid && <li className={style.search__errors__item}>⚠️ Selecione pelo menos um tipo de resíduo.</li>}
+                  {!isZipCodeValid && <li className={style.search__errors__item}>Digite um CEP válido.</li>}
+                  {!isCategoryValid && <li className={style.search__errors__item}>Selecione o que deseja descartar.</li>}
                 </ul>
               )}
             </div>

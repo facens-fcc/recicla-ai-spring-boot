@@ -16,7 +16,7 @@ const Home = () => {
       <section className={style.whyRecycle} id="por-que-reciclar">
         <figure className={style.whyRecycle__quote}>
           <blockquote className={`${style.whyRecycle__quote__content} display display--medium`} cite="https://www.theworldcounts.com/challenges/waste/electronic-waste-facts">
-            Mais de <span className={style.whyRecycle__quote__highlight}>80%</span> dos lixos eletrônicos e eletrodométiscos não são reciclados
+            Mais de <span className={style.whyRecycle__quote__highlight}>80%</span> do lixo eletrônico e eletrodométisco não é reciclados
           </blockquote>
           <figcaption className={style.whyRecycle__quote__source}>
             —<cite>World Economic Forum</cite>
@@ -38,7 +38,7 @@ const Home = () => {
         </figure>
         <div className={style.worldCount__earth}>
           <img className={style.worldCount__earth__image} src={earth} alt="Imagem do planeta Terra" loading="lazy" />
-          <p className={`${style.worldCount__earth__text} display display--medium`}>A mudança começa por você</p>
+          <p className={`${style.worldCount__earth__text} display display--medium`}>A mudança começa com você</p>
         </div>
       </section>
 
@@ -47,7 +47,7 @@ const Home = () => {
           <ul className={`${style.benefits__list} checklist checklist--orange`}>
             <li className={style.benefits__item}>
               <h2 className="heading">Salve o meio ambiente</h2>
-              <p className={style.benefits__item__description}>Reduzindo a extracão de matéria prima para utilização nas indústrias.</p>
+              <p className={style.benefits__item__description}>Reduzindo a extracão de matéria-prima para utilização nas indústrias.</p>
             </li>
             <li className={style.benefits__item}>
               <h2 className="heading">Salve dinheiro</h2>
