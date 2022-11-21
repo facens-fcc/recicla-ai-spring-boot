@@ -449,6 +449,8 @@ strong {
 }
 
 .checkbox {
+  --size: 1.15em;
+
   cursor: pointer;
   font-size: var(--text-md);
   user-select: none;
@@ -463,14 +465,18 @@ strong {
   margin-top: var(--spacing-xxs);
 }
 
+.checkbox__label {
+  padding-left: calc(var(--size) + var(--spacing-xs));
+}
+
 .checkbox__mark {
   border: 1px solid var(--color-black);
   border-radius: var(--radius-sm);
-  height: 1.15em;
-  width: 1.15em;
+  height: var(--size);
+  width: var(--size);
 
-  position: relative;
-  top: 0;
+  position: absolute;
+  top: 0.2em;
   left: 0;
 
   transition: background 0.3s;

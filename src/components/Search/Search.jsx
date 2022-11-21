@@ -184,7 +184,9 @@ const Search = ({ userZipCode = '', userSelectedCategories = [] }) => {
                 <div className="checkbox" key={id}>
                   <input className="checkbox__input visually-hidden" type="checkbox" name={label} id={id} onChange={handleCheckboxChange} />
                   <div className="checkbox__mark"></div>
-                  <label htmlFor={id}>{label}</label>
+                  <label className="checkbox__label" htmlFor={id}>
+                    {label}
+                  </label>
                 </div>
               ))}
             </div>
