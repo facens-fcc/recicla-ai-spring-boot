@@ -10,8 +10,9 @@ const Footer = () => {
       <div className="container container--narrow">
         <div className={style.footer__wrapper}>
           <Brand />
-          <div className={style.footer__about}>
-            <p>A Recicla Aí nasceu com intuito de contribuir com a sustentabilidade e, tendo como inspiração os Objetivos de Desenvolvimento Sustentável (ODS), desenvolvemos uma plataforma de informações sobre locais de descarte de lixo eletrônico na cidade de Sorocaba.</p>
+          <div className={style.footer__content}>
+            <p>A Recicla Aí nasceu com intuito de oferecer informações confiáveis e atualizadas sobre locais de descarte de lixo eletrônico na cidade de Sorocaba, a fim de diminuir o acúmulo de lixo e a poluição do meio ambiente. Venha mudar o mundo com a gente! Todos os direitos reservados.</p>
+            <p>Todos os direitos reservados.</p>
           </div>
         </div>
       </div>
