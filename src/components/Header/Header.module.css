@@ -1,12 +1,12 @@
 .header {
   grid-area: header;
+  padding: var(--spacing-md) var(--side-padding) 3vh;
 }
 
 .header__nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--spacing-md) var(--side-padding) 3vh;
 }
 
 /*  */
@@ -54,6 +54,7 @@
 
 .menu__wrapper {
   display: none;
+  padding: 0 var(--side-padding);
 }
 
 .menu__list {
