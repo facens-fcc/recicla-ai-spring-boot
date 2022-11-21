@@ -9,7 +9,7 @@ const Search = ({ userZipCode = '', userSelectedCategories = [] }) => {
   const dropdownButtonRef = React.useRef();
   const zipCodeRef = React.useRef();
 
-  const [isDropdownOpen, setDropdownOpen] = useState(true);
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
 
   const [zipCode, setZipCode] = useState(userZipCode);
   const [isZipCodeValid, setZipCodeValid] = useState(false);
