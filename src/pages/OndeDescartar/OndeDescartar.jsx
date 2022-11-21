@@ -20,7 +20,7 @@ const OndeDescartar = () => {
   }, []);
 
   return (
-    <main class="main">
+    <main className="main">
       <section className={style.hero}>
         <div className="container">
           <h1 className="display">Onde descartar?</h1>

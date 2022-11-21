@@ -5,7 +5,7 @@ import earth from '../../assets/earth.png';
 
 const Home = () => {
   return (
-    <main class="main">
+    <main className="main">
       <section className={style.hero}>
         <div className="container">
           <h1 className="visually-hidden">Descubra onde descatar lixos eletrônicos em Sorocaba</h1>
