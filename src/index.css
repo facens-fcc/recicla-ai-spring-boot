@@ -228,6 +228,12 @@ strong {
   font-size: clamp(4rem, -1rem + 10vw, 10rem);
 }
 
+@media (max-width: 25rem) {
+  .display {
+    font-size: 2.5rem;
+  }
+}
+
 /**
  *
  */
@@ -237,6 +243,12 @@ strong {
   font-size: 1.5rem;
   font-weight: normal;
   line-height: 110%;
+}
+
+@media (max-width: 25rem) {
+  .heading {
+    font-size: 1.25rem;
+  }
 }
 
 /**

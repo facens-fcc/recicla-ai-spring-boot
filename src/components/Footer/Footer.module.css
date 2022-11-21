@@ -1,4 +1,5 @@
 .footer {
+  grid-area: footer;
   padding: var(--spacing-md) var(--side-padding) var(--spacing-xl);
 }
 
