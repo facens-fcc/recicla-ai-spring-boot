@@ -9,7 +9,9 @@ const Home = () => {
     <main className="main">
       <section className={style.hero}>
         <div className="container">
-          <h1 className={`display display--small ${style.hero__title}`}>Descarte o seu lixo eletrônico de forma consciente em Sorocaba</h1>
+          <h1 className={`display display--small ${style.hero__title}`}>
+            Descarte o seu <em>lixo eletrônico</em> de forma consciente em <em>Sorocaba</em>
+          </h1>
           <Search />
         </div>
       </section>
