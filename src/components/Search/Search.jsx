@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import style from './Search.module.css';
 
+import Checkbox from '../Checkbox/Checkbox';
+
 import categories from '../../data/categories.json';
 import siren from '../../assets/siren.svg';
 
@@ -181,13 +183,7 @@ const Search = ({ userZipCode = '', userSelectedCategories = [] }) => {
             </button>
             <div className="dropdownContent" aria-hidden={!isDropdownOpen} aria-labelledby="dropdown-button" id="dropdown-content" role="dialog">
               {categories.map(({ id, label }) => (
-                <div className="checkbox" key={id}>
-                  <input className="checkbox__input visually-hidden" type="checkbox" name={label} id={id} onChange={handleCheckboxChange} />
-                  <div className="checkbox__mark"></div>
-                  <label className="checkbox__label" htmlFor={id}>
-                    {label}
-                  </label>
-                </div>
+                <Checkbox key={id} id={id} label={label} name={label} onChange={handleCheckboxChange} />
               ))}
             </div>
           </div>
