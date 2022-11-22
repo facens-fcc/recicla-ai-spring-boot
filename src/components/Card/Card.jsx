@@ -46,7 +46,7 @@ const Card = ({ company }) => {
             Abrir WhatsApp
           </a>
         ) : (
-          <a className="button" href={`tel:${phone}`} target="_blank" rel="noreferrer">
+          <a className="button" href={`tel:${formatPhone(phone)}`} target="_blank" rel="noreferrer">
             Entrar em contato
           </a>
         )}
