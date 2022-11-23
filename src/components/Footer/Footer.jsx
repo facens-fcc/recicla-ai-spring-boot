@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import style from './Footer.module.css';
 import Brand from '../Brand/Brand';
 
