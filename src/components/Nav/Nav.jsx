@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from 'react';
 import style from './Nav.module.css';
 
 import Brand from '../Brand/Brand';
-import Container from '../Container/Container.jsx';
 
 const Nav = () => {
   const menuRef = useRef();
