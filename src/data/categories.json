@@ -17,10 +17,26 @@
   },
   {
     "id": 5,
-    "label": "Acessórios de informática"
+    "label": "Equipamentos de Informática"
   },
   {
     "id": 6,
-    "label": "Computadores e vídeos games"
+    "label": "Computadores e Vídeos Games"
+  },
+  {
+    "id": 7,
+    "label": "Carregadores"
+  },
+  {
+    "id": 8,
+    "label": "Cabos e Fios"
+  },
+  {
+    "id": 9,
+    "label": "Antenas"
+  },
+  {
+    "id": 10,
+    "label": "Lâmpadas"
   }
 ]

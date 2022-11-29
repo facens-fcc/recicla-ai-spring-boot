@@ -3,595 +3,598 @@
     "id": 1,
     "name": "Metareciclagem",
     "whatsapp": false,
-    "phone": "(15) 3417-3825",
-    "address": {
-      "street": "Av. Nove de Julho",
-      "number": "1066",
-      "district": "Vila Barão",
-      "city": "Sorocaba",
-      "state": "São Paulo",
-      "zip_code": "18060-630",
-      "lat": "-23.4973243",
-      "lng": "-47.4826211"
+    "phone": {
+      "ddi": "55",
+      "ddd": "15",
+      "number": "34173825"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Acessórios de informática"],
-    "payment": true,
-    "residential_collection": true,
-    "selective_collection": true
+    "address": {
+      "street": "Av. Armando Sales de Oliveira",
+      "number": "762",
+      "neighborhood": "Trujilo",
+      "city": "Sorocaba",
+      "state": "SP",
+      "zip_code": "18060370",
+      "lat": "-23.49231",
+      "lng": "-47.47388"
+    },
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores", "Cabos e Fios", "Antenas"],
+    "payment": false,
+    "residential_collection": true
   },
   {
     "id": 2,
-    "name": "Eco Vida",
-    "whatsapp": true,
-    "phone": "(15) 99623-6924",
+    "name": "Coreso",
+    "whatsapp": false,
+    "phone": {
+      "ddi": "55",
+      "ddd": "15",
+      "number": "32276608"
+    },
     "address": {
       "street": "R. Chile",
       "number": "401",
-      "district": "Vila Barcelona",
+      "neighborhood": "Vila Barcelona",
       "city": "Sorocaba",
-      "state": "São Paulo",
-      "zip_code": "18025-280",
-      "lat": "-23.5157219",
-      "lng": "-47.4382419"
+      "state": "SP",
+      "zip_code": "18025280",
+      "lat": "-23.51331",
+      "lng": "-47.43692"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Acessórios de informática"],
-    "payment": true,
-    "residential_collection": true,
-    "selective_collection": true
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores", "Cabos e Fios", "Antenas", "Lâmpadas"],
+    "payment": false,
+    "residential_collection": true
   },
   {
     "id": 3,
-    "name": "Eco Vida",
-    "whatsapp": true,
-    "phone": "(15) 99623-6924",
+    "name": "Coreso",
+    "whatsapp": false,
+    "phone": {
+      "ddi": "55",
+      "ddd": "15",
+      "number": "32276608"
+    },
     "address": {
       "street": "R. José Henrique Dias",
       "number": "215",
-      "district": "Vitória Régia",
+      "neighborhood": "Vitória Régia",
       "city": "Sorocaba",
-      "state": "São Paulo",
-      "zip_code": "18078-395",
-      "lat": "-23.4289349",
-      "lng": "-47.4561666"
+      "state": "SP",
+      "zip_code": "18078395",
+      "lat": "-23.42858",
+      "lng": "-47.45544"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Acessórios de informática"],
-    "payment": true,
-    "residential_collection": true,
-    "selective_collection": true
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores", "Cabos e Fios", "Antenas", "Lâmpadas"],
+    "payment": false,
+    "residential_collection": true
   },
   {
     "id": 4,
     "name": "Cooperativa de Col. Sel. Reviver",
     "whatsapp": false,
-    "phone": "(15) 3326-1903",
+    "phone": {
+      "ddi": "55",
+      "ddd": "15",
+      "number": "33261903"
+    },
     "address": {
       "street": "R. Ourinhos",
       "number": "241",
-      "district": "Jardim Leocadia",
+      "neighborhood": "Jd. Leocadia",
       "city": "Sorocaba",
-      "state": "São Paulo",
-      "zip_code": "18085-460",
-      "lat": "-23.4723075",
-      "lng": "-47.4392272"
+      "state": "SP",
+      "zip_code": "18085460",
+      "lat": "-23.47211",
+      "lng": "-47.43923"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Acessórios de informática"],
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores", "Cabos e Fios", "Antenas"],
     "payment": false,
-    "residential_collection": false,
-    "selective_collection": false
+    "residential_collection": true
   },
   {
     "id": 5,
-    "name": "Recycle",
-    "whatsapp": true,
-    "phone": "(15) 99817-7369",
-    "address": {
-      "street": "R. Dr. Campos Salles",
-      "number": "1071",
-      "district": "Vila Assis",
-      "city": "Sorocaba",
-      "state": "São Paulo",
-      "zip_code": "18025-000",
-      "lat": "-23.5132873",
-      "lng": "-47.4472793"
-    },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Acessórios de informática", "Computadores e vídeos games"],
-    "payment": true,
-    "residential_collection": true,
-    "selective_collection": true
-  },
-  {
-    "id": 6,
     "name": "Resotech Ambiental",
     "whatsapp": true,
-    "phone": "(15) 99799-0984",
+    "phone": {
+      "ddi": "55",
+      "ddd": "15",
+      "number": "997990984"
+    },
     "address": {
       "street": "R. Estanislau Camargo Sampaio",
       "number": "680",
-      "district": "Jardim Luciana Maria",
+      "neighborhood": "Jd. Luciana Maria",
       "city": "Sorocaba",
-      "state": "São Paulo",
-      "zip_code": "18071-325",
-      "lat": "-23.467163",
-      "lng": "-47.505694"
+      "state": "SP",
+      "zip_code": "18071325",
+      "lat": "-23.46715",
+      "lng": "-47.50880"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Acessórios de informática", "Computadores e vídeos games"],
+    "categories": ["Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores", "Cabos e Fios"],
     "payment": false,
-    "residential_collection": false,
-    "selective_collection": true
+    "residential_collection": true
   },
   {
-    "id": 7,
+    "id": 6,
     "name": "Império Sucatas",
     "whatsapp": true,
-    "phone": "(15) 99195-3191",
+    "phone": {
+      "ddi": "55",
+      "ddd": "15",
+      "number": "991953191"
+    },
     "address": {
       "street": "R. Catalunha",
       "number": "125",
-      "district": "Vila Hortência",
+      "neighborhood": "Vila Hortência",
       "city": "Sorocaba",
-      "state": "São Paulo",
-      "zip_code": "18020-242",
-      "lat": "-23.5087363",
-      "lng": "-47.4427354"
+      "state": "SP",
+      "zip_code": "18020242",
+      "lat": "-23.50824",
+      "lng": "-47.44222"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Acessórios de informática", "Computadores e vídeos games"],
+    "categories": ["Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores", "Cabos e Fios", "Antenas"],
     "payment": true,
-    "residential_collection": false,
-    "selective_collection": false
+    "residential_collection": true
   },
   {
-    "id": 8,
+    "id": 7,
     "name": "Recicla Sorocaba",
     "whatsapp": true,
-    "phone": "(15) 99699-5301",
+    "phone": {
+      "ddi": "55",
+      "ddd": "15",
+      "number": "996995301"
+    },
     "address": {
       "street": "Av. Ipanema",
       "number": "3345",
-      "district": "Jardim Planalto",
+      "neighborhood": "Jd. Planalto",
       "city": "Sorocaba",
-      "state": "São Paulo",
-      "zip_code": "18071-801",
-      "lat": "-23.4793839",
-      "lng": "-47.4829895"
+      "state": "SP",
+      "zip_code": "18071801",
+      "lat": "-23.46832",
+      "lng": "-47.49347"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Acessórios de informática"],
-    "payment": true,
-    "residential_collection": true,
-    "selective_collection": true
+    "categories": ["Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores", "Cabos e Fios"],
+    "payment": false,
+    "residential_collection": true
   },
   {
-    "id": 9,
+    "id": 8,
     "name": "INFOBOM",
     "whatsapp": true,
-    "phone": "(15) 98810-9371",
+    "phone": {
+      "ddi": "55",
+      "ddd": "15",
+      "number": "988109371"
+    },
     "address": {
       "street": "Av. Edward Fru Fru Marciano da Silva",
       "number": "1159",
-      "district": "Jardim São Guilherme II",
+      "neighborhood": "Jd. São Guilherme II",
       "city": "Sorocaba",
-      "state": "São Paulo",
-      "zip_code": "18074-621",
-      "lat": "-23.4495",
-      "lng": "-47.4893015"
+      "state": "SP",
+      "zip_code": "18074621",
+      "lat": "-23.44618",
+      "lng": "-47.49176"
     },
-    "categories": ["Acessórios de informática", "Computadores e vídeos games"],
+    "categories": ["Equipamentos de Informática", "Computadores e Vídeos Games"],
     "payment": true,
-    "residential_collection": false,
-    "selective_collection": false
+    "residential_collection": true
+  },
+  {
+    "id": 9,
+    "name": "Ecoponto - Vila Helena",
+    "whatsapp": false,
+    "phone": {
+      "ddi": "",
+      "ddd": "",
+      "number": "156"
+    },
+    "address": {
+      "street": "R. Roque Sampaio",
+      "number": "100",
+      "neighborhood": "Vila Helena",
+      "city": "Sorocaba",
+      "state": "SP",
+      "zip_code": "18066220",
+      "lat": "-23.477486",
+      "lng": "-47.493161"
+    },
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores", "Cabos e Fios", "Antenas", "Lâmpadas"],
+    "payment": false,
+    "residential_collection": false
   },
   {
     "id": 10,
-    "name": "ECOPONTO",
-    "address": {
-      "street": "R. Roque Sampaio",
-      "number": "",
-      "district": "Vila Helena",
-      "city": "Sorocaba",
-      "state": "São Paulo",
-      "zip_code": "18066-200",
-      "lat": "-23.4768362",
-      "lng": "-47.4933206"
+    "name": "Ecoponto - Colorau",
+    "whatsapp": true,
+    "phone": {
+      "ddi": "55",
+      "ddd": "15",
+      "number": "997159789"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Acessórios de informática"],
+    "address": {
+      "street": "R. Encarnação Rando Castellucci",
+      "number": "70",
+      "neighborhood": "Vila Colorau",
+      "city": "Sorocaba",
+      "state": "SP",
+      "zip_code": "18020440",
+      "lat": "-23.51322",
+      "lng": "-47.43512"
+    },
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores", "Cabos e Fios", "Antenas", "Lâmpadas"],
     "payment": false,
-    "residential_collection": false,
-    "selective_collection": false
-  },
-  {
-    "id": 11,
-    "name": "Salmeron",
-    "whatsapp": false,
-    "phone": "(15) 3232-2425",
-    "address": {
-      "street": "Av. Bandeirantes",
-      "number": "2480",
-      "district": "Brigadeiro Tobias",
-      "city": "Sorocaba",
-      "state": "São Paulo",
-      "zip_code": "18108-000",
-      "lat": "-23.5072698",
-      "lng": "-47.3688862"
-    },
-    "categories": ["Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Acessórios de informática"],
-    "payment": true,
-    "residential_collection": false,
-    "selective_collection": true
+    "residential_collection": false
   },
   {
     "id": 12,
-    "name": "Casas Bahia",
+    "name": "Ecoponto - Vila Hortência",
     "whatsapp": false,
-    "phone": "(15) 3331-5200",
-    "address": {
-      "street": "R. Dr. Álvaro Soares",
-      "number": "48",
-      "district": "Centro",
-      "city": "Sorocaba",
-      "state": "São Paulo",
-      "zip_code": "18010-190",
-      "lat": "-23.4976431",
-      "lng": "-47.4577734"
+    "phone": {
+      "ddi": "",
+      "ddd": "",
+      "number": "156"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Acessórios de informática"],
+    "address": {
+      "street": "R. Lourenço Molinero",
+      "number": "85",
+      "neighborhood": "Vila Hortência",
+      "city": "Sorocaba",
+      "state": "SP",
+      "zip_code": "18015063",
+      "lat": "-23.502874",
+      "lng": "-47.439862"
+    },
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores", "Cabos e Fios", "Antenas", "Lâmpadas"],
     "payment": false,
-    "residential_collection": true,
-    "selective_collection": false
+    "residential_collection": false
   },
   {
     "id": 13,
-    "name": "Casas Bahia - Shopping Cidade Sorocaba",
+    "name": "Casas Bahia",
     "whatsapp": false,
-    "address": {
-      "street": "Av. Itavuvu",
-      "number": "3373",
-      "district": "Jardim Santa Cecilia",
-      "city": "Sorocaba",
-      "state": "São Paulo",
-      "zip_code": "18078-005",
-      "lat": "-23.4540606",
-      "lng": "-47.4824502"
+    "phone": {
+      "ddi": "55",
+      "ddd": "15",
+      "number": "33315200"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Acessórios de informática"],
+    "address": {
+      "street": "R. Dr. Álvaro Soares",
+      "number": "48",
+      "neighborhood": "Centro",
+      "city": "Sorocaba",
+      "state": "SP",
+      "zip_code": "18010190",
+      "lat": "-23.49834",
+      "lng": "-47.45884"
+    },
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores", "Cabos e Fios"],
     "payment": false,
-    "residential_collection": true,
-    "selective_collection": false
+    "residential_collection": false
   },
   {
     "id": 14,
-    "name": "Casas Bahia - Shopping Iguatemi Esplanada",
+    "name": "Coop",
     "whatsapp": false,
-    "address": {
-      "street": "Av. Professora Izoraida Marques Peres",
-      "number": "401",
-      "district": "Parque Campolim",
-      "city": "Sorocaba",
-      "state": "São Paulo",
-      "zip_code": "18110-650",
-      "lat": "-23.5417545",
-      "lng": "-47.4665344"
+    "phone": {
+      "ddi": "55",
+      "ddd": "15",
+      "number": "32392911"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Acessórios de informática"],
-    "payment": false,
-    "residential_collection": true,
-    "selective_collection": false
-  },
-  {
-    "id": 15,
-    "name": "COOP",
-    "whatsapp": false,
-    "phone": "(15) 3239-2911",
     "address": {
       "street": "Av. Itavuvu",
       "number": "3799",
-      "district": "Jardim Santa Cecilia",
+      "neighborhood": "Jd. Santa Cecilia",
       "city": "Sorocaba",
-      "state": "São Paulo",
-      "zip_code": "18078-005",
-      "lat": "-23.4540606",
-      "lng": "-47.4824502"
+      "state": "SP",
+      "zip_code": "18078005",
+      "lat": "-23.45267",
+      "lng": "-47.48289"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Acessórios de informática"],
-    "payment": true,
-    "residential_collection": true,
-    "selective_collection": true
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Equipamentos de Informática"],
+    "payment": false,
+    "residential_collection": false
   },
   {
-    "id": 16,
+    "id": 15,
     "name": "TIM",
     "whatsapp": false,
-    "phone": "(15) 40030941",
+    "phone": {
+      "ddi": "55",
+      "ddd": "15",
+      "number": "40030941"
+    },
     "address": {
       "street": "Praça Cel. Fernando Prestes",
       "number": "46",
-      "district": "Centro",
+      "neighborhood": "Centro",
       "city": "Sorocaba",
-      "state": "São Paulo",
-      "zip_code": "18010-160",
-      "lat": "-23.4997697",
-      "lng": "-47.4585753"
+      "state": "SP",
+      "zip_code": "18010160",
+      "lat": "-23.49982",
+      "lng": "-47.45758"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Acessórios de informática"],
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Equipamentos de Informática"],
     "payment": false,
-    "residential_collection": false,
-    "selective_collection": false
+    "residential_collection": false
   },
   {
     "id": 17,
-    "name": "VIVO",
-    "whatsapp": false,
-    "address": {
-      "street": "R. Prof. Toledo",
-      "number": "373",
-      "district": "Centro",
-      "city": "Sorocaba",
-      "state": "São Paulo",
-      "zip_code": "18035-110",
-      "lat": "-23.4996998",
-      "lng": "-47.4639032"
-    },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Acessórios de informática"],
-    "payment": false,
-    "residential_collection": true,
-    "selective_collection": false
-  },
-  {
-    "id": 18,
     "name": "Cooperativa de Votorantim - Coopervot",
     "whatsapp": true,
-    "phone": "(15) 99796-7641",
+    "phone": {
+      "ddi": "55",
+      "ddd": "15",
+      "number": "997967641"
+    },
     "address": {
       "street": "Av. Jaziel de Azeredo Ribeiro",
       "number": "680",
-      "district": "Jardim Antonio Cassillo",
+      "neighborhood": "Jd. Antonio Cassillo",
       "city": "Votorantim",
-      "state": "São Paulo",
-      "zip_code": "18112-180",
-      "lat": "-23.527338",
-      "lng": "-47.4306048"
+      "state": "SP",
+      "zip_code": "18112180",
+      "lat": "-23.52723",
+      "lng": "-47.43377"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Acessórios de informática"],
-    "payment": true,
-    "residential_collection": true,
-    "selective_collection": true
+    "categories": ["Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Equipamentos de Informática", "Computadores e Vídeos Games", "Lâmpadas", "Carregadores", "Cabos e Fios", "Antenas"],
+    "payment": false,
+    "residential_collection": true
   },
   {
-    "id": 19,
-    "name": "SEMA – Secretaria do Meio Ambiente",
+    "id": 18,
+    "name": "SEMA - Secretaria do Meio Ambiente",
     "whatsapp": false,
-    "phone": "(15) 3219-2280",
+    "phone": {
+      "ddi": "55",
+      "ddd": "15",
+      "number": "32192280"
+    },
     "address": {
       "street": "R. Santa Maria",
       "number": "197",
-      "district": "Vila Hortência",
+      "neighborhood": "Vila Hortência",
       "city": "Sorocaba",
-      "state": "São Paulo",
-      "zip_code": "18020-216",
-      "lat": "-23.5047759",
-      "lng": "-47.4485801"
+      "state": "SP",
+      "zip_code": "18020216",
+      "lat": "-23.50540",
+      "lng": "-47.44882"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Acessórios de informática"],
-    "payment": true,
-    "residential_collection": true,
-    "selective_collection": true
+    "categories": ["Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores", "Cabos e Fios"],
+    "payment": false,
+    "residential_collection": false
+  },
+  {
+    "id": 19,
+    "name": "Fast Shop - Shopping Iguatemi Esplanada",
+    "whatsapp": false,
+    "phone": {
+      "ddi": "55",
+      "ddd": "15",
+      "number": "34154058"
+    },
+    "address": {
+      "street": "Av. Gisele Constantino",
+      "number": "1850",
+      "neighborhood": "Parque Bela Vista",
+      "city": "Votorantim",
+      "state": "SP",
+      "zip_code": "18110650",
+      "lat": "-23.53530",
+      "lng": "-47.46230"
+    },
+    "categories": ["Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores", "Cabos e Fios"],
+    "payment": false,
+    "residential_collection": false
   },
   {
     "id": 20,
-    "name": "Fast Shop - Shopping Iguatemi Esplanada",
+    "name": "Carrefour Sorocaba - Norte",
     "whatsapp": false,
-    "phone": "(15) 3415-4058",
-    "address": {
-      "street": "Avenida Gisele Constantino",
-      "number": "1850",
-      "district": "Parque Bela Vista",
-      "city": "Votorantim",
-      "state": "São Paulo",
-      "zip_code": "18110-650",
-      "lat": "-23.5417545",
-      "lng": "-47.4665344"
+    "phone": {
+      "ddi": "55",
+      "ddd": "15",
+      "number": "33329675"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Acessórios de informática"],
-    "payment": false,
-    "residential_collection": false,
-    "selective_collection": false
-  },
-  {
-    "id": 21,
-    "name": "Carrefour Sorocaba – Norte",
-    "whatsapp": false,
-    "phone": "(15) 3332-9675",
     "address": {
       "street": "Av. Brasil",
       "number": "376",
-      "district": "Terra Vermelha",
+      "neighborhood": "Terra Vermelha",
       "city": "Sorocaba",
-      "state": "São Paulo",
-      "zip_code": "18060-105",
-      "lat": "-23.4878648",
-      "lng": "-47.4743255"
+      "state": "SP",
+      "zip_code": "18065100",
+      "lat": "-23.48649",
+      "lng": "-47.47119"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Acessórios de informática"],
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores"],
     "payment": false,
-    "residential_collection": false,
-    "selective_collection": false
+    "residential_collection": false
   },
   {
-    "id": 22,
+    "id": 21,
     "name": "Dicico - Shopping Esplanada Sorocaba",
     "whatsapp": false,
-    "phone": "(08) 007634622",
+    "phone": {
+      "ddi": "",
+      "ddd": "",
+      "number": "08007634622"
+    },
     "address": {
       "street": "Av. Gisele Constantino",
       "number": "401",
-      "district": "Parque Bela Vista",
+      "neighborhood": "Parque Bela Vista",
       "city": "Votoratim",
-      "state": "São Paulo",
-      "zip_code": "18110-650",
-      "lat": "-23.5417545",
-      "lng": "-47.4665344"
+      "state": "SP",
+      "zip_code": "18047900",
+      "lat": "-23.53374",
+      "lng": "-47.46309"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Acessórios de informática"],
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores"],
     "payment": false,
-    "residential_collection": false,
-    "selective_collection": false
+    "residential_collection": false
   },
   {
-    "id": 23,
-    "name": "FACENS",
+    "id": 22,
+    "name": "Facens",
     "whatsapp": false,
-    "phone": "(15) 3238-1188",
+    "phone": {
+      "ddi": "55",
+      "ddd": "15",
+      "number": "32381188"
+    },
     "address": {
       "street": "Rodovia Senador José Ermírio de Moraes",
       "number": "1425",
-      "district": "Jardim Constantino Matucci",
+      "neighborhood": "Alto da Boa Vista",
       "city": "Sorocaba",
-      "state": "São Paulo",
-      "zip_code": "18085-784",
-      "lat": "-23.469845090806796",
-      "lng": "-47.429796957092606"
+      "state": "SP",
+      "zip_code": "18087125",
+      "lat": "-23.46985",
+      "lng": "-47.42980"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Acessórios de informática"],
-    "payment": true,
-    "residential_collection": true,
-    "selective_collection": true
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Equipamentos de Informática", "Carregadores"],
+    "payment": false,
+    "residential_collection": false
   },
   {
-    "id": 24,
+    "id": 23,
     "name": "Kalunga",
     "whatsapp": false,
-    "phone": "(11) 33469966",
+    "phone": {
+      "ddi": "55",
+      "ddd": "11",
+      "number": "33469966"
+    },
     "address": {
       "street": "Av. Dom Aguirre",
       "number": "2121",
-      "district": "Jardim Santa Rosália",
+      "neighborhood": "Jd. Santa Rosália",
       "city": "Sorocaba",
-      "state": "São Paulo",
-      "zip_code": "18090-002",
-      "lat": "-23.4892743",
-      "lng": "-47.4400011"
+      "state": "SP",
+      "zip_code": "18090002",
+      "lat": "-23.49220",
+      "lng": "-47.44516"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Acessórios de informática"],
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores"],
     "payment": false,
-    "residential_collection": false,
-    "selective_collection": false
+    "residential_collection": false
   },
   {
-    "id": 25,
+    "id": 24,
     "name": "Leroy Merlin",
     "whatsapp": false,
-    "phone": "0800 020 5376",
+    "phone": {
+      "ddi": "",
+      "ddd": "",
+      "number": "08000205376"
+    },
     "address": {
       "street": "Rodovia Raposo Tavares",
       "number": "km 101",
-      "district": "Parque Reserva Fazenda Imperial",
+      "neighborhood": "Parque Reserva Fazenda Imperial",
       "city": "Sorocaba",
-      "state": "São Paulo",
-      "zip_code": "18052-775",
-      "lat": "-23.532998531368815",
-      "lng": "-47.47624297848851"
+      "state": "SP",
+      "zip_code": "18052775",
+      "lat": "-23.53314",
+      "lng": "-47.47629"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Acessórios de informática", "Computadores e vídeos games"],
-    "payment": true,
-    "residential_collection": true,
-    "selective_collection": true
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores"],
+    "payment": false,
+    "residential_collection": false
   },
   {
-    "id": 26,
-    "name": "Makro",
+    "id": 25,
+    "name": "Makro Zona Norte",
     "whatsapp": false,
-    "phone": "(15) 3316-2720",
+    "phone": {
+      "ddi": "55",
+      "ddd": "15",
+      "number": "33162720"
+    },
     "address": {
       "street": "R. João Ribeiro de Barros",
       "number": "1411",
-      "district": "Vila Odim Antao",
+      "neighborhood": "Vila Odim Antao",
       "city": "Sorocaba",
-      "state": "São Paulo",
-      "zip_code": "18090-602",
-      "lat": "-23.475367727981595",
-      "lng": "-47.455416886245985"
+      "state": "SP",
+      "zip_code": "18090602",
+      "lat": "-23.47065",
+      "lng": "-47.45487"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Acessórios de informática"],
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores"],
     "payment": false,
-    "residential_collection": true,
-    "selective_collection": true
+    "residential_collection": false
+  },
+  {
+    "id": 26,
+    "name": "Sam's Club",
+    "whatsapp": false,
+    "phone": {
+      "ddi": "55",
+      "ddd": "15",
+      "number": "21013700"
+    },
+    "address": {
+      "street": "Av. Antônio Carlos Comitre",
+      "number": "80",
+      "neighborhood": "Parque Campolim",
+      "city": "Sorocaba",
+      "state": "SP",
+      "zip_code": "18047620",
+      "lat": "-23.51731",
+      "lng": "-47.46551"
+    },
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores"],
+    "payment": false,
+    "residential_collection": false
   },
   {
     "id": 27,
-    "name": "Makro Zona Norte",
-    "whatsapp": false,
-    "phone": "(15) 3316-2720",
-    "address": {
-      "street": "R. Clemente Bernardino Pereira",
-      "number": "92",
-      "district": "Jardim Novo Mundo",
-      "city": "Sorocaba",
-      "state": "São Paulo",
-      "zip_code": "18119-055",
-      "lat": "-23.5376123",
-      "lng": "-47.5023073"
-    },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Acessórios de informática"],
-    "payment": false,
-    "residential_collection": true,
-    "selective_collection": true
-  },
-  {
-    "id": 28,
-    "name": "Sam's Club",
-    "whatsapp": false,
-    "phone": "(15) 2101-3700",
-    "address": {
-      "street": "Avenida Antônio Carlos Comitre",
-      "number": "80",
-      "district": "Parque Campolim",
-      "city": "Sorocaba",
-      "state": "São Paulo",
-      "zip_code": "18047-620",
-      "lat": "-23.5217748",
-      "lng": "-47.46481559999999"
-    },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Acessórios de informática"],
-    "payment": true,
-    "residential_collection": true,
-    "selective_collection": true
-  },
-  {
-    "id": 29,
     "name": "Senac",
     "whatsapp": false,
-    "phone": "(15) 3412-2500",
+    "phone": {
+      "ddi": "55",
+      "ddd": "15",
+      "number": "34122500"
+    },
     "address": {
       "street": "Av. Cel. Nogueira Padilha",
       "number": "2392",
-      "district": "Vila Hortênia",
+      "neighborhood": "Vila Hortênia",
       "city": "Sorocaba",
-      "state": "São Paulo",
-      "zip_code": "18020-003",
-      "lat": "-23.5120483",
-      "lng": "-47.4328786"
+      "state": "SP",
+      "zip_code": "18020003",
+      "lat": "-23.51277",
+      "lng": "-47.43180"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Acessórios de informática"],
-    "payment": true,
-    "residential_collection": false,
-    "selective_collection": true
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores", "Cabos e Fios", "Antenas", "Lâmpadas"],
+    "payment": false,
+    "residential_collection": false
   },
   {
-    "id": 30,
+    "id": 28,
     "name": "Sesc",
     "whatsapp": false,
-    "phone": "(15) 3332-9933",
-    "address": {
-      "street": "Rua Barão de Piratininga",
-      "number": "555",
-      "district": "Jardim Faculdade",
-      "city": "Sorocaba",
-      "state": "São Paulo",
-      "zip_code": "18030-160",
-      "lat": "-23.512181",
-      "lng": "-47.4611259"
+    "phone": {
+      "ddi": "55",
+      "ddd": "15",
+      "number": "33329933"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Acessórios de informática"],
-    "payment": true,
-    "residential_collection": false,
-    "selective_collection": true
+    "address": {
+      "street": "R. Barão de Piratininga",
+      "number": "555",
+      "neighborhood": "Jd. Faculdade",
+      "city": "Sorocaba",
+      "state": "SP",
+      "zip_code": "18030160",
+      "lat": "-23.51352",
+      "lng": "-47.46063"
+    },
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores", "Cabos e Fios", "Antenas", "Lâmpadas"],
+    "payment": false,
+    "residential_collection": false
   }
 ]
