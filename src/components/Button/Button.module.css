@@ -1,0 +1,22 @@
+.button {
+  background: var(--bg-orange-noise);
+  color: var(--color-black);
+
+  border-radius: var(--radius-md);
+  font-size: var(--text-md);
+  letter-spacing: 0.01em;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  width: max-content;
+
+  height: var(--button-height);
+  line-height: var(--button-height);
+  padding: 0 1.5em;
+}
+
+.button--center {
+  margin-left: auto;
+  margin-right: auto;
+}

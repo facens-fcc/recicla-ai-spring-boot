@@ -5,6 +5,7 @@ import Checkbox from '../Checkbox/Checkbox';
 
 import categories from '../../data/categories.json';
 import siren from '../../assets/siren.svg';
+import Button from '../Button/Button.jsx';
 
 const Search = ({ userZipCode = '', userSelectedCategories = [] }) => {
   const dropdownRef = React.useRef();
@@ -194,9 +195,7 @@ const Search = ({ userZipCode = '', userSelectedCategories = [] }) => {
             </div>
           </div>
           <footer>
-            <button className="button button--primary" type="submit">
-              Pesquisar
-            </button>
+            <Button type="submit">Pesquisar</Button>
             <div role="alert" aria-live="assertive" aria-atomic="true" className={style.search__errors}>
               {isFormValid === false && (
                 <ul className={style.search__errors__list}>

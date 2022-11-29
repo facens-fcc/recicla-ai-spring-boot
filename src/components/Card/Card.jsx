@@ -2,6 +2,7 @@ import React from 'react';
 import style from './Card.module.css';
 
 import iconEnvironment from '../../assets/environment.svg';
+import Button from '../Button/Button.jsx';
 
 const Card = ({ company }) => {
   const { name, address, whatsapp, phone, payment, residential_collection } = company;
@@ -84,14 +85,14 @@ const Card = ({ company }) => {
           Ver no mapa
         </a>
         {whatsapp && (
-          <a className="button" href={formatLinkWhatsApp(phone)} target="_blank" rel="noreferrer">
+          <Button href={formatLinkWhatsApp(phone)} target="_blank" rel="noreferrer">
             Abrir WhatsApp
-          </a>
+          </Button>
         )}
         {phone && !whatsapp && (
-          <a className="button" href={formatLinkPhone(phone)}>
+          <Button href={formatLinkWhatsApp(phone)} target="_blank" rel="noreferrer">
             Fazer ligação
-          </a>
+          </Button>
         )}
       </div>
     </li>
