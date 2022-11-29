@@ -11,6 +11,12 @@ const Search = ({ userZipCode = '', userSelectedCategories = [] }) => {
   const dropdownButtonRef = React.useRef();
   const zipCodeRef = React.useRef();
 
+  const sortedCategories = categories.sort((a, b) => {
+    if (a.label < b.label) return -1;
+    if (a.label > b.label) return 1;
+    return 0;
+  });
+
   const [isDropdownOpen, setDropdownOpen] = useState(false);
 
   const [zipCode, setZipCode] = useState(userZipCode);
@@ -182,7 +188,7 @@ const Search = ({ userZipCode = '', userSelectedCategories = [] }) => {
               {handleDropdownLabel()}
             </button>
             <div className="dropdownContent" aria-hidden={!isDropdownOpen} aria-labelledby="dropdown-button" id="dropdown-content" role="dialog">
-              {categories.map(({ id, label }) => (
+              {sortedCategories.map(({ id, label }) => (
                 <Checkbox key={id} id={id} label={label} name={label} onChange={handleCheckboxChange} />
               ))}
             </div>
