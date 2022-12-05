@@ -92,8 +92,8 @@ const Nav = () => {
     { name: 'Início', url: '/' },
     { name: 'Por que reciclar?', url: '/#por-que-reciclar' },
     { name: 'Onde descartar?', url: '/onde-descartar/' },
-    { name: 'Cadastro para empresas', url: 'https://docs.google.com/forms/d/e/1FAIpQLSfgJz_tUJcSYwrfeFvPi2J4R6IVz4XS768srHT82WIm2s_mnw/viewform' },
-    { name: 'Contato', url: 'https://docs.google.com/forms/d/e/1FAIpQLSfhJKpZWB0m6akjqDgRwUry90EeyU3IfTmV_1WsCVZpwxA0Lg/viewform' },
+    { name: 'Cadastro para empresas', url: 'https://docs.google.com/forms/d/e/1FAIpQLSfgJz_tUJcSYwrfeFvPi2J4R6IVz4XS768srHT82WIm2s_mnw/viewform', openInNewTab: true },
+    { name: 'Contato', url: 'https://docs.google.com/forms/d/e/1FAIpQLSfhJKpZWB0m6akjqDgRwUry90EeyU3IfTmV_1WsCVZpwxA0Lg/viewform', openInNewTab: true },
   ];
 
   return (
@@ -111,7 +111,7 @@ const Nav = () => {
             <ul className={style.menu__list} aria-label="Menu" role="menu">
               {links.map((link) => (
                 <li className={style.menu__list__item} key={link.name}>
-                  <a className={`link ${style.menu__list__link}`} href={link.url} onClick={handleLinkClick}>
+                  <a className={`link ${style.menu__list__link}`} href={link.url} onClick={handleLinkClick} {...(link.openInNewTab ? { target: '_blank', rel: 'noopener noreferrer' } : {})}>
                     {link.name}
                   </a>
                 </li>
