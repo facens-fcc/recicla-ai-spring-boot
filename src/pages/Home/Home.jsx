@@ -16,6 +16,55 @@ const Home = () => {
         </div>
       </section>
 
+      <section className="marquee">
+        {/* <div className="container"> */}
+          <div className="marquee-content track">
+            <div className="slide">
+              <img src="battery.png" alt="" />
+            </div>
+            <div className="slide">
+              <img src="lamp.png" alt="" />
+            </div>
+            <div className="slide">
+              <img src="acessories.jpg" alt="" />
+            </div>
+            <div className="slide">
+              <img src="phone.jpg" alt="" />
+            </div>
+            <div className="slide">
+              <img src="laptop.jpg" alt="" />
+            </div>
+            <div className="slide">
+              <img src="mixer.jpg" alt="" />
+            </div>
+            <div className="slide">
+              <img src="refrigerator.jpg" alt="" />
+            </div>
+            <div className="slide">
+              <img src="battery.png" alt="" />
+            </div>
+            <div className="slide">
+              <img src="lamp.png" alt="" />
+            </div>
+            <div className="slide">
+              <img src="acessories.jpg" alt="" />
+            </div>
+            <div className="slide">
+              <img src="phone.jpg" alt="" />
+            </div>
+            <div className="slide">
+              <img src="laptop.jpg" alt="" />
+            </div>
+            <div className="slide">
+              <img src="mixer.jpg" alt="" />
+            </div>
+            <div className="slide">
+              <img src="refrigerator.jpg" alt="" />
+            </div>
+          </div>
+        {/* </div> */}
+      </section>
+
       <section className={style.whyRecycle} id="por-que-reciclar">
         <figure className={style.whyRecycle__quote}>
           <blockquote className={`${style.whyRecycle__quote__content} display display--medium`} cite="https://www.theworldcounts.com/challenges/waste/electronic-waste-facts">
