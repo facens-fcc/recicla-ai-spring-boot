@@ -121,6 +121,11 @@ a {
   outline-offset: 2px;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   background: var(--bg-sand-noise);
   color: var(--color-black);
@@ -519,44 +524,4 @@ strong {
   left: 0.45em;
   top: 0.25em;
   transform: rotate(45deg);
-}
-
-/* .marquee  */
-
-.marquee {
-  position: relative;
-  height: 350px;
-  width: 100%;
-  overflow-x: hidden;
-}
-
-.marquee-content {
-  display: flex;
-  justify-content: center;
-  gap: 3rem;
-  margin-top: 20px;
-}
-
-.track {
-  position: absolute;
-  white-space: nowrap;
-  will-change: transform;
-  animation: marquee 15s linear infinite;
-  width: 180%;
-}
-
-@keyframes marquee {
-  from {
-    transform: translateX(0);
-  }
-
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-.slide img {
-  height: 300px;
-  min-width: 300px;
-  border-radius: 100%;
 }

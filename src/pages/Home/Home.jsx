@@ -3,6 +3,7 @@ import style from './Home.module.css';
 import Search from '../../components/Search/Search';
 import earth from '../../assets/earth.png';
 import earthDesktop from '../../assets/earth-desktop.png';
+import Marquee from '../../components/Marquee/Marquee.jsx';
 
 const Home = () => {
   return (
@@ -16,54 +17,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="marquee">
-        {/* <div className="container"> */}
-          <div className="marquee-content track">
-            <div className="slide">
-              <img src="battery.png" alt="" />
-            </div>
-            <div className="slide">
-              <img src="lamp.png" alt="" />
-            </div>
-            <div className="slide">
-              <img src="acessories.jpg" alt="" />
-            </div>
-            <div className="slide">
-              <img src="phone.jpg" alt="" />
-            </div>
-            <div className="slide">
-              <img src="laptop.jpg" alt="" />
-            </div>
-            <div className="slide">
-              <img src="mixer.jpg" alt="" />
-            </div>
-            <div className="slide">
-              <img src="refrigerator.jpg" alt="" />
-            </div>
-            <div className="slide">
-              <img src="battery.png" alt="" />
-            </div>
-            <div className="slide">
-              <img src="lamp.png" alt="" />
-            </div>
-            <div className="slide">
-              <img src="acessories.jpg" alt="" />
-            </div>
-            <div className="slide">
-              <img src="phone.jpg" alt="" />
-            </div>
-            <div className="slide">
-              <img src="laptop.jpg" alt="" />
-            </div>
-            <div className="slide">
-              <img src="mixer.jpg" alt="" />
-            </div>
-            <div className="slide">
-              <img src="refrigerator.jpg" alt="" />
-            </div>
-          </div>
-        {/* </div> */}
-      </section>
+      <Marquee />
 
       <section className={style.whyRecycle} id="por-que-reciclar">
         <figure className={style.whyRecycle__quote}>
