@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28">
+  <g id="root">
+    <path d="M14.5,21.49h8.5c.28,0,.5-.22,.5-.5v-3.5h1.5c.28,0,.5-.22,.5-.5v-4c0-.28-.22-.5-.5-.5h-1.5v-3.5c0-.28-.22-.5-.5-.5h-3.5m-12,0H3c-.28,0-.5,.22-.5,.5v12c0,.28,.22,.5,.5,.5h6.5m6.38-6h-2.79l4.75-7h-2.62l1.91-4h-5.9l-2.82,7h2.51l-2.6,7h3.18v5.01l4.38-8.01Z" style="fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round;"/>
+  </g>
+</svg>

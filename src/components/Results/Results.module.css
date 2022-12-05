@@ -5,7 +5,13 @@
 
 .results__list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: 1fr;
   gap: 1rem;
   margin-top: var(--spacing-md);
+}
+
+@media (min-width: 48rem) {
+  .results__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

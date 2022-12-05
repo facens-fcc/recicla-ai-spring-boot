@@ -5,11 +5,18 @@ import Checkbox from '../Checkbox/Checkbox';
 
 import categories from '../../data/categories.json';
 import siren from '../../assets/siren.svg';
+import Button from '../Button/Button.jsx';
 
 const Search = ({ userZipCode = '', userSelectedCategories = [] }) => {
   const dropdownRef = React.useRef();
   const dropdownButtonRef = React.useRef();
   const zipCodeRef = React.useRef();
+
+  const sortedCategories = categories.sort((a, b) => {
+    if (a.label < b.label) return -1;
+    if (a.label > b.label) return 1;
+    return 0;
+  });
 
   const [isDropdownOpen, setDropdownOpen] = useState(false);
 
@@ -182,15 +189,13 @@ const Search = ({ userZipCode = '', userSelectedCategories = [] }) => {
               {handleDropdownLabel()}
             </button>
             <div className="dropdownContent" aria-hidden={!isDropdownOpen} aria-labelledby="dropdown-button" id="dropdown-content" role="dialog">
-              {categories.map(({ id, label }) => (
-                <Checkbox key={id} id={id} label={label} name={label} onChange={handleCheckboxChange} />
+              {sortedCategories.map(({ id, label, icon }) => (
+                <Checkbox key={id} id={id} label={label} name={label} icon={icon} onChange={handleCheckboxChange} />
               ))}
             </div>
           </div>
           <footer>
-            <button className="button button--primary" type="submit">
-              Pesquisar
-            </button>
+            <Button variant="orange" type="submit">Pesquisar</Button>
             <div role="alert" aria-live="assertive" aria-atomic="true" className={style.search__errors}>
               {isFormValid === false && (
                 <ul className={style.search__errors__list}>

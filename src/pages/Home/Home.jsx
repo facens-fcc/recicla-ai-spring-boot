@@ -1,6 +1,8 @@
 import React from 'react';
 import style from './Home.module.css';
+
 import Search from '../../components/Search/Search';
+
 import earth from '../../assets/earth.png';
 import earthDesktop from '../../assets/earth-desktop.png';
 

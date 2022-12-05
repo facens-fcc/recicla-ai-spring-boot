@@ -1,26 +1,52 @@
 [
   {
     "id": 1,
-    "label": "Pilhas e Baterias"
+    "label": "Pilhas e Baterias",
+    "icon": "/assets/icons/battery-charging-energy.svg"
   },
   {
     "id": 2,
-    "label": "Celulares e Tablets"
+    "label": "Celulares e Tablets",
+    "icon": "/assets/icons/iphone-mobile.svg"
   },
   {
     "id": 3,
-    "label": "Eletrodomésticos de Pequeno Porte"
+    "label": "Eletrodomésticos Pequenos",
+    "icon": "/assets/icons/microwave-oven-kitchen-appliances.svg"
   },
   {
     "id": 4,
-    "label": "Eletrodomésticos de Grande Porte"
+    "label": "Eletrodomésticos Grandes",
+    "icon": "/assets/icons/washing-machine.svg"
   },
   {
     "id": 5,
-    "label": "Acessórios de informática"
+    "label": "Equipamentos de Informática",
+    "icon": "/assets/icons/mouse.svg"
   },
   {
     "id": 6,
-    "label": "Computadores e vídeos games"
+    "label": "Computadores e Vídeos Games",
+    "icon": "/assets/icons/computer-desktop.svg"
+  },
+  {
+    "id": 7,
+    "label": "Carregadores",
+    "icon": "/assets/icons/apple-lightning-connect.svg"
+  },
+  {
+    "id": 8,
+    "label": "Cabos e Fios",
+    "icon": "/assets/icons/plug-power-electricity.svg"
+  },
+  {
+    "id": 9,
+    "label": "Antenas",
+    "icon": "/assets/icons/wi-fi-wlan-connect-internet_signal_antenna.svg"
+  },
+  {
+    "id": 10,
+    "label": "Lâmpadas",
+    "icon": "/assets/icons/light-bulb-idea.svg"
   }
 ]
