@@ -5,6 +5,7 @@ import Search from '../../components/Search/Search';
 
 import earth from '../../assets/earth.png';
 import earthDesktop from '../../assets/earth-desktop.png';
+import Marquee from '../../components/Marquee/Marquee.jsx';
 
 const Home = () => {
   return (
@@ -17,6 +18,8 @@ const Home = () => {
           <Search />
         </div>
       </section>
+
+      <Marquee />
 
       <section className={style.whyRecycle} id="por-que-reciclar">
         <figure className={style.whyRecycle__quote}>

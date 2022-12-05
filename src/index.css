@@ -129,6 +129,11 @@ a {
   outline-offset: 2px;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   background: var(--bg-noise-sand);
   color: var(--color-black);
