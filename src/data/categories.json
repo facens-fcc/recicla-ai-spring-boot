@@ -11,12 +11,12 @@
   },
   {
     "id": 3,
-    "label": "Eletrodomésticos de Pequeno Porte",
+    "label": "Eletrodomésticos Pequenos",
     "icon": "/assets/icons/microwave-oven-kitchen-appliances.svg"
   },
   {
     "id": 4,
-    "label": "Eletrodomésticos de Grande Porte",
+    "label": "Eletrodomésticos Grandes",
     "icon": "/assets/icons/washing-machine.svg"
   },
   {

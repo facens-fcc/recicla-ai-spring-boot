@@ -18,7 +18,7 @@
       "lat": "-23.49231",
       "lng": "-47.47388"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores", "Cabos e Fios", "Antenas"],
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos Pequenos", "Eletrodomésticos Grandes", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores", "Cabos e Fios", "Antenas"],
     "payment": false,
     "residential_collection": true
   },
@@ -41,7 +41,7 @@
       "lat": "-23.51331",
       "lng": "-47.43692"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores", "Cabos e Fios", "Antenas", "Lâmpadas"],
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos Pequenos", "Eletrodomésticos Grandes", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores", "Cabos e Fios", "Antenas", "Lâmpadas"],
     "payment": false,
     "residential_collection": true
   },
@@ -64,7 +64,7 @@
       "lat": "-23.42858",
       "lng": "-47.45544"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores", "Cabos e Fios", "Antenas", "Lâmpadas"],
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos Pequenos", "Eletrodomésticos Grandes", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores", "Cabos e Fios", "Antenas", "Lâmpadas"],
     "payment": false,
     "residential_collection": true
   },
@@ -87,7 +87,7 @@
       "lat": "-23.47211",
       "lng": "-47.43923"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores", "Cabos e Fios", "Antenas"],
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos Pequenos", "Eletrodomésticos Grandes", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores", "Cabos e Fios", "Antenas"],
     "payment": false,
     "residential_collection": true
   },
@@ -110,7 +110,7 @@
       "lat": "-23.46715",
       "lng": "-47.50880"
     },
-    "categories": ["Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores", "Cabos e Fios"],
+    "categories": ["Celulares e Tablets", "Eletrodomésticos Pequenos", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores", "Cabos e Fios"],
     "payment": false,
     "residential_collection": true
   },
@@ -133,7 +133,7 @@
       "lat": "-23.50824",
       "lng": "-47.44222"
     },
-    "categories": ["Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores", "Cabos e Fios", "Antenas"],
+    "categories": ["Celulares e Tablets", "Eletrodomésticos Pequenos", "Eletrodomésticos Grandes", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores", "Cabos e Fios", "Antenas"],
     "payment": true,
     "residential_collection": true
   },
@@ -156,7 +156,7 @@
       "lat": "-23.46832",
       "lng": "-47.49347"
     },
-    "categories": ["Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores", "Cabos e Fios"],
+    "categories": ["Celulares e Tablets", "Eletrodomésticos Pequenos", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores", "Cabos e Fios"],
     "payment": false,
     "residential_collection": true
   },
@@ -202,13 +202,13 @@
       "lat": "-23.477486",
       "lng": "-47.493161"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores", "Cabos e Fios", "Antenas", "Lâmpadas"],
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos Pequenos", "Eletrodomésticos Grandes", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores", "Cabos e Fios", "Antenas", "Lâmpadas"],
     "payment": false,
     "residential_collection": false
   },
   {
     "id": 10,
-    "name": "Ecoponto - Colorau",
+    "name": "Coreso - Ecoponto",
     "whatsapp": true,
     "phone": {
       "ddi": "55",
@@ -225,7 +225,7 @@
       "lat": "-23.51322",
       "lng": "-47.43512"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores", "Cabos e Fios", "Antenas", "Lâmpadas"],
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos Pequenos", "Eletrodomésticos Grandes", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores", "Cabos e Fios", "Antenas", "Lâmpadas"],
     "payment": false,
     "residential_collection": false
   },
@@ -248,7 +248,7 @@
       "lat": "-23.502874",
       "lng": "-47.439862"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores", "Cabos e Fios", "Antenas", "Lâmpadas"],
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos Pequenos", "Eletrodomésticos Grandes", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores", "Cabos e Fios", "Antenas", "Lâmpadas"],
     "payment": false,
     "residential_collection": false
   },
@@ -271,7 +271,7 @@
       "lat": "-23.49834",
       "lng": "-47.45884"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores", "Cabos e Fios"],
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos Pequenos", "Eletrodomésticos Grandes", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores", "Cabos e Fios"],
     "payment": false,
     "residential_collection": false
   },
@@ -294,7 +294,7 @@
       "lat": "-23.45267",
       "lng": "-47.48289"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Equipamentos de Informática"],
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos Pequenos", "Equipamentos de Informática"],
     "payment": false,
     "residential_collection": false
   },
@@ -340,7 +340,7 @@
       "lat": "-23.52723",
       "lng": "-47.43377"
     },
-    "categories": ["Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Equipamentos de Informática", "Computadores e Vídeos Games", "Lâmpadas", "Carregadores", "Cabos e Fios", "Antenas"],
+    "categories": ["Celulares e Tablets", "Eletrodomésticos Pequenos", "Eletrodomésticos Grandes", "Equipamentos de Informática", "Computadores e Vídeos Games", "Lâmpadas", "Carregadores", "Cabos e Fios", "Antenas"],
     "payment": false,
     "residential_collection": true
   },
@@ -363,7 +363,7 @@
       "lat": "-23.50540",
       "lng": "-47.44882"
     },
-    "categories": ["Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores", "Cabos e Fios"],
+    "categories": ["Celulares e Tablets", "Eletrodomésticos Pequenos", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores", "Cabos e Fios"],
     "payment": false,
     "residential_collection": false
   },
@@ -386,7 +386,7 @@
       "lat": "-23.53530",
       "lng": "-47.46230"
     },
-    "categories": ["Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores", "Cabos e Fios"],
+    "categories": ["Celulares e Tablets", "Eletrodomésticos Pequenos", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores", "Cabos e Fios"],
     "payment": false,
     "residential_collection": false
   },
@@ -409,7 +409,7 @@
       "lat": "-23.48649",
       "lng": "-47.47119"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores"],
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos Pequenos", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores"],
     "payment": false,
     "residential_collection": false
   },
@@ -432,7 +432,7 @@
       "lat": "-23.53374",
       "lng": "-47.46309"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores"],
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos Pequenos", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores"],
     "payment": false,
     "residential_collection": false
   },
@@ -455,7 +455,7 @@
       "lat": "-23.46985",
       "lng": "-47.42980"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Equipamentos de Informática", "Carregadores"],
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos Pequenos", "Equipamentos de Informática", "Carregadores"],
     "payment": false,
     "residential_collection": false
   },
@@ -478,7 +478,7 @@
       "lat": "-23.49220",
       "lng": "-47.44516"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores"],
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos Pequenos", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores"],
     "payment": false,
     "residential_collection": false
   },
@@ -501,7 +501,7 @@
       "lat": "-23.53314",
       "lng": "-47.47629"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores"],
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos Pequenos", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores"],
     "payment": false,
     "residential_collection": false
   },
@@ -524,7 +524,7 @@
       "lat": "-23.47065",
       "lng": "-47.45487"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores"],
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos Pequenos", "Eletrodomésticos Grandes", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores"],
     "payment": false,
     "residential_collection": false
   },
@@ -547,7 +547,7 @@
       "lat": "-23.51731",
       "lng": "-47.46551"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores"],
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos Pequenos", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores"],
     "payment": false,
     "residential_collection": false
   },
@@ -570,7 +570,7 @@
       "lat": "-23.51277",
       "lng": "-47.43180"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores", "Cabos e Fios", "Antenas", "Lâmpadas"],
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos Pequenos", "Eletrodomésticos Grandes", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores", "Cabos e Fios", "Antenas", "Lâmpadas"],
     "payment": false,
     "residential_collection": false
   },
@@ -593,7 +593,7 @@
       "lat": "-23.51352",
       "lng": "-47.46063"
     },
-    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos de Pequeno Porte", "Eletrodomésticos de Grande Porte", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores", "Cabos e Fios", "Antenas", "Lâmpadas"],
+    "categories": ["Pilhas e Baterias", "Celulares e Tablets", "Eletrodomésticos Pequenos", "Eletrodomésticos Grandes", "Equipamentos de Informática", "Computadores e Vídeos Games", "Carregadores", "Cabos e Fios", "Antenas", "Lâmpadas"],
     "payment": false,
     "residential_collection": false
   }
