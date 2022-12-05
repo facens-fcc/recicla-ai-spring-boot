@@ -189,13 +189,13 @@ const Search = ({ userZipCode = '', userSelectedCategories = [] }) => {
               {handleDropdownLabel()}
             </button>
             <div className="dropdownContent" aria-hidden={!isDropdownOpen} aria-labelledby="dropdown-button" id="dropdown-content" role="dialog">
-              {sortedCategories.map(({ id, label }) => (
-                <Checkbox key={id} id={id} label={label} name={label} onChange={handleCheckboxChange} />
+              {sortedCategories.map(({ id, label, icon }) => (
+                <Checkbox key={id} id={id} label={label} name={label} icon={icon} onChange={handleCheckboxChange} />
               ))}
             </div>
           </div>
           <footer>
-            <Button type="submit">Pesquisar</Button>
+            <Button variant="orange" type="submit">Pesquisar</Button>
             <div role="alert" aria-live="assertive" aria-atomic="true" className={style.search__errors}>
               {isFormValid === false && (
                 <ul className={style.search__errors__list}>

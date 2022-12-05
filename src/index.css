@@ -76,19 +76,26 @@ a {
 /* ======================================================================== */
 
 :root {
-  --color-black: #000000;
-  --color-white: #ffffff;
   --color-orange: #ffac52;
+  --color-orange-darker: #dc6a00;
+  --color-black: #000000;
+  --color-black-light: rgba(0, 0, 0, 0.64);
+  --color-black-lighter: rgba(0, 0, 0, 0.4);
+  --color-white: #ffffff;
+  --color-silver: #c7c7c7;
   --color-sand: #efe0d6;
+  --color-sand-light: #eee5db;
   --color-red: #f5c6cb;
   --color-red-lighter: #f8d7da;
   --color-red-darker: #721c24;
 
-  --bg-sand: linear-gradient(102.34deg, #efe0d6 0%, #fff7eb 100%);
-  --bg-orange-noise: url(./assets/pattern-black.png) repeat, var(--color-orange);
-  --bg-red-noise: url(./assets/pattern-black.png) repeat, var(--color-red);
-  --bg-sand-noise: url(./assets/pattern-black.png) repeat, var(--color-sand);
-  --bg-black-noise: url(./assets/pattern-white.png) repeat, var(--color-black);
+  --bg-noise-orange: url(./assets/pattern-black.png) repeat, var(--color-orange);
+  --bg-noise-red: url(./assets/pattern-black.png) repeat, var(--color-red);
+  --bg-noise-sand: url(./assets/pattern-black.png) repeat, var(--color-sand);
+  --bg-noise-black: url(./assets/pattern-white.png) repeat, var(--color-black);
+
+  --display-font: 'DM Serif Display', sans-serif;
+  --body-font: 'Roboto Slab', sans-serif;
 
   --spacing-xxs: 0.25rem;
   --spacing-xs: 0.5rem;
@@ -103,6 +110,7 @@ a {
   --radius-md: 0.5rem;
   --radius-lg: 1rem;
 
+  --text-xs: 0.75rem;
   --text-sm: 0.875rem;
   --text-md: 1rem;
   --text-lg: 1.25rem;
@@ -122,7 +130,7 @@ a {
 }
 
 body {
-  background: var(--bg-sand-noise);
+  background: var(--bg-noise-sand);
   color: var(--color-black);
   font-family: 'Roboto Slab', sans-serif;
   font-size: var(--text-md);
@@ -131,6 +139,11 @@ body {
 
 strong {
   font-weight: bold;
+}
+
+svg {
+  vertical-align: middle;
+  width: 100%;
 }
 
 /**
@@ -325,7 +338,7 @@ strong {
 
 :where(.checklist) {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(32ch, 1fr));
   gap: var(--spacing-xs);
 }
 
@@ -411,7 +424,7 @@ strong {
 }
 
 .dropdownContent {
-  background: var(--bg-sand-noise);
+  background: var(--bg-noise-sand);
   border: 1px solid var(--color-black);
   border-radius: var(--radius-md);
   padding: 1em;

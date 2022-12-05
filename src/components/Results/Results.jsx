@@ -51,13 +51,13 @@ const Results = ({ userSelectedCategories = [], userCoordinates = [] }) => {
 
   /**
    * Filters the companies by the selected categories.
-   * If the company has at least one category in common with the selected categories, it's included in the filtered list.
+   * If the company has all the selected categories, it is added to the filteredCompanies array.
    */
 
   const filterCompaniesByCategory = companies.filter((company) => {
     const companyCategories = company.categories;
-    const matches = companyCategories.filter((category) => categories.includes(category));
-    return matches.length > 0;
+    const hasAllCategories = categories.every((category) => companyCategories.includes(category));
+    return hasAllCategories;
   });
 
   return (

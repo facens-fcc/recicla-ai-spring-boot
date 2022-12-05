@@ -12,11 +12,18 @@
 }
 
 .checkbox + .checkbox {
-  margin-top: var(--spacing-xxs);
+  margin-top: var(--spacing-xs);
 }
 
 .checkbox__label {
   padding-left: calc(var(--size) + var(--spacing-xs));
+  display: flex;
+  gap: var(--spacing-xs);
+  align-items: center;
+}
+
+.checkbox__icon {
+  width: 1.5em;
 }
 
 .checkbox__input:focus + .checkbox__mark {
@@ -39,7 +46,7 @@
 }
 
 .checkbox__input:checked ~ .checkbox__mark {
-  background: var(--bg-orange-noise);
+  background: var(--bg-noise-orange);
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */

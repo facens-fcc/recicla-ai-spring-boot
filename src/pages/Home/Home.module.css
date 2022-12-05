@@ -80,7 +80,7 @@
  */
 
 .worldCount {
-  background: var(--bg-black-noise);
+  background: var(--bg-noise-black);
   color: var(--color-white);
   padding: var(--spacing-xxl) var(--side-padding) 0;
   position: relative;
@@ -153,7 +153,7 @@
  */
 
 .benefits {
-  background: var(--bg-black-noise);
+  background: var(--bg-noise-black);
   color: var(--color-white);
   padding: 0 var(--side-padding) var(--spacing-xxl);
 }

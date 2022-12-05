@@ -42,7 +42,7 @@
 }
 
 [data-menu-open='true'] .menu__wrapper {
-  background: var(--bg-black-noise);
+  background: var(--bg-noise-black);
   display: grid;
   align-content: center;
 

@@ -9,7 +9,7 @@ const PaginaNaoEncontrada = () => {
         <div className="container">
           <h1 className="display display--medium">Página não encontrada</h1>
           <p className={style.hero__description}>A página que você está procurando não existe.</p>
-          <Button href="/">Voltar para a página inicial</Button>
+          <Button variant="orange" href="/">Voltar para a página inicial</Button>
         </div>
       </section>
     </main>

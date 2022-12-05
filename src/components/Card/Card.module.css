@@ -1,39 +1,169 @@
 .card {
-  border: 1px solid rgba(0, 0, 0, 0.25);
-  border-radius: var(--radius-md);
-  padding: 1.5rem;
+  border: 1px solid var(--color-silver);
+  border-radius: var(--radius-lg);
 
   display: grid;
-  grid-template-rows: auto 1fr auto;
-  height: 100%;
-  min-height: 18.75rem;
+  grid-template-rows: 1fr auto auto;
+}
+
+/**
+ * Header
+ */
+
+.card__header {
+  background: var(--color-sand-light);
+  border-bottom: 1px solid var(--color-silver);
+  border-radius: var(--radius-lg) var(--radius-lg) var(--radius-md) var(--radius-md);
+  padding: var(--spacing-lg);
+}
+
+/**
+ * Company
+ * Company name and distance from user.
+ */
+
+.card__company {
+  display: grid;
+  justify-content: space-between;
+  align-items: baseline;
   gap: var(--spacing-sm);
 }
 
-.card__header {
+.card__company__title {
+  font-family: var(--display-font);
+  font-size: 1.75rem;
+  line-height: 1.1;
+}
+
+.card__company__distance {
+}
+
+@media (min-width: 60rem) {
+  .card__company {
+    grid-template-columns: 1fr max-content;
+  }
+}
+
+/**
+ * Contact
+ * Company address and phone number.
+ */
+
+.card__contact {
+  margin-top: var(--spacing-sm);
+}
+
+.card__contact__address {
+  color: var(--color-black-light);
+}
+
+.card__contact__phone {
+  display: block;
+  margin-top: var(--spacing-xxs);
+}
+
+/**
+ * Body
+ */
+
+.card__body {
   display: grid;
-  gap: var(--spacing-xxs);
+  align-content: flex-end;
+  height: max-content;
+  padding: var(--spacing-lg) var(--spacing-md);
+}
+
+/**
+ * Extra information
+ * Payment in exchange for e-waste and residential collection.
+ */
+
+.card__extraInfo {
+  color: var(--color-black-light);
+  margin-bottom: var(--spacing-md);
+}
+
+/**
+ * Categories.
+ * This is a list of categories that the company accepts.
+ */
+
+.card__categories {
+}
+
+.card__categories__label {
   font-size: var(--text-sm);
 }
 
-.card__title {
-  margin-bottom: var(--spacing-xxs);
-}
-
-.card__body {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
-  color: rgba(0, 0, 0, 0.65);
-  padding-bottom: var(--spacing-sm);
-}
-
-.card__footer {
+.card__categories__list {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-sm);
+}
+
+.card__categories__item {
+}
+
+.card__categories__icon {
+  color: var(--color-orange-darker);
+  cursor: help;
+  position: relative;
+  width: 1.75rem;
+}
+
+.card__categories__icon[aria-hidden='true'] {
+  color: var(--color-black-lighter);
+}
+
+.card__categories__icon::before {
+  background: var(--bg-noise-orange);
+  border-radius: var(--radius-sm);
+  box-shadow: 0 0 0 1px var(--color-sand-light);
+  content: attr(aria-label);
+  color: var(--color-black);
+  font-size: var(--text-xs);
+  padding: 0.25em 0.5em;
+  margin: auto;
+  width: max-content;
+
+  position: absolute;
+  top: calc(var(--spacing-xs) * -1);
+  left: 50%;
+  right: 0;
+  transform: translate(-50%, -100%);
+
+  transition: opacity 0.2s ease-in-out;
+  opacity: 0;
+}
+
+.card__categories__icon:hover::before,
+.card__categories__icon:focus::before {
+  opacity: 1;
+}
+
+/**
+ * Footer
+ */
+
+.card__footer {
+  border-top: 1px solid var(--color-silver);
+  padding: var(--spacing-sm) var(--spacing-md);
+  display: flex;
+  align-items: center;
   justify-content: space-between;
+  gap: var(--spacing-sm);
+}
+
+.card__buttons {
+  display: flex;
   align-items: center;
   gap: var(--spacing-sm);
 }
 
-.card__list {
-  max-width: 34ch;
+@media all and (max-width: 65rem) and (min-width: 48rem), (max-width: 36.25rem) {
+  .card__footer {
+    flex-direction: column;
+  }
 }

@@ -4,7 +4,7 @@
 }
 
 .footerDark {
-  background: var(--bg-black-noise);
+  background: var(--bg-noise-black);
   color: var(--color-white);
 }
 
