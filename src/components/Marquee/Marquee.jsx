@@ -22,12 +22,12 @@ const Marquee = () => {
       <div className={style.marquee__wrapper}>
         <div className={style.marquee__group}>
           {images.map((image, index) => (
-            <img key={index} className={style.marquee__image} src={`/assets/images/${image}`} alt="Imagem de lixo eletrônico" loading="lazy" width="260" height="260" />
+            <img key={index} className={style.marquee__image} src={`/assets/images/${image}`} alt="Imagem de lixo eletrônico" width="260" height="260" />
           ))}
         </div>
         <div className={style.marquee__group} aria-hidden="true">
           {images.map((image, index) => (
-            <img key={index} className={style.marquee__image} src={`/assets/images/${image}`} alt="Imagem de lixo eletrônico" loading="lazy" width="260" height="260" />
+            <img key={index} className={style.marquee__image} src={`/assets/images/${image}`} alt="Imagem de lixo eletrônico" width="260" height="260" />
           ))}
         </div>
       </div>
