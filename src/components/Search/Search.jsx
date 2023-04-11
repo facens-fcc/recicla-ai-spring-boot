@@ -129,7 +129,7 @@ const Search = ({ userZipCode = '', userSelectedCategories = [] }) => {
   const getAdressData = async (zipCode) => {
     const zipCodeValue = zipCode.replace(/\D/g, '');
 
-    fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${zipCodeValue}&key=AIzaSyDdE2m_2nAtfQN9CA3emww375xD5CELjiU`)
+    fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${zipCodeValue}&key=AIzaSyCDVRS2y-aVIXVmiyXnrCfg9ZiDBEiHQJM`)
       .then((response) => response.json())
       .then((data) => {
         if (data.status === 'OK') {
@@ -195,7 +195,9 @@ const Search = ({ userZipCode = '', userSelectedCategories = [] }) => {
             </div>
           </div>
           <footer>
-            <Button variant="orange" type="submit">Pesquisar</Button>
+            <Button variant="orange" type="submit">
+              Pesquisar
+            </Button>
             <div role="alert" aria-live="assertive" aria-atomic="true" className={style.search__errors}>
               {isFormValid === false && (
                 <ul className={style.search__errors__list}>
