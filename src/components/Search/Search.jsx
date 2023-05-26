@@ -3,7 +3,8 @@ import style from './Search.module.css';
 
 import Checkbox from '../Checkbox/Checkbox';
 
-import categories from '../../data/categories.json';
+import api from '../../api/api';
+
 import siren from '../../assets/siren.svg';
 import Button from '../Button/Button.jsx';
 
@@ -12,23 +13,38 @@ const Search = ({ userZipCode = '', userSelectedCategories = [] }) => {
   const dropdownButtonRef = React.useRef();
   const zipCodeRef = React.useRef();
 
-  const sortedCategories = categories.sort((a, b) => {
-    if (a.label < b.label) return -1;
-    if (a.label > b.label) return 1;
-    return 0;
-  });
-
   const [isDropdownOpen, setDropdownOpen] = useState(false);
 
   const [zipCode, setZipCode] = useState(userZipCode);
   const [isZipCodeValid, setZipCodeValid] = useState(false);
 
+  const [categories, setCategories] = useState([]);
   const [selectedCategories, setSelectedCategories] = useState(userSelectedCategories);
   const [isCategoryValid, setCategoryValid] = useState(false);
 
   const [isFormValid, setFormValid] = useState();
 
   const [coordinates, setCoordinates] = useState(null);
+
+  const sortedCategories = categories.sort((a, b) => {
+    if (a.label < b.label) return -1;
+    if (a.label > b.label) return 1;
+    return 0;
+  });
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await api.get('/company');
+        setCategories(response.data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    fetchData();
+  }, []);
+
+  console.log(categories);
 
   useEffect(() => {
     document.addEventListener('click', handleDropdownClickOutside);
@@ -189,8 +205,8 @@ const Search = ({ userZipCode = '', userSelectedCategories = [] }) => {
               {handleDropdownLabel()}
             </button>
             <div className="dropdownContent" aria-hidden={!isDropdownOpen} aria-labelledby="dropdown-button" id="dropdown-content" role="dialog">
-              {sortedCategories.map(({ id, label, icon }) => (
-                <Checkbox key={id} id={id} label={label} name={label} icon={icon} onChange={handleCheckboxChange} />
+              {sortedCategories.map(({ id, name, icon }) => (
+                <Checkbox key={id} id={id} label={name} name={name} icon={icon} onChange={handleCheckboxChange} />
               ))}
             </div>
           </div>
