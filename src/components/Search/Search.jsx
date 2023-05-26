@@ -35,7 +35,7 @@ const Search = ({ userZipCode = '', userSelectedCategories = [] }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await api.get('/company');
+        const response = await api.get('/category');
         setCategories(response.data);
       } catch (error) {
         console.log(error);
@@ -43,8 +43,6 @@ const Search = ({ userZipCode = '', userSelectedCategories = [] }) => {
     };
     fetchData();
   }, []);
-
-  console.log(categories);
 
   useEffect(() => {
     document.addEventListener('click', handleDropdownClickOutside);
@@ -205,8 +203,8 @@ const Search = ({ userZipCode = '', userSelectedCategories = [] }) => {
               {handleDropdownLabel()}
             </button>
             <div className="dropdownContent" aria-hidden={!isDropdownOpen} aria-labelledby="dropdown-button" id="dropdown-content" role="dialog">
-              {sortedCategories.map(({ id, name, icon }) => (
-                <Checkbox key={id} id={id} label={name} name={name} icon={icon} onChange={handleCheckboxChange} />
+              {sortedCategories.map(({ id, label, icon }) => (
+                <Checkbox key={id} id={id} label={label} name={label} icon={icon} onChange={handleCheckboxChange} />
               ))}
             </div>
           </div>
