@@ -1,13 +1,28 @@
 import React, { useState, useEffect } from 'react';
 import style from './Results.module.css';
 
-import Companies from '../../data/companies.json';
+import api from '../../api/api';
+// import Companies from '../../data/companies.json';
 import Card from '../Card/Card';
 
 const Results = ({ userSelectedCategories = [], userCoordinates = [] }) => {
   const [categories, setCategories] = useState([]);
-  const [companies, setCompanies] = useState(Companies);
+  const [companies, setCompanies] = useState([]);
   const [filteredCompanies, setFilteredCompanies] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await api.get('/company');
+        setCompanies(response.data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    fetchData();
+  }, []);
+
+  console.log(companies)
 
   useEffect(() => {
     setCategories(userSelectedCategories);
@@ -15,7 +30,7 @@ const Results = ({ userSelectedCategories = [], userCoordinates = [] }) => {
   }, []);
 
   useEffect(() => {
-    setFilteredCompanies(filterCompaniesByCategory.sort((a, b) => a.address.distance - b.address.distance));
+    setFilteredCompanies(filterCompaniesByCategory.sort((a, b) => a.distance - b.distance));
   }, [companies]);
 
   /**
@@ -43,9 +58,9 @@ const Results = ({ userSelectedCategories = [], userCoordinates = [] }) => {
    */
 
   const companiesWithDistance = companies.map((company) => {
-    const companyCoordinates = [company.address.lat, company.address.lng];
+    const companyCoordinates = [company.lat, company.lng];
     const distance = calculateDistance(userCoordinates, companyCoordinates);
-    company.address.distance = distance;
+    company.distance = distance;
     return company;
   });
 
